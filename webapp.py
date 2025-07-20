@@ -1,6 +1,8 @@
 import streamlit as st
 import re
 
+st.set_page_config(layout="wide")
+
 # --- Custom Styled Title and Info Text ---
 st.markdown(
     """
