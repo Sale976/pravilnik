@@ -3,7 +3,7 @@ import re
 
 st.set_page_config(
     page_title="Pretraga PoPV - PoTP",
-    layaut="wide"
+    layout="wide"
 )
 
 # --- Custom Styled Title and Info Text ---
