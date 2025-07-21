@@ -3,6 +3,7 @@ import re
 
 if 'layout_preference' not in st.session_state:
     st.session_state['layout_preference'] = 'wide'
+
 # --- Custom Styled Title and Info Text ---
 st.markdown(
     """
