@@ -1,8 +1,7 @@
 import streamlit as st
 import re
 
-if 'layout_preference' not in st.session_state:
-    st.session_state['layout_preference'] = 'wide'
+st.set_option('wideMode' , True)
 
 # --- Custom Styled Title and Info Text ---
 st.markdown(
