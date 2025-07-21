@@ -1,7 +1,11 @@
 import streamlit as st
 import re
 
-st.set_option('wideMode' , True)
+st.set_page_config(
+    page_title="Pretraga PoPV - PoTP",
+    layaut="wide"
+)
+    
 
 # --- Custom Styled Title and Info Text ---
 st.markdown(
