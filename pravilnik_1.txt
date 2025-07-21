@@ -1,0 +1,168 @@
+pravilnik propisuje -- clan 1(PoPV) str. 1
+coc (za nova vozila) -- clan 2(PoPV) str. 1
+izrazi koristeni u pravilniku -- clan 4(PoPV) str. 3
+uredaji i oprema na vozilima -- clan 5(PoPV) str. 9
+vrsta L -- clan 6(PoPV) str. 10
+vrsta M -- clan 7(PoPV) str. 11
+vrsta N -- clan 8(PoPV) str. 12
+uslovi za vozila vrste N -- clan 9(PoPV) str. 12
+vrsta O -- clan 10(PoPV) str. 15
+oblik karoserije za vozila vrste M, N, O -- clan 11(PoPV) str. 16
+vrsta T, Tm ,TR i C -- clan 12(PoPV) str. 21
+vrsta R, S -- clan 13(PoPV) str. 22
+prikljucak za izvodenje radova za vozila vrste R i S -- clan 14(PoPV) str. 23
+vrsta K -- clan 15(PoPV) str. 24
+terenska vozila - podvrsta G -- clan 16(PoPV) str. 24
+duzina vozila -- clan 17(PoPV) str. 24
+sirina vozila -- clan 18(PoPV) str. 26
+visina vozila, klirens -- clan 19(PoPV) str. 27
+voznja u krug -- clan 20(PoPV) str. 27
+najveca dozvoljena ukupna masa motornog vozila i prikolice -- clan 21(PoPV) str. 27
+osovinsko opterecenje -- clan 22(PoPV) str. 29
+najveca dozvoljena masa vozila sa tockovima od metala, pune gume itd -- clan 23(PoPV) str. 30
+odnos najvece nominalne snage -- clan 24(PoPV) str. 31
+sistem za upravljanje-opste odredbe (volan) -- clan 25(PoPV) str.31
+kocni sistem-opste odredbe (kocnice) -- clan 26(PoPV) str. 32
+kocne obloge (plocice, pakne, diskovi, dobosi) -- clan 27(PoPV) str. 32
+pneumatski kocni sistem (kocnice) -- clan 28(PoPV) str. 32
+sistem za kocenje-funkcije kocnog sistema (radno, pomocno, parkirno, dugotrajno usporavanje) -- clan 29(PoPV) str. 34
+abs (kocenje) -- clan 30(PoPV) str. 35
+radno kocenje -- clan 31(PoPV) str. 35
+elektricno kocenje (regenerativno) -- clan 31a(PoPV) str. 36
+sistem za dugotrajno usporavanje -- clan 32(PoPV) str. 37
+komande kocenja -- clan 33(PoPV) str. 37
+servo -- clan 34(PoPV) str. 38
+radno kocenje R -- clan 35(PoPV) str. 38
+radno kocenje L, M, N, O -- clan 36(PoPV) str. 39
+radno kocenje L1, L3 -- clan 37(PoPV) str. 40
+radno kocenje L2, L5, L6, L7 -- clan 38(PoPV) str. 40
+radno kocenje L4 -- clan 39(PoPV) str. 41
+radno kocenje T, C, K, Tm, TR -- clan 40(PoPV) str. 41
+normativi kocnih koeficijenata (ovalnost) -- clan 41(PoPV) str. 41
+svetlosno i svelosno signalni uredaji (vrste) -- clan 42(PoPV) str. 46
+svetlosno i svelosno signalni uredaji (prednji deo vozila) -- clan 43(PoPV) str. 46
+svetlosno i svelosno signalni uredaji (istovetni, udvojeni) -- clan 44(PoPV) str. 46
+svetlosno i svelosno signalni uredaji (osvetljavanje puta) -- clan 45(PoPV) str. 46
+osvetljavanje puta (podela) -- clan 46(PoPV) str. 47
+glavni farovi -- clan 47(PoPV) str. 48
+glavni farovi M, N (gasni izvor, nivelacija snopa, dinamicko pracenje) -- clan 48(PoPV) str. 49
+svetlosni snop (kratka svetla) -- clan 49(PoPV) str. 49
+svetla za voznju unazad (rikverc svetlo) -- clan 50(PoPV) str. 50
+svetla za maglu (maglenke) -- clan 51(PoPV) str. 51
+farovi i svetlo za osvetljavanje radova -- clan 53(PoPV) str. 51
+oznacavanje vozila (podela) -- clan 55(PoPV) str. 52
+oznacavanje vozila (uslovi) -- clan 56(PoPV) str. 52
+prednja poziciona svetla -- clan 57(PoPV) str. 53
+zadnja poziciona svetla -- clan 58(PoPV) str. 53
+dnevna svetla -- clan 58a(PoPV) str. 54
+zadnje svetlo za maglu (maglenke) -- clan 59(PoPV) str. 55
+parkirna svetla -- clan 60(PoPV) str. 56
+gabaritna svetla -- clan 61(PoPV) str. 56
+svetlo zadnje registarske tablice -- clan 62(PoPV) str. 57
+rotaciona i trepcuca svetla (zuta, crvena, plava) -- clan 63(PoPV) str. 58
+katadiopteri -- clan 64(PoPV) str. 58
+svetla za oznacavanje vozila posebnih namena (taksi, obuka vozaca, putna pomoc, gradski prevoz) -- clan 65(PoPV) str. 60
+oznake dugih, teskih i sporih vozila -- clan 66(PoPV) str. 60
+reklamni natpisi -- clan 67(PoPV) str. 62
+uredaji za davanje svetlosnih znakova (podela) -- clan 68(PoPV) str. 62
+stop svetla -- clan 69(PoPV) str. 62
+pokazivaci pravca (zmigavci) -- clan 70(PoPV) str. 63
+normalna vidljivost (podela) -- clan 71(PoPV) str. 65
+vetrobran i sva stakla -- clan 72(PoPV) str.  str. 65
+brisaci vetrobrana -- clan 73(PoPV) str. 66
+peraci vetrobrana -- clan 74(PoPV) str. 67
+vozacko ogledalo -- clan 75(PoPV) str. 67
+vozacko ogledalo N2, N3 -- 75a(PoPV) str. 68
+zvucni znakovi (sirena) -- clan 76(PoPV) str. 69
+zvucni znakovi - jacina zvuka(db) (sirena) -- clan 77(PoPV) str. 70
+buka vozila -- clan 78(PoPV) str. 70
+kontrola i davanje znakova (odometar, tahograf itd) -- clan 79(PoPV) str. 71
+tahograf (uslovi) -- clan 80(PoPV) str. 74
+izduvni sistem (auspuh) -- clan 81(PoPV) str. 74
+izduvni gasovi - normativi -- clan 82(PoPV) str. 75
+vucni uredaj (kuka) -- clan 83(PoPV) str. 77
+uredaj za kretanje unazad (rikverc) -- clan 84(PoPV) str. 78
+sistem za oslanjanje -- clan 85(PoPV) str. 78
+pneumatici (gume) -- clan 86(PoPV) str. 78
+etektricna instalacija (akumulator, elektro instalacija) -- clan 87(PoPV) str. 79
+pogonski uredaj (motor) -- clan 88(PoPV) str. 79
+prenos snage (menjac) -- clan 89(PoPV) str. 80
+delovi vozila od posebnog znacaja (karoserija, VIN, kabina ili ram) -- clan 90(PoPV) str. 80
+boja, reklamne table i napisi -- clan 91(PoPV) str. 82
+registarska tablica -- clan 92(PoPV) str. 83
+povrsina za stajanje putnika -- clan 93(PoPV) str. 83
+vrata na vozilima M2, M3, O -- clan 94(PoPV) str. 84
+brave, vrata, poklopci -- clan 95(PoPV) str. 85
+provetravanje u vozilu -- clan 96(PoPV) str. 85
+sedista, kabina -- clan 97(PoPV) str. 86
+odmrzavanje i odmagljivanje vetrobrana, grejanje) -- clan 98(PoPV) str. 86
+blatobrani -- clan 99(PoPV) str. 86
+branici, zastitnik od podletanja -- clan 100(PoPV) str. 87
+sigurnosni pojasevi, bezbedonosna sedista, nasloni za glavu -- clan 101(PoPV) str. 89
+prikljucak za vucu (slepanje) -- clan 102(PoPV) str. 89
+neovlascena upotreba vozila M1 -- clan 103(PoPV) str. 90
+TNG, KPG -- clan 104(PoPV) str. 90
+rezervni tocak -- clan 105(PoPV) str. 90
+aparat za gasenje pozara -- clan 106(PoPV) str. 91
+sigurnosni trougao -- clan 107(PoPV) str. 91
+prva pomoc -- clan 108(PoPV) str. 91
+klinasti podmetaci -- clan 109(PoPV) str. 92
+cekic za razbijanje stakla -- clan 110(PoPV) str. 92
+svetloodbojni prsluk -- clan 111(PoPV) str. 92
+uze ili poluga za vucu vozila -- clan 112(PoPV) str. 92
+zimska oprema (zimske gume, lanci, lopata, period za zimsku opremu) -- clan 113(PoPV) str. 92
+zastitna kaciga za L vozila -- clan 114(PoPV) str. 93
+ciscenje gusenica za vozila C -- clan 115(PoPV) str. 93
+oprema za vozila Tm i S -- clan 115a(PoPV) str. 93
+oldtajmeri (prelazne i zavrsne odredbe) -- clan 116(PoPV) str. 93
+TNG, KPG (prelazne i zavrsne odredbe) -- clan 117(PoPV) str. 94
+izduvni gasovi (prelazne i zavrsne odredbe) -- clan 118(PoPV) str. 94
+izduvni gasovi (prelazne i zavrsne odredbe) -- clan 118a(PoPV) str. 94
+izduvni gasovi (prelazne i zavrsne odredbe) -- clan 118b(PoPV) str. 94
+taksi (prelazne i zavrsne odredbe) -- clan 119(PoPV) str. 94
+coc, brisac i perac vetrabrana za T i C (prelazne i zavrsne odredbe) -- clan 120(PoPV) str. 95
+homologacija za N (prelazne i zavrsne odredbe) -- clan 120a(PoPV) str. 95
+radno kocenje za R i S (prelazne i zavrsne odredbe) -- clan 120b(PoPV) str. 95
+vrsta N specijalna (prelazne i zavrsne odredbe) -- clan 120v(PoPV) str. 95
+konture vozila (prelazne i zavrsne odredbe) -- clan 121(PoPV) str. 95
+vozacko ogledalo N2, N3 (prelazne i zavrsne odredbe) -- clan 121a(PoPV) str. 95
+tahograf (prelazne i zavrsne odredbe) -- clan 122(PoPV) str. 96
+kabina ili ram (prelazne i zavrsne odredbe) -- clan 123(PoPV) str. 96
+---------------------------------------------------------------------
+boja vozila (odredivanje boje vozila) -- clan 24(PoTP) str. 17
+baza podataka, propisi, uputstva, strucna literatura, tehnicka dokumentacija, elaborat, bazdarenje -- clan 27(PoTP) str. 20
+vrste tehnickog pregleda (podela) -- clan 28(PoTP) str. 21
+uslovi za vrsenje tehnickog pregleda -- clan 29(PoTP) str. 21
+sumnja u tacnost podataka -- clan 30(PoTP) str. 23
+tehnicki pregled vozila (obuhvata) -- clan 31(PoTP) str. 24
+tehnicki pregled vozila (vrsi se u celini) -- clan 32(PoTP) str. 24
+ponovni tehnicki pregled vozila -- clan 33(PoTP) str. 24
+tehnicki pregled vozila (obuhvata pregled uredaja, opreme itd) -- clan 34(PoTP) str. 25
+utvrdivanje tehnickih karakteristika vozila -- clan 35(PoTP) str. 26
+kontrolori (uslovi za kontrolore) -- clan 36(PoTP) str. 26
+snimanje vrsenja tehnickog pregleda (video sistem) -- clan 37(PoTP) str. 27
+tehnologija vrsenja tehnickog pregleda (minimalna vremena za vrsenje tehnickog pregleda) -- clan 38(PoTP) str. 27
+ID broj -- clan 39(PoTP) str. 28
+evidencija -- clan 40(PoTP) str. 28
+potvrda, registracioni list, izvestaj -- clan 41(PoTP) str. 30
+tehnicki pregled vozila na poligonu (poligon) -- clan 42(PoTP) str. 30
+boja vozila -- clan 44(PoTP) str. 32
+fotografija vozila (fotografosanje vozila) -- clan 49(PoTP) str. 33
+registar pregledanih vozila (registar) -- clan 50(PoTP) str. 33
+Prilog 1:  identifikacija vozila -- tacka 0(PoTP) str. 35
+Prilog 1:  uredaj za upravljanje (volan) -- tacka 1(PoTP) str. 35
+Prilog 1:  uredaj za zaustavljanje (kocnice) -- tacka 2(PoTP) str. 36
+Prilog 1:  svetlosni i svetlosno-signalni uredaji (svetla) -- tacka 3(PoTP) str. 40
+Prilog 1:  uredaji koji omogucavaju normalnu vidljivost (vetrobran, retrovizor) -- tacka 4(PoTP) str. 43
+Prilog 1:  uredaji za davanje zvucnih znakova (sirena) -- tacka 5(PoTP) str. 44
+Prilog 1:  uredaji za kontrolu i davanje znakova (odometar, tahograf) -- tacka 6(PoTP) str. 44
+Prilog 1:  uredaji za odvodenje i regulisanje izduvnih gasova (auspuh) -- tacka 7(PoTP) str. 45
+Prilog 1:  uredaj za spajanje vucnog i prikljucnog vozila (kuka) -- tacka 8(PoTP) str. 46
+Prilog 1:  uredaj za kretanje vozila unazad (rikverc) -- tacka 9(PoTP) str. 46
+Prilog 1:  uredaji za oslanjanje -- tacka 10(PoTP) str. 46
+Prilog 1:  uredaji za kretanje (pneumatici - gume) -- tacka 11(PoTP) str. 47
+Prilog 1:  elektro-uredaji i instalacija -- tacka 12(PoTP) str. 48
+Prilog 1:  pogonski uredaj (motor) -- tacka 13(PoTP) str. 48
+Prilog 1:  uredaj za prenos snage (menjac) -- tacka 14(PoTP) str. 49
+Prilog 1:  delovi vozila od posebnog znacaja za bezbednost (karoserija, ram, VIN, ukrasni predmeti, oslonci za noge) -- tacka 15(PoTP) str. 50
+Prilog 1:  oprema vozila -- tacka 16(PoTP) str. 53
