@@ -1,5 +1,6 @@
 import streamlit as st
 import re
+import time
 
 st.set_page_config(
     page_title="Pretraga PoPV - PoTP",
@@ -91,8 +92,8 @@ with col2:
 
                 file_link = ""
                 if acronym and page_number:
-                    # Use raw.githubusercontent.com to avoid jsDelivr cache
-                    pdf_url = f"https://raw.githubusercontent.com/Sale976/pravilnik/main/{acronym}.pdf#page={page_number}"
+                    timestamp = int(time.time())
+                    pdf_url = f"https://cdn.jsdelivr.net/gh/Sale976/pravilnik@main/{acronym}.pdf?v={timestamp}#page={page_number}"
                     file_link = (
                         f"<a href='{pdf_url}' target='_blank' "
                         f"title='Kliknite da otvorite PDF na odgovarajućoj stranici' "
