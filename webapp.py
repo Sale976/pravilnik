@@ -98,7 +98,7 @@ with col2:
                             f"<a href='{full_url}' target='_blank' "
                             f"title='Otvori PDF na strani {page_number}' "
                             f"style='color:#0077b6; font-weight: bold; text-decoration: none;'>"
-                            f"📄 Otvori PDF</a>"
+                            f"📄 Otvori Pravilnik u PDF-u</a>"
                         )
 
                 st.markdown(
