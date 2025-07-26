@@ -32,13 +32,12 @@ def clear_search():
 
 file_path = "pravilnik.txt"
 
-# --- Create file if needed (for demo/testing) ---
+# --- Create file if needed ---
 try:
     with open(file_path, "x", encoding="utf-8") as f:
-        f.write("Član 12 se odnosi na tehnički pregled vozila. (PoTP) str. 15\n")
-        f.write("PoTP reguliše tehničke uslove. (PoTP) str. 22\n")
-        f.write("abs (kočenje) -- Član 30 (PoPV) str. 35\n")
-        f.write("Ovaj red ne sadrži ništa relevantno.\n")
+        f.write("Član 12 se odnosi na tehnički pregled vozila. (PoTP) Str. 15.\n")
+        f.write("PoTP reguliše tehničke uslove. Str. 22.\n")
+        f.write("ABS (kočenje) -- Član 30 (PoPV) str. 35\n")
 except FileExistsError:
     pass
 
@@ -65,6 +64,7 @@ with col2:
             with open(file_path, "r", encoding="utf-8") as f:
                 for line in f:
                     if st.session_state.search_query.lower() in line.lower():
+                        # Highlight matching text
                         highlighted = re.sub(
                             f"({re.escape(st.session_state.search_query)})",
                             r"<mark>\1</mark>",
@@ -77,9 +77,10 @@ with col2:
 
         if matching_lines:
             st.markdown(
-                "<h3 style='color: #0077b6; margin-top: -5px; font-size: 17px;'>🔍 Rezultati pretrage:</h3>",
+                "<h3 style='color: #0077b6; font-size: 24px;'>🔍 Rezultati pretrage:</h3>",
                 unsafe_allow_html=True
             )
+
             for match in matching_lines:
                 # Extract acronym and page number
                 acronym_match = re.search(r"\((PoPV|PoTP)\)", match)
@@ -90,15 +91,16 @@ with col2:
 
                 file_link = ""
                 if acronym and page_number:
+                    # Use raw.githubusercontent.com to avoid jsDelivr cache
                     pdf_url = f"https://raw.githubusercontent.com/Sale976/pravilnik/main/{acronym}.pdf#page={page_number}"
                     file_link = (
                         f"<a href='{pdf_url}' target='_blank' "
                         f"title='Kliknite da otvorite PDF na odgovarajućoj stranici' "
                         f"style='color:#0077b6; font-weight: bold; text-decoration: none;'>"
-                        f"📄 Otvori Pravilnik u PDF-u</a>"
+                        f"📄 Otvori PDF</a>"
                     )
 
-                # Show result line and PDF link side-by-side with ~1cm gap
+                # Display result and link side by side with ~1cm spacing
                 st.markdown(
                     f"""
                     <div style='display: flex; flex-direction: row; align-items: center; gap: 40px;
@@ -114,6 +116,6 @@ with col2:
         else:
             st.info("Nisu pronađeni odgovarajući rezultati!")
     else:
-        st.info("")  # Empty space when no search
+        st.info("")  # Placeholder spacing
 
     st.markdown("</div>", unsafe_allow_html=True)
