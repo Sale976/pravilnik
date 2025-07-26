@@ -1,6 +1,5 @@
 import streamlit as st
 import re
-import time
 
 st.set_page_config(
     page_title="Pretraga PoPV - PoTP",
@@ -33,12 +32,12 @@ def clear_search():
 
 file_path = "pravilnik.txt"
 
-# --- Create file if needed ---
+# --- Create file if needed (demo content) ---
 try:
     with open(file_path, "x", encoding="utf-8") as f:
-        f.write("Član 12 se odnosi na tehnički pregled vozila. (PoTP) Str. 15.\n")
-        f.write("PoTP reguliše tehničke uslove. Str. 22.\n")
         f.write("ABS (kočenje) -- Član 30 (PoPV) str. 35\n")
+        f.write("Pregled svetala -- Član 12 (PoTP) str. 15\n")
+        f.write("Ovaj red ne sadrži ništa relevantno.\n")
 except FileExistsError:
     pass
 
@@ -65,7 +64,6 @@ with col2:
             with open(file_path, "r", encoding="utf-8") as f:
                 for line in f:
                     if st.session_state.search_query.lower() in line.lower():
-                        # Highlight matching text
                         highlighted = re.sub(
                             f"({re.escape(st.session_state.search_query)})",
                             r"<mark>\1</mark>",
@@ -92,16 +90,22 @@ with col2:
 
                 file_link = ""
                 if acronym and page_number:
-                    drive_file_id = "1wkVMLXFWPY8dAkam7KRbJwNkq7kBBcuy"
-                    pdf_url = f"https://drive.google.com/file/d/{drive_file_id}/preview#page={page_number}"
-                    file_link = (
-                        f"<a href='{pdf_url}' target='_blank' "
-                        f"title='Kliknite da otvorite PDF na odgovarajućoj stranici' "
-                        f"style='color:#0077b6; font-weight: bold; text-decoration: none;'>"
-                        f"📄 Otvori PDF</a>"
-                    )
+                    # Map acronyms to Google Drive file IDs
+                    drive_file_ids = {
+                        "PoPV": "1N8C4bclnk0kZi7rW3JYRs2sG5lumc18O",
+                        "PoTP": "1wkVMLXFWPY8dAkam7KRbJwNkq7kBBcuy"
+                    }
+                    file_id = drive_file_ids.get(acronym)
+                    if file_id:
+                        pdf_url = f"https://drive.google.com/file/d/{file_id}/preview#page={page_number}"
+                        file_link = (
+                            f"<a href='{pdf_url}' target='_blank' "
+                            f"title='Otvorite PDF na strani {page_number}' "
+                            f"style='color:#0077b6; font-weight: bold; text-decoration: none;'>"
+                            f"📄 Otvori PDF</a>"
+                        )
 
-                # Display result and link side by side with ~1cm spacing
+                # Display result with PDF link ~1cm (40px) apart
                 st.markdown(
                     f"""
                     <div style='display: flex; flex-direction: row; align-items: center; gap: 40px;
@@ -114,9 +118,10 @@ with col2:
                     """,
                     unsafe_allow_html=True
                 )
+
         else:
             st.info("Nisu pronađeni odgovarajući rezultati!")
     else:
-        st.info("")  # Placeholder spacing
+        st.info("")  # Empty space when no search
 
     st.markdown("</div>", unsafe_allow_html=True)
