@@ -1,11 +1,6 @@
 import streamlit as st
 import re
 
-st.set_page_config(
-    page_title="Pretraga PoPV - PoTP",
-    layout="wide"
-)
-
 # --- Custom Styled Title and Info Text ---
 st.markdown(
     """
@@ -32,7 +27,7 @@ def clear_search():
 
 file_path = "pravilnik.txt"
 
-# --- Create file if needed ---
+# --- Create file if needed (for demo/testing) ---
 try:
     with open(file_path, "x", encoding="utf-8") as f:
         f.write("Član 12 se odnosi na tehnički pregled vozila. (PoTP) str. 15\n")
@@ -98,15 +93,15 @@ with col2:
                         f"📄 Otvori PDF</a>"
                     )
 
-                # Show result line and PDF link side-by-side with spacing
+                # Show result line and PDF link side-by-side with ~1cm gap
                 st.markdown(
                     f"""
-                    <div style='display: flex; align-items: center;
+                    <div style='display: flex; flex-direction: row; align-items: center; gap: 40px;
                                 padding: 10px; background-color: #f4f4f4;
                                 border-left: 4px solid #0077b6; margin-bottom: 10px;
-                                font-size:17px;'>
-                        <div style='flex: 1;'>{match}</div>
-                        <div style='margin-left: 15px; white-space: nowrap;'>{file_link}</div>
+                                font-size:17px; flex-wrap: wrap;'>
+                        <div>{match}</div>
+                        <div>{file_link}</div>
                     </div>
                     """,
                     unsafe_allow_html=True
