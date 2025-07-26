@@ -1,11 +1,6 @@
 import streamlit as st
 import re
 
-st.set_page_config(
-    page_title="Pretraga PoPV - PoTP",
-    layout="wide"
-)
-
 # --- Custom Styled Title and Info Text ---
 st.markdown(
     """
@@ -32,7 +27,7 @@ def clear_search():
 
 file_path = "pravilnik.txt"
 
-# --- Create file if needed (for demo purposes) ---
+# --- Create file if needed ---
 try:
     with open(file_path, "x", encoding="utf-8") as f:
         f.write("Član 12 se odnosi na tehnički pregled vozila. (PoTP) str. 15\n")
@@ -92,19 +87,21 @@ with col2:
                 if acronym and page_number:
                     pdf_url = f"https://cdn.jsdelivr.net/gh/Sale976/pravilnik@main/{acronym}.pdf#page={page_number}"
                     file_link = (
-                        f"<a href='{pdf_url}' target='_blank' title='Kliknite da otvorite PDF na odgovarajućoj stranici' "
+                        f"<a href='{pdf_url}' target='_blank' "
+                        f"title='Kliknite da otvorite PDF na odgovarajućoj stranici' "
                         f"style='color:#0077b6; font-weight: bold; text-decoration: none;'>"
                         f"📄 Otvori PDF</a>"
                     )
 
-                # Show result line and link in a single row
+                # Show result line and PDF link side-by-side with spacing
                 st.markdown(
                     f"""
-                    <div style='display: flex; justify-content: space-between; align-items: center;
-                                padding: 10px; background-color: #f4f4f4; border-left: 4px solid #0077b6;
-                                margin-bottom: 10px; font-size:17px;'>
+                    <div style='display: flex; align-items: center;
+                                padding: 10px; background-color: #f4f4f4;
+                                border-left: 4px solid #0077b6; margin-bottom: 10px;
+                                font-size:17px;'>
                         <div style='flex: 1;'>{match}</div>
-                        <div style='margin-left: 40px;'>{file_link}</div>
+                        <div style='margin-left: 40px; white-space: nowrap;'>{file_link}</div>
                     </div>
                     """,
                     unsafe_allow_html=True
