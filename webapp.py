@@ -6,17 +6,15 @@ st.set_page_config(
     layout="wide"
 )
 
-# --- Custom Styled Title and Info Text ---
+# --- Title and Description ---
 st.markdown(
     """
-    <h2 style='text-align: center; margin-top: 0; font-size:28px;'>
-        Web aplikacija za pretragu Pravilnika o Podeli (PoPV) i Pravilnika o Tehničkom Pregledu (PoTP)
+    <h2 style='text-align: center; font-size:28px;'>
+        Web aplikacija za pretragu Pravilnika o Podeli (PoPV) i Tehničkom Pregledu (PoTP)
     </h2>
     <p style='font-size:18px; text-align: justify;'>
-        🛈 Aplikacija ne vrši pretragu Pravilnika (PoPV, PoTP) nego poseban tekstualni fajl koji vam pri pretrazi prikazuje broj Člana i na kojoj stranici se nalazi!
-    </p>
-    <p style='font-size:18px; text-align: justify;'>
-        🛈 Broj strane prikazan u rezultatu pretrage važi isključivo ako su pravilnici preuzeti sa Pravno Informacionog Sistema bez bilo kakvih izmena pri štampanju!
+        🛈 Aplikacija pretražuje tekstualni fajl koji prikazuje broj člana i stranu iz PDF verzije pravilnika.
+        Brojevi stranica važe ako su PDF fajlovi preuzeti sa zvaničnog izvora (PIS) bez izmene.
     </p>
     """,
     unsafe_allow_html=True
@@ -30,9 +28,10 @@ if "search_query" not in st.session_state:
 def clear_search():
     st.session_state.search_query = ""
 
+# --- File path ---
 file_path = "pravilnik.txt"
 
-# --- Create file if needed (demo content) ---
+# --- Create demo file if not exist ---
 try:
     with open(file_path, "x", encoding="utf-8") as f:
         f.write("ABS (kočenje) -- Član 30 (PoPV) str. 35\n")
@@ -41,19 +40,17 @@ try:
 except FileExistsError:
     pass
 
-# --- Layout: Two columns ---
+# --- Layout ---
 col1, col2 = st.columns([1, 2])
 
-# --- Left Column: Search Input & Button ---
 with col1:
-    search_query = st.text_input(
+    st.text_input(
         r"$\textsf{\large Unesite tekst za pretragu:}$",
         value=st.session_state.search_query,
         key="search_query"
     )
     st.button("Obrišite rezultate pretrage", on_click=clear_search)
 
-# --- Right Column: Display Results ---
 with col2:
     st.markdown("<div style='margin-top: 32px;'>", unsafe_allow_html=True)
 
@@ -81,7 +78,6 @@ with col2:
             )
 
             for match in matching_lines:
-                # Extract acronym and page number
                 acronym_match = re.search(r"\((PoPV|PoTP)\)", match)
                 page_match = re.search(r"[Ss]tr\.*\s*(\d+)", match)
 
@@ -90,26 +86,25 @@ with col2:
 
                 file_link = ""
                 if acronym and page_number:
-                    # Map acronyms to Google Drive file IDs
-                    drive_file_ids = {
-                        "PoPV": "1N8C4bclnk0kZi7rW3JYRs2sG5lumc18O",
-                        "PoTP": "1wkVMLXFWPY8dAkam7KRbJwNkq7kBBcuy"
+                    # GitHub-hosted PDFs via jsDelivr
+                    pdf_links = {
+                        "PoPV": "https://cdn.jsdelivr.net/gh/Sale976/pravilnik/popv.pdf",
+                        "PoTP": "https://cdn.jsdelivr.net/gh/Sale976/pravilnik/potp.pdf"
                     }
-                    file_id = drive_file_ids.get(acronym)
-                    if file_id:
-                        pdf_url = f"https://drive.google.com/file/d/{file_id}/preview#page={page_number}"
+                    pdf_url = pdf_links.get(acronym)
+                    if pdf_url:
+                        full_url = f"{pdf_url}#page={page_number}"
                         file_link = (
-                            f"<a href='{pdf_url}' target='_blank' "
-                            f"title='Otvorite PDF na strani {page_number}' "
+                            f"<a href='{full_url}' target='_blank' "
+                            f"title='Otvori PDF na strani {page_number}' "
                             f"style='color:#0077b6; font-weight: bold; text-decoration: none;'>"
                             f"📄 Otvori PDF</a>"
                         )
 
-                # Display result with PDF link ~1cm (40px) apart
                 st.markdown(
                     f"""
-                    <div style='display: flex; flex-direction: row; align-items: center; gap: 40px;
-                                padding: 10px; background-color: #f4f4f4;
+                    <div style='display: flex; flex-direction: row; align-items: center;
+                                gap: 40px; padding: 10px; background-color: #f4f4f4;
                                 border-left: 4px solid #0077b6; margin-bottom: 10px;
                                 font-size:17px; flex-wrap: wrap;'>
                         <div>{match}</div>
@@ -118,10 +113,9 @@ with col2:
                     """,
                     unsafe_allow_html=True
                 )
-
         else:
-            st.info("Nisu pronađeni odgovarajući rezultati!")
+            st.info("Nisu pronađeni odgovarajući rezultati.")
     else:
-        st.info("")  # Empty space when no search
+        st.info("")
 
     st.markdown("</div>", unsafe_allow_html=True)
