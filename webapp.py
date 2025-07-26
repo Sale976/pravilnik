@@ -106,7 +106,7 @@ with col2:
                                 border-left: 4px solid #0077b6; margin-bottom: 10px;
                                 font-size:17px;'>
                         <div style='flex: 1;'>{match}</div>
-                        <div style='margin-left: 40px; white-space: nowrap;'>{file_link}</div>
+                        <div style='margin-left: 15px; white-space: nowrap;'>{file_link}</div>
                     </div>
                     """,
                     unsafe_allow_html=True
