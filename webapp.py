@@ -77,7 +77,7 @@ with col2:
 
         if matching_lines:
             st.markdown(
-                "<h3 style='color: #0077b6; margin-top: -50px; font-size: 20px;'>🔍 Rezultati pretrage:</h3>",
+                "<h3 style='color: #0077b6; margin-top: -50px; font-size: 17px;'>🔍 Rezultati pretrage:</h3>",
                 unsafe_allow_html=True
             )
             for match in matching_lines:
@@ -95,7 +95,7 @@ with col2:
                         f"<a href='{pdf_url}' target='_blank' "
                         f"title='Kliknite da otvorite PDF na odgovarajućoj stranici' "
                         f"style='color:#0077b6; font-weight: bold; text-decoration: none;'>"
-                        f"📄 Otvori PDF</a>"
+                        f"📄 Otvori Pravilnik u PDF-u</a>"
                     )
 
                 # Show result line and PDF link side-by-side with ~1cm gap
