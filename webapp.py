@@ -93,7 +93,7 @@ with col2:
                 file_link = ""
                 if acronym and page_number:
                     timestamp = int(time.time())
-                    pdf_url = f"https://cdn.jsdelivr.net/gh/Sale976/pravilnik@main/{acronym}.pdf?v={timestamp}#page={page_number}"
+                    pdf_url = f"https://cdn.jsdelivr.net/gh/Sale976/pravilnik@main/{acronym}.pdf?v=123{timestamp}#page={page_number}"
                     file_link = (
                         f"<a href='{pdf_url}' target='_blank' "
                         f"title='Kliknite da otvorite PDF na odgovarajućoj stranici' "
