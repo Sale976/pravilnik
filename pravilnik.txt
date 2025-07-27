@@ -128,40 +128,40 @@ vozacko ogledalo N2, N3 (prelazne i zavrsne odredbe) -- clan 121a(PoPV) str. 96
 tahograf (prelazne i zavrsne odredbe) -- clan 122(PoPV) str. 96
 kabina ili ram (prelazne i zavrsne odredbe) -- clan 123(PoPV) str. 96
 ---------------------------------------------------------------------
-boja vozila (odredivanje boje vozila) -- clan 24(PoTP) str. 17
-baza podataka, propisi, uputstva, strucna literatura, tehnicka dokumentacija, elaborat, bazdarenje -- clan 27(PoTP) str. 20
-vrste tehnickog pregleda (podela) -- clan 28(PoTP) str. 21
-uslovi za vrsenje tehnickog pregleda -- clan 29(PoTP) str. 21
-sumnja u tacnost podataka -- clan 30(PoTP) str. 23
-tehnicki pregled vozila (obuhvata) -- clan 31(PoTP) str. 24
-tehnicki pregled vozila (vrsi se u celini) -- clan 32(PoTP) str. 24
-ponovni tehnicki pregled vozila -- clan 33(PoTP) str. 24
-tehnicki pregled vozila (obuhvata pregled uredaja, opreme itd) -- clan 34(PoTP) str. 25
-utvrdivanje tehnickih karakteristika vozila -- clan 35(PoTP) str. 26
-kontrolori (uslovi za kontrolore) -- clan 36(PoTP) str. 26
-snimanje vrsenja tehnickog pregleda (video sistem) -- clan 37(PoTP) str. 27
-tehnologija vrsenja tehnickog pregleda (minimalna vremena za vrsenje tehnickog pregleda) -- clan 38(PoTP) str. 27
-ID broj -- clan 39(PoTP) str. 28
-evidencija -- clan 40(PoTP) str. 28
-potvrda, registracioni list, izvestaj -- clan 41(PoTP) str. 30
-tehnicki pregled vozila na poligonu (poligon) -- clan 42(PoTP) str. 30
-boja vozila -- clan 44(PoTP) str. 32
-fotografija vozila (fotografosanje vozila) -- clan 49(PoTP) str. 33
-registar pregledanih vozila (registar) -- clan 50(PoTP) str. 33
-Prilog 1:  identifikacija vozila -- tacka 0(PoTP) str. 35
-Prilog 1:  uredaj za upravljanje (volan) -- tacka 1(PoTP) str. 35
-Prilog 1:  uredaj za zaustavljanje (kocnice) -- tacka 2(PoTP) str. 36
-Prilog 1:  svetlosni i svetlosno-signalni uredaji (svetla) -- tacka 3(PoTP) str. 40
-Prilog 1:  uredaji koji omogucavaju normalnu vidljivost (vetrobran, retrovizor) -- tacka 4(PoTP) str. 43
-Prilog 1:  uredaji za davanje zvucnih znakova (sirena) -- tacka 5(PoTP) str. 44
-Prilog 1:  uredaji za kontrolu i davanje znakova (odometar, tahograf) -- tacka 6(PoTP) str. 44
-Prilog 1:  uredaji za odvodenje i regulisanje izduvnih gasova (auspuh) -- tacka 7(PoTP) str. 45
-Prilog 1:  uredaj za spajanje vucnog i prikljucnog vozila (kuka) -- tacka 8(PoTP) str. 46
-Prilog 1:  uredaj za kretanje vozila unazad (rikverc) -- tacka 9(PoTP) str. 46
-Prilog 1:  uredaji za oslanjanje -- tacka 10(PoTP) str. 46
-Prilog 1:  uredaji za kretanje (pneumatici - gume) -- tacka 11(PoTP) str. 47
-Prilog 1:  elektro-uredaji i instalacija -- tacka 12(PoTP) str. 48
-Prilog 1:  pogonski uredaj (motor) -- tacka 13(PoTP) str. 48
-Prilog 1:  uredaj za prenos snage (menjac) -- tacka 14(PoTP) str. 49
-Prilog 1:  delovi vozila od posebnog znacaja za bezbednost (karoserija, ram, VIN, ukrasni predmeti, oslonci za noge) -- tacka 15(PoTP) str. 50
-Prilog 1:  oprema vozila -- tacka 16(PoTP) str. 53
+boja vozila (odredivanje boje vozila) -- clan 24(PoTP) str. 13
+baza podataka, propisi, uputstva, strucna literatura, tehnicka dokumentacija, elaborat, bazdarenje -- clan 27(PoTP) str. 14
+vrste tehnickog pregleda (podela) -- clan 28(PoTP) str. 15
+uslovi za vrsenje tehnickog pregleda -- clan 29(PoTP) str. 15
+sumnja u tacnost podataka -- clan 30(PoTP) str. 17
+tehnicki pregled vozila obuhvata -- clan 31(PoTP) str. 17
+tehnicki pregled vozila vrsi se u celini -- clan 32(PoTP) str. 18
+ponovni tehnicki pregled vozila -- clan 33(PoTP) str. 18
+tehnicki pregled vozila obuhvata pregled uredaja, opreme itd -- clan 34(PoTP) str. 18
+utvrdivanje tehnickih karakteristika vozila -- clan 35(PoTP) str. 19
+kontrolori (uslovi za kontrolore) -- clan 36(PoTP) str. 19
+snimanje vrsenja tehnickog pregleda (video sistem) -- clan 37(PoTP) str. 19
+tehnologija vrsenja tehnickog pregleda - eleborat (minimalna vremena za vrsenje tehnickog pregleda) -- clan 38(PoTP) str. 20
+ID broj -- clan 39(PoTP) str. 20
+evidencija -- clan 40(PoTP) str. 20
+potvrda, registracioni list, izvestaj -- clan 41(PoTP) str. 21
+tehnicki pregled vozila na poligonu (poligon) -- clan 42(PoTP) str. 22
+boja vozila -- clan 44(PoTP) str. 23
+fotografija vozila (fotografosanje vozila) -- clan 49(PoTP) str. 24
+registar pregledanih vozila (registar) -- clan 50(PoTP) str. 24
+Prilog 1:  identifikacija vozila -- tacka 0(PoTP) str. 26
+Prilog 1:  uredaj za upravljanje (volan) -- tacka 1(PoTP) str. 26
+Prilog 1:  uredaj za zaustavljanje (kocnice) -- tacka 2(PoTP) str. 27
+Prilog 1:  svetlosni i svetlosno-signalni uredaji (svetla) -- tacka 3(PoTP) str. 31
+Prilog 1:  uredaji koji omogucavaju normalnu vidljivost (vetrobran, retrovizor) -- tacka 4(PoTP) str. 34
+Prilog 1:  uredaji za davanje zvucnih znakova (sirena) -- tacka 5(PoTP) str. 35
+Prilog 1:  uredaji za kontrolu i davanje znakova (odometar, tahograf) -- tacka 6(PoTP) str. 35
+Prilog 1:  uredaji za odvodenje i regulisanje izduvnih gasova (auspuh) -- tacka 7(PoTP) str. 36
+Prilog 1:  uredaj za spajanje vucnog i prikljucnog vozila (kuka) -- tacka 8(PoTP) str. 37
+Prilog 1:  uredaj za kretanje vozila unazad (rikverc) -- tacka 9(PoTP) str. 37
+Prilog 1:  uredaji za oslanjanje -- tacka 10(PoTP) str. 37
+Prilog 1:  uredaji za kretanje (pneumatici - gume) -- tacka 11(PoTP) str. 38
+Prilog 1:  elektro-uredaji i instalacija -- tacka 12(PoTP) str. 39
+Prilog 1:  pogonski uredaj (motor) -- tacka 13(PoTP) str. 39
+Prilog 1:  uredaj za prenos snage (menjac) -- tacka 14(PoTP) str. 40
+Prilog 1:  delovi vozila od posebnog znacaja za bezbednost (karoserija, ram, VIN, ukrasni predmeti, oslonci za noge) -- tacka 15(PoTP) str. 41
+Prilog 1:  oprema vozila -- tacka 16(PoTP) str. 44
