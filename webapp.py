@@ -18,7 +18,7 @@ st.markdown(
     </p>
     </h2>
     <p style='font-size:18px; text-align: justify;'>
-        🛈 Pravilnik o Podeli Vozila, br. 53 од 20. јуна 2025. | Pravilnik o Tehničkom Pregledu, br. 62 od 26. маја 2022. 
+        🛈 Pravilnik o Podeli Vozila, SG RS br. 53 од 20. јуна 2025. | Pravilnik o Tehničkom Pregledu, SG RS br. 62 od 26. маја 2022. 
     </p>
     """,
     unsafe_allow_html=True
