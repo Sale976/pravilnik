@@ -12,7 +12,7 @@ st.markdown(
     <h2 style='text-align: center; font-size:28px;'>
         Web aplikacija za pretragu Pravilnika o Podeli Vozila (PoPV) i Pravilnika o Tehničkom Pregledu (PoTP)
     </h2>
-    <p style='font-size:18px; text-align: center;'>
+    <p style='font-size:18px; text-align: justify;'>
         🛈 Aplikacija pretražuje tekstualni fajl koji prikazuje broj člana i stranu iz PDF verzije pravilnika.
         Brojevi stranica važe ako su PDF fajlovi preuzeti sa zvaničnog izvora (PIS) bez izmene.
     </p>
