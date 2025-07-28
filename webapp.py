@@ -109,7 +109,7 @@ with col2:
                     f"""
                     <div style='display: flex; flex-direction: row; align-items: center;
                                 gap: 40px; padding: 10px; background-color: #f4f4f4;
-                                border-left: 3px solid #0077b6; margin-bottom: 10px;
+                                border-left: 4px solid #0077b6; margin-bottom: 8px;
                                 font-size:17px; flex-wrap: wrap;'>
                         <div>{match}</div>
                         <div>{file_link}</div>
