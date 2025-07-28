@@ -77,7 +77,7 @@ with col2:
 
         if matching_lines:
             st.markdown(
-                "<h3 style='color: #0077b6; margine-top: -22px; font-size: 22px;'>🔍 Rezultati pretrage:</h3>",
+                "<h3 style='color: #0077b6; margine-top: -25px; font-size: 20px;'>🔍 Rezultati pretrage:</h3>",
                 unsafe_allow_html=True
             )
 
