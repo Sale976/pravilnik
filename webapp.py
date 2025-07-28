@@ -56,7 +56,7 @@ with col1:
     st.button("Obrišite rezultate pretrage", on_click=clear_search)
 
 with col2:
-    st.markdown("<div style='height: 1px; margin-top: 32px;'>", unsafe_allow_html=True)
+    st.markdown("<div style='margin-top: 30px;'>", unsafe_allow_html=True)
 
     matching_lines = []
 
