@@ -108,7 +108,7 @@ with col2:
                 st.markdown(
                     f"""
                     <div style='display: flex; flex-direction: row; align-items: center;
-                                gap: 40px; padding: 10px; background-color: #f4f4f4;
+                                gap: 40px; padding: 8px; background-color: #f4f4f4;
                                 border-left: 4px solid #0077b6; margin-bottom: 8px;
                                 font-size:17px; flex-wrap: wrap;'>
                         <div>{match}</div>
