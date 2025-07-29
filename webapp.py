@@ -29,7 +29,7 @@ def increment_visit_count():
 # Increment the count when the app loads
 current_visits = increment_visit_count()
 
-st.write(f"Web Aplikacija posecena {current_visits} puta.")
+st.write('<div class="top-left-text">Web Aplikacija posecena {current_visits} puta.</div>', unsafe_allow_html=True)
 
 # Custom CSS to position the text at the top-left
 st.markdown(
