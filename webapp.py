@@ -31,26 +31,6 @@ current_visits = increment_visit_count()
 
 st.write('<div class="top-left-text">This app has been visited {current_visits} times.', unsafe_allow_html=True)
 
-# Custom CSS to position the text at the top-left
-st.markdown(
-    """
-    <style>
-    .top-left-text {
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding: 10px; /* Optional: Add some padding for better aesthetics */
-        z-index: 1000; /* Ensure it's above other elements */
-        color: grey; /* Optional: Style the text color */
-        font-size: 14px; /* Optional: Adjust font size */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
-# Place the text using a div with the defined class
-st.markdown('<div class="top-left-text">Web Aplikacija posecena {current_visits} puta.</div>', unsafe_allow_html=True)
 
 # --- Title and Description ---
 st.markdown(
