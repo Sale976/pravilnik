@@ -29,7 +29,7 @@ def increment_visit_count():
 # Increment the count when the app loads
 current_visits = increment_visit_count()
 
-st.write(f"This app has been visited {current_visits} times.")
+st.write('<div class="top-left-text">This app has been visited {current_visits} times.', unsafe_allow_html=True)
 
 # Custom CSS to position the text at the top-left
 st.markdown(
