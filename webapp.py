@@ -7,6 +7,31 @@ st.set_page_config(
     layout="wide"
 )
 
+# Define the path to the counter file
+COUNT_FILE = "visit_count.txt"
+
+def get_visit_count():
+    if not os.path.exists(COUNT_FILE):
+        return 0
+    with open(COUNT_FILE, "r") as f:
+        try:
+            return int(f.read())
+        except ValueError:
+            return 0
+
+def increment_visit_count():
+    current_count = get_visit_count()
+    new_count = current_count + 1
+    with open(COUNT_FILE, "w") as f:
+        f.write(str(new_count))
+    return new_count
+
+# Increment the count when the app loads
+current_visits = increment_visit_count()
+
+st.title("My Streamlit App")
+st.write(f"This app has been visited {current_visits} times.")
+
 # Custom CSS to position the text at the top-left
 st.markdown(
     """
@@ -26,7 +51,7 @@ st.markdown(
 )
 
 # Place the text using a div with the defined class
-st.markdown('<div class="top-left-text">Your custom top-left text here</div>', unsafe_allow_html=True)
+st.markdown('<div class="top-left-text">Web Aplikacija posecena {current_visits} puta.</div>', unsafe_allow_html=True)
 
 # --- Title and Description ---
 st.markdown(
