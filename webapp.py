@@ -7,7 +7,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.markdown("![visit counter](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://pravilnikgit.streamlit.app&count_bg=%2379C83D&title_bg=%23555555&icon=streamlit.svg&icon_color=%23E7E7E7&title=posete&edge_flat=false)")
+st.image("https://img.shields.io/badge/posete-0-blue?style=for-the-badge")
 
 # --- Title and Description ---
 st.markdown(
