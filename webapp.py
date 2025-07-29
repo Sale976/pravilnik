@@ -7,36 +7,25 @@ st.set_page_config(
     layout="wide"
 )
 
-# Define the path to the counter file
-COUNT_FILE = "visit_count.txt"
 
-def get_visit_count():
-    if not os.path.exists(COUNT_FILE):
-        return 0
-    with open(COUNT_FILE, "r") as f:
-        try:
-            return int(f.read())
-        except ValueError:
-            return 0
+# Initialize the visit counter in session state if it doesn't exist
+if 'visits' not in st.session_state:
+    st.session_state.visits = 0
 
-def increment_visit_count():
-    current_count = get_visit_count()
-    new_count = current_count + 1
-    with open(COUNT_FILE, "w") as f:
-        f.write(str(new_count))
-    return new_count
+# Increment the counter every time the app loads
+st.session_state.visits += 1
 
-# Increment the count when the app loads
-current_visits = increment_visit_count()
+# Display the title with the visit count
+st.title(f"My Awesome Streamlit App (Visits: {st.session_state.visits})")
 
-st.write("")
-st.write(f"Web Aplikacija posećena <h2<b>{current_visits}</b></h2> puta.")
+st.write("Welcome to my Streamlit app!")
+st.write("This app demonstrates a simple visit counter.")
 
 # --- Title and Description ---
 st.markdown(
     """
     <h2 style='text-align: center; font-size:28px;'>
-        {current_visits}Web aplikacija za pretragu Pravilnika o Podeli Vozila (PoPV) i Pravilnika o Tehničkom Pregledu (PoTP)
+        Web aplikacija za pretragu Pravilnika o Podeli Vozila (PoPV) i Pravilnika o Tehničkom Pregledu (PoTP)
     </h2>
     <p style='font-size:18px; text-align: justify;'>
         🛈 Aplikacija pretražuje tekstualni fajl koji prikazuje broj člana i stranu iz PDF verzije pravilnika.
