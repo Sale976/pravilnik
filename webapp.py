@@ -7,15 +7,6 @@ st.set_page_config(
     layout="wide"
 )
 
-st.markdown("""
-<div style="display: flex; align-items: center; justify-content: center; gap: 16px;">
-    <img src="https://simplecounter.pro/count.php?url=pravilnikgit.streamlit.app" alt="Visit Counter"/>
-    <h2 style="margin: 0; font-size: 28px;">
-        Web aplikacija za pretragu Pravilnika o Podeli (PoPV) i Tehničkom Pregledu (PoTP)
-    </h2>
-</div>
-""", unsafe_allow_html=True)
-
 
 # --- Title and Description ---
 st.markdown(
