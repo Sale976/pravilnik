@@ -7,9 +7,30 @@ st.set_page_config(
     layout="wide"
 )
 
-col3 = st.columns([1]) # Adjust ratio as needed
-with col3:
-    st.write("Left-aligned text.")
+# Custom CSS to position the text at the top-left
+st.markdown(
+    """
+    <style>
+    .top-left-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px; /* Optional: Add some padding for better aesthetics */
+        z-index: 1000; /* Ensure it's above other elements */
+        color: grey; /* Optional: Style the text color */
+        font-size: 14px; /* Optional: Adjust font size */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# Place the text using a div with the defined class
+st.markdown('<div class="top-left-text">Your custom top-left text here</div>', unsafe_allow_html=True)
+
+# Your standard Streamlit header and content follow
+st.header("Your Main Application Header")
+st.write("This is the content of your Streamlit application.")
 
 # --- Title and Description ---
 st.markdown(
