@@ -30,7 +30,7 @@ def increment_visit_count():
 current_visits = increment_visit_count()
 
 st.write("")
-st.write(f"Web Aplikacija posećena <h<b>{current_visits}</b></h> puta.")
+st.write(f"Web Aplikacija posećena <h2<b>{current_visits}</b></h2> puta.")
 
 # --- Title and Description ---
 st.markdown(
