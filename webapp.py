@@ -7,10 +7,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.markdown("""
-<iframe src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://pravilnikgit.streamlit.app"
-        style="height: 30px; width: 160px; border: none;"></iframe>
-""", unsafe_allow_html=True)
+st.image("https://img.shields.io/badge/posete-0-blue?style=for-the-badge")
 
 
 # --- Title and Description ---
