@@ -8,7 +8,7 @@ st.set_page_config(
 
 st.markdown("""
 <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 10px; margin-top: -20px;">
-    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://pravilnikgit.streamlit.app"/>
+    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://sale976-pravilnikgit.streamlit.app"/>
     <h2 style='margin: 0; font-size: 28px;'>
         Web aplikacija za pretragu Pravilnika o Podeli (PoPV) i Tehničkom Pregledu (PoTP)
     </h2>
