@@ -7,6 +7,27 @@ st.set_page_config(
     layout="wide"
 )
 
+import streamlit as st
+
+st.set_page_config(page_title="View Counter Example", layout="centered")
+
+st.title("Streamlit View Counter")
+
+# Initialize the view counter in session_state if it doesn't exist
+if 'view_count' not in st.session_state:
+    st.session_state.view_count = 0
+
+# Increment the view count each time the script reruns (i.e., page is viewed)
+st.session_state.view_count += 1
+
+st.write(f"This page has been viewed **{st.session_state.view_count}** times in this session.")
+
+st.markdown("""
+---
+**Note:** This counter tracks views per user session. 
+If a user closes and reopens the app, or clears their browser cache, 
+the counter will reset for that user.
+""")
 
 # --- Title and Description ---
 st.markdown(
