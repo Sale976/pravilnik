@@ -29,8 +29,8 @@ def increment_visit_count():
 # Increment the count when the app loads
 current_visits = increment_visit_count()
 
-st.write("My Streamlit App")
-st.write(f"This app has been visited {current_visits} times.")
+st.write("")
+st.write(f"Aplikacija otvorena {current_visits} puta.")
 
 # --- Title and Description ---
 st.markdown(
