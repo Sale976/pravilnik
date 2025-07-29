@@ -7,19 +7,11 @@ st.set_page_config(
     layout="wide"
 )
 
-
-# Initialize the visit counter in session state if it doesn't exist
-if 'visits' not in st.session_state:
-    st.session_state.visits = 0
-
-# Increment the counter every time the app loads
-st.session_state.visits += 1
-
-# Display the title with the visit count
-st.title(f"My Awesome Streamlit App (Visits: {st.session_state.visits})")
-
-st.write("Welcome to my Streamlit app!")
-st.write("This app demonstrates a simple visit counter.")
+col3, col4 = st.columns([1, 9]) # Adjust ratio as needed
+with col3:
+    st.write("Left-aligned text.")
+with col4:
+    st.write("Other content.")
 
 # --- Title and Description ---
 st.markdown(
