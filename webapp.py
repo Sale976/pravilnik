@@ -28,10 +28,6 @@ st.markdown(
 # Place the text using a div with the defined class
 st.markdown('<div class="top-left-text">Your custom top-left text here</div>', unsafe_allow_html=True)
 
-# Your standard Streamlit header and content follow
-st.header("Your Main Application Header")
-st.write("This is the content of your Streamlit application.")
-
 # --- Title and Description ---
 st.markdown(
     """
