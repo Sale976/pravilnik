@@ -7,7 +7,14 @@ st.set_page_config(
     layout="wide"
 )
 
-st.image("https://img.shields.io/badge/posete-0-blue?style=for-the-badge")
+st.markdown("""
+<div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 10px;">
+    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fpravilnikgit.streamlit.app&count_bg=%2379C83D&title_bg=%23555555&icon=streamlit.svg&icon_color=%23E7E7E7&title=posete&edge_flat=false"/>
+    <h2 style="margin: 0; font-size: 28px;">
+        Web aplikacija za pretragu Pravilnika o Podeli (PoPV) i Tehničkom Pregledu (PoTP)
+    </h2>
+</div>
+""", unsafe_allow_html=True)
 
 
 # --- Title and Description ---
