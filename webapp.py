@@ -7,7 +7,7 @@ st.set_page_config(
     layout="wide"
 )
 
-col3 = st.columns([1, 2]) # Adjust ratio as needed
+col3 = st.columns([1]) # Adjust ratio as needed
 with col3:
     st.write("Left-aligned text.")
 
