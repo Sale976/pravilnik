@@ -7,15 +7,6 @@ st.set_page_config(
     layout="wide"
 )
 
-st.markdown("""
-<div style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-bottom: 10px;">
-    <img src="https://www.simplehitcounter.com/hit.php?uid=2885742&f=0&b=16777215" alt="Visit Counter" style="height: 32px;">
-    <h2 style="margin: 0; font-size: 28px;">
-        Web aplikacija za pretragu Pravilnika o Podeli (PoPV) i Tehničkom Pregledu (PoTP)
-    </h2>
-</div>
-""", unsafe_allow_html=True)
-
 
 # --- Title and Description ---
 st.markdown(
