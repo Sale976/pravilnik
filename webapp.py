@@ -29,7 +29,7 @@ def increment_visit_count():
 # Increment the count when the app loads
 current_visits = increment_visit_count()
 
-st.write("WebApp brojac: {current_visits} times.")
+st.write(f"WebApp brojac: {current_visits}.")
 
 
 # --- Title and Description ---
