@@ -36,7 +36,7 @@ st.write(f"Web Aplikacija posećena <h2<b>{current_visits}</b></h2> puta.")
 st.markdown(
     """
     <h2 style='text-align: center; font-size:28px;'>
-        Web aplikacija za pretragu Pravilnika o Podeli Vozila (PoPV) i Pravilnika o Tehničkom Pregledu (PoTP)
+        Web Aplikacija posećena: <b>{current_visits}</b> puta. Web aplikacija za pretragu Pravilnika o Podeli Vozila (PoPV) i Pravilnika o Tehničkom Pregledu (PoTP)
     </h2>
     <p style='font-size:18px; text-align: justify;'>
         🛈 Aplikacija pretražuje tekstualni fajl koji prikazuje broj člana i stranu iz PDF verzije pravilnika.
