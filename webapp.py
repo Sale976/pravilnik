@@ -7,30 +7,6 @@ st.set_page_config(
     layout="wide"
 )
 
-# Define the path to the counter file
-COUNT_FILE = "visit_count.txt"
-
-def get_visit_count():
-    if not os.path.exists(COUNT_FILE):
-        return 0
-    with open(COUNT_FILE, "r") as f:
-        try:
-            return int(f.read())
-        except ValueError:
-            return 0
-
-def increment_visit_count():
-    current_count = get_visit_count()
-    new_count = current_count + 1
-    with open(COUNT_FILE, "w") as f:
-        f.write(str(new_count))
-    return new_count
-
-# Increment the count when the app loads
-current_visits = increment_visit_count()
-
-st.write(f"WebApp brojač: {current_visits}")
-
 
 # --- Title and Description ---
 st.markdown(
