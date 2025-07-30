@@ -14,11 +14,9 @@ if 'show_analytics' not in st.session_state:
     st.session_state.show_analytics = False
 
 with streamlit_analytics.track():
-    #st.button("Interact with me")
-
     # Button to toggle analytics display
     if st.button("Show Analytics"):
-        st.session_state.show_analytics = not st.session_state.show_analytics
+        st.session_state.show_analytics # = not st.session_state.show_analytics
 
 
 # --- Title and Description ---
