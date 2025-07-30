@@ -1,6 +1,6 @@
 import streamlit as st
 import re, os
-from streamlit_analytics2 import Analytics
+import streamlit_analytics2
 
 
 st.set_page_config(
@@ -8,17 +8,8 @@ st.set_page_config(
     layout="wide"
 )
 
-
-
-analytics = Analytics()
-
-if st.button("Show Dashboard"):
-    analytics.show()
-else:
-    query = st.text_input("Search:")
-    if st.button("Search"):
-        st.write(f"Searching for: {query}")
-        analytics.track("search_clicked", {"query": query})
+with streamlit_analytics.track(record_on=None)
+    st,button("Analytics)
 
 
 # --- Title and Description ---
