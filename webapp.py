@@ -8,11 +8,11 @@ st.set_page_config(
     layout="wide"
 )
 
-
-class ContextFilter(logging.Filter):
-    def filter(self, record):
-        record.user_ip = get_remote_ip()
-        return super().filter(record)
+def open(self):
+        # self.request.remote_ip contains the IP address of the user connecting
+        # to the Streamlit app. You could send this to an analytics platform like MixPanel
+        ip = self.request.remote_ip
+        self._session = self._server._create_report_session(self)
 
 # --- Title and Description ---
 st.markdown(
