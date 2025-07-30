@@ -8,12 +8,11 @@ st.set_page_config(
     layout="wide"
 )
 
-
-with streamlit_analytics.track():
-    st.write("Streamlit Analytics!")
-    st.button(label="scrape stuff", key="btn_scrape")
-    if st.session_state.get("btn_scrape"):
-        your_scraping_function
+if st.session_state.get("btn_scrape"):
+    with streamlit_analytics.track():
+        st.write("Streamlit Analytics!")
+        st.button(label="scrape stuff", key="btn_scrape")
+        
 
 # --- Title and Description ---
 st.markdown(
