@@ -20,14 +20,6 @@ with streamlit_analytics.track():
     if st.button("Show Analytics"):
         st.session_state.show_analytics = not st.session_state.show_analytics
 
-# Conditionally display analytics based on session state
-if st.session_state.show_analytics:
-    st.write("## Analytics Dashboard")
-    # In a real scenario, you would typically redirect or embed the analytics
-    # provided by streamlit-analytics2 here.
-    # As streamlit-analytics2 directly modifies the URL, this button
-    # simply triggers a rerun to reflect the 'analytics=on' state.
-    # The analytics dashboard will appear at the bottom of your app.
 
 # --- Title and Description ---
 st.markdown(
