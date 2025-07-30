@@ -1,6 +1,6 @@
 import streamlit as st
 import re, os
-import streamlit_analytics2 as streamlit_analytics
+from streamlit_analytics2 import track
 
 
 st.set_page_config(
@@ -8,7 +8,7 @@ st.set_page_config(
     layout="wide"
 )
 
-with streamlit_analytics.track():
+with track():
     st.button(label="Analiza", key="btn_scrape")
 
 # --- Title and Description ---
