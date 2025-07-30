@@ -11,15 +11,13 @@ st.set_page_config(
 
 analytics = Analytics()
 
-# Add a checkbox or button to show the dashboard
-if st.button("Show Analytics Dashboard"):  # You can rename this
+if st.button("Show Dashboard"):
     analytics.show()
 else:
-    # Your regular app logic
-    query = st.text_input("Enter your search term:")
+    query = st.text_input("Search:")
     if st.button("Search"):
         st.write(f"Searching for: {query}")
-        analytics.track("search_button_clicked", {"query": query})
+        analytics.track("search_clicked", {"query": query})
 
 
 # --- Title and Description ---
