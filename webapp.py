@@ -9,17 +9,31 @@ st.set_page_config(
     layout="wide"
 )
 
-server {
-    listen 80;
-    server_name your_domain.com;
+from streamlit.runtime.script_run_context import get_script_run_ctx
+from streamlit.runtime import get_instance
 
-    location / {
-        proxy_pass http://pravilnikgit.streamlit.app; # Replace with your Streamlit app's address
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        https://github.com/Sale976/pravilnik/blob/main/access_log.log; # Path to your access log
-    }
-}
+def get_remote_ip():
+    try:
+        ctx = get_script_run_ctx()
+        if ctx is None:
+            return None
+        session_info = get_instance().get_client(ctx.session_id)
+        if session_info is None:
+            return None
+    except Exception as e:
+        return None
+    return session_info.request.remote_ip
+
+st.title("IP Address Logger")
+remote_ip = get_remote_ip()
+
+if remote_ip:
+    st.write(f"Your IP address: {remote_ip}")
+    # You would then need to store this IP address
+    # in a database, file, or other persistent storage
+    # and implement logic to count unique IPs.
+else:
+    st.write("Could not retrieve IP address.")
 
 # --- Title and Description ---
 st.markdown(
