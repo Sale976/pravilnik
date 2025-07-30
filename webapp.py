@@ -9,25 +9,17 @@ st.set_page_config(
     layout="wide"
 )
 
+server {
+    listen 80;
+    server_name your_domain.com;
 
-def get_remote_ip() -> str:
-    """Get remote ip."""
-
-    try:
-        ctx = get_script_run_ctx()
-        if ctx is None:
-            return None
-
-        session_info = runtime.get_instance().get_client(ctx.session_id)
-        if session_info is None:
-            return None
-    except Exception as e:
-        return None
-
-    return session_info.request.remote_ip
-
-st.title("Title")
-st.markdown(f"The remote ip is {get_remote_ip()}")
+    location / {
+        proxy_pass http://pravilnikgit.streamlit.app; # Replace with your Streamlit app's address
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        https://github.com/Sale976/pravilnik/blob/main/access_log.log; # Path to your access log
+    }
+}
 
 # --- Title and Description ---
 st.markdown(
