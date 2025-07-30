@@ -9,9 +9,8 @@ st.set_page_config(
 )
 
 with streamlit_analytics.track():
-    if st.session_state.get("btn_scrape"):
-        st.write("Streamlit Analytics!")
-        st.button(label="scrape stuff", key="btn_scrape")
+    st.write("Streamlit Analytics!")
+    st.button(label="scrape stuff", key="btn_scrape")
         
 
 # --- Title and Description ---
