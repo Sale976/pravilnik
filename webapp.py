@@ -21,7 +21,6 @@ with streamlit_analytics.track():
     # Button to toggle analytics display
     if st.button("Show Analytics"):
         st.session_state.show_analytics = not st.session_state.show_analytics
-        st.experimental_rerun() # Rerun to apply the URL parameter
 
 # Conditionally display analytics based on session state
 if st.session_state.show_analytics:
