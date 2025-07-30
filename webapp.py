@@ -1,6 +1,6 @@
 import streamlit as st
 import re, os
-import streamlit_analytics2
+from streamlit_analytics2 import log_event, show_dashboard
 
 
 st.set_page_config(
@@ -9,11 +9,19 @@ st.set_page_config(
 )
 
 
-st.write("Checking functions in streamlit-analytics2...")
+st.title("Pravilnik Search App with Analytics")
 
-st.code(dir(streamlit_analytics2))
+# Text input
+query = st.text_input("Enter search query:")
 
+# Log only when search button is clicked
+if st.button("Search"):
+    st.write(f"Searching for: {query}")
+    log_event("search_button_clicked", {"query": query})
 
+# Show dashboard only when this button is clicked
+if st.button("Show Analytics Dashboard"):
+    show_dashboard()
 
 
 # --- Title and Description ---
