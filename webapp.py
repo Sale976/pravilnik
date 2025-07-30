@@ -9,7 +9,7 @@ st.set_page_config(
 )
 
 with streamlit_analytics.track(record_on=None)
-    st,button("Analytics)
+    st.button("Analytics)
 
 
 # --- Title and Description ---
