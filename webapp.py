@@ -8,7 +8,7 @@ st.set_page_config(
     layout="wide"
 )
 
-with streamlit_analytics(record_on=None):
+with streamlit_analytics():
     st.button("Analytics")
 
 
