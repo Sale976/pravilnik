@@ -4,3 +4,5 @@
     secondaryBackgroundColor ='#B9F1C0'
     textColor='#262730'
     font ='sans serif'
+
+    logging_file:str="streamlit_logs.log"
