@@ -21,8 +21,6 @@ st.button("Show Analytics", on_click=display_analytics)
 if st.session_state.show_analytics:
     st.header("Analytics Dashboard")
     # Your analytics code here, e.g.,
-    st.write("Here are your detailed analytics data.")
-    st.bar_chart({"Data Point 1": 10, "Data Point 2": 25, "Data Point 3": 15})
 
 # --- Title and Description ---
 st.markdown(
