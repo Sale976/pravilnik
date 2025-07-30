@@ -1,6 +1,6 @@
 import streamlit as st
 import re, os
-from state import count_sessions
+import state
 
 
 st.set_page_config(
@@ -8,9 +8,7 @@ st.set_page_config(
     layout="wide"
 )
 
-
 count_sessions()
-st.write(count_sessions)
 st.write("test")
 
 # --- Title and Description ---
