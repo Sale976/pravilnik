@@ -1,5 +1,6 @@
 import streamlit as st
 import re, os
+import streamlit_analytics2 as streamlit_analytics
 
 
 st.set_page_config(
@@ -8,6 +9,28 @@ st.set_page_config(
 )
 
 
+# Initialize session state for analytics display
+if 'show_analytics' not in st.session_state:
+    st.session_state.show_analytics = False
+
+with streamlit_analytics.track():
+    st.title("My Streamlit App")
+    st.write("This is a sample app.")
+    st.button("Interact with me")
+
+    # Button to toggle analytics display
+    if st.button("Show Analytics"):
+        st.session_state.show_analytics = not st.session_state.show_analytics
+        st.experimental_rerun() # Rerun to apply the URL parameter
+
+# Conditionally display analytics based on session state
+if st.session_state.show_analytics:
+    st.write("## Analytics Dashboard")
+    # In a real scenario, you would typically redirect or embed the analytics
+    # provided by streamlit-analytics2 here.
+    # As streamlit-analytics2 directly modifies the URL, this button
+    # simply triggers a rerun to reflect the 'analytics=on' state.
+    # The analytics dashboard will appear at the bottom of your app.
 
 # --- Title and Description ---
 st.markdown(
