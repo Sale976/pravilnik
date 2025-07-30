@@ -128,6 +128,6 @@ with col2:
 
     st.markdown("</div>", unsafe_allow_html=True)
 
-with streamlit_analytics.start_track():
+with streamlit_analytics.strack():
     st.write("Streamlit Analytics!")
     st.button(label="scrape stuff", key="btn_scrape")
