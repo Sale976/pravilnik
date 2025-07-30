@@ -8,7 +8,7 @@ st.set_page_config(
     layout="wide"
 )
 
-if streamlit_analytics.track():
+with streamlit_analytics.track():
     st.write("Analytics!")
     st.button(label="scrape stuff", key="btn_scrape")
 
