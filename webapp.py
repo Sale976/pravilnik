@@ -1,6 +1,5 @@
 import streamlit as st
 import re, os
-from streamlit_analytics import track
 
 
 st.set_page_config(
@@ -8,15 +7,6 @@ st.set_page_config(
     layout="wide"
 )
 
-
-if st.button("Search Document"):
-    st.write("Performing search...")
-    
-    # Log this specific event
-    track("search_button_clicked", {
-        "query": "some data or query",
-        "user": "optional user info",
-    })
 
 
 # --- Title and Description ---
