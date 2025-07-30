@@ -13,11 +13,10 @@ st.set_page_config(
 if 'show_analytics' not in st.session_state:
     st.session_state.show_analytics = False
 
-with streamlit_analytics.track():
-    # Button to toggle analytics display
-    if st.button("Show Analytics"):
-        st.session_state.show_analytics # = not st.session_state.show_analytics
+def display_analytics():
+    st.session_state.show_analytics = True
 
+st.button("Show Analytics", on_click=display_analytics)
 
 # --- Title and Description ---
 st.markdown(
