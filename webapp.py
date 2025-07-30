@@ -9,8 +9,6 @@ st.set_page_config(
 )
 
 
-st.title("Controlled Analytics Demo")
-
 if st.button("Search Document"):
     st.write("Performing search...")
     
