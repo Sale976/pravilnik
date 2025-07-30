@@ -9,8 +9,7 @@ st.set_page_config(
 )
 
 with streamlit_analytics.track():
-    st.write("Analytics!")
-    st.button(label="scrape stuff", key="btn_scrape")
+    st.button(label="Analiza", key="btn_scrape")
 
 # --- Title and Description ---
 st.markdown(
