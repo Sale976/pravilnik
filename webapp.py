@@ -1,6 +1,6 @@
 import streamlit as st
 import re, os
-import streamlit_analytics2
+from streamlit_analytics2 import streamlit_analytics
 
 
 st.set_page_config(
