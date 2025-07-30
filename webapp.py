@@ -26,13 +26,6 @@ def get_remote_ip():
 st.title("IP Address Logger")
 remote_ip = get_remote_ip()
 
-if remote_ip:
-    st.write(f"Your IP address: {remote_ip}")
-    # You would then need to store this IP address
-    # in a database, file, or other persistent storage
-    # and implement logic to count unique IPs.
-else:
-    st.write("Could not retrieve IP address.")
 
 # --- Title and Description ---
 st.markdown(
