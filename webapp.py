@@ -7,7 +7,10 @@ st.set_page_config(
     page_title="Pretraga PoPV - PoTP",
     layout="wide"
 )
-        
+
+with streamlit_analytics.strack():
+    st.write("Streamlit Analytics!")
+    st.button(label="scrape stuff", key="btn_scrape")
 
 # --- Title and Description ---
 st.markdown(
@@ -127,7 +130,3 @@ with col2:
         st.info("")
 
     st.markdown("</div>", unsafe_allow_html=True)
-
-with streamlit_analytics.strack():
-    st.write("Streamlit Analytics!")
-    st.button(label="scrape stuff", key="btn_scrape")
