@@ -1,5 +1,6 @@
 import streamlit as st
 import re, os
+import streamlit_analytics
 
 
 st.set_page_config(
@@ -7,6 +8,14 @@ st.set_page_config(
     layout="wide"
 )
 
+    with streamlit_analytics.track():
+        st.title("My Streamlit App with Analytics")
+        st.write("This is a sample Streamlit app.")
+
+        # Add your Streamlit widgets and content here
+        name = st.text_input("Enter your name:")
+        if name:
+            st.write(f"Hello, {name}!")
 
 # --- Title and Description ---
 st.markdown(
