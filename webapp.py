@@ -18,9 +18,6 @@ def display_analytics():
 
 st.button("Show Analytics", on_click=display_analytics)
 
-if st.session_state.show_analytics:
-    st.header("Analytics Dashboard")
-    # Your analytics code here, e.g.,
 
 # --- Title and Description ---
 st.markdown(
