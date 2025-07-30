@@ -1,5 +1,6 @@
 import streamlit as st
 import re, os
+import logging
 
 
 st.set_page_config(
@@ -8,6 +9,10 @@ st.set_page_config(
 )
 
 
+class ContextFilter(logging.Filter):
+    def filter(self, record):
+        record.user_ip = get_remote_ip()
+        return super().filter(record)
 
 # --- Title and Description ---
 st.markdown(
