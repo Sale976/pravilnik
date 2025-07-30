@@ -10,7 +10,7 @@ st.set_page_config(
 
 
 with streamlit_analytics.track():
-    st.write("Hello, Streamlit Analytics!")
+    st.write("Streamlit Analytics!")
     st.button("Click me to see analytics!")
 
 # --- Title and Description ---
