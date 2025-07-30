@@ -1,6 +1,8 @@
 import streamlit as st
 from streamlit import runtime
 from streamlit.runtime.scriptrunner import get_script_run_ctx
+from streamlit.runtime.script_run_context import get_script_run_ctx
+from streamlit.runtime import get_instance
 import re, os
 
 
@@ -9,8 +11,6 @@ st.set_page_config(
     layout="wide"
 )
 
-from streamlit.runtime.script_run_context import get_script_run_ctx
-from streamlit.runtime import get_instance
 
 def get_remote_ip():
     try:
