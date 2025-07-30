@@ -7,20 +7,11 @@ st.set_page_config(
     layout="wide"
 )
 
-import streamlit as st
-
 ip = st.context.ip_address
-
 if ip is None:
-    st.write("No IP address detected. This is expected in local development.")
-elif ":" in ip:
-    st.write(f"You have an IPv6 address: {ip}")
-elif "." in ip:
-    st.write(f"You have an IPv4 address: {ip}")
+    st.write("No IP address. This is expected in local development.")
 else:
-    st.error("Unexpected IP address format.")
-
-st.write(f"ip address {ip}")
+    st.write(f"Your IP address: {ip}")
 
 # --- Title and Description ---
 st.markdown(
