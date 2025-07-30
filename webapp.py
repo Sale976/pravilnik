@@ -9,16 +9,6 @@ st.set_page_config(
 )
 
 
-# Initialize session state for analytics display
-if 'show_analytics' not in st.session_state:
-    st.session_state.show_analytics = False
-
-def display_analytics():
-    st.session_state.show_analytics = True
-
-st.button("Show Analytics", on_click=display_analytics)
-
-
 # --- Title and Description ---
 st.markdown(
     """
