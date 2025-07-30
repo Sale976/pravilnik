@@ -1,6 +1,6 @@
 import streamlit as st
 import re, os
-from streamlit_analytics2 import start_tracking, stop_tracking, log_event, show_dashboard
+import streamlit_analytics2
 
 
 st.set_page_config(
@@ -9,14 +9,10 @@ st.set_page_config(
 )
 
 
-st.title("Manual Tracking Only")
+st.write("Checking functions in streamlit-analytics2...")
 
-if st.button("Search"):
-    st.write("Searching...")
-    log_event("search_button_clicked", {"query": "example search term"})
+st.code(dir(streamlit_analytics2))
 
-if st.button("Show Analytics Dashboard"):
-    show_dashboard()
 
 
 
