@@ -1,6 +1,5 @@
 import streamlit as st
 import re, os
-import state
 
 
 st.set_page_config(
@@ -8,8 +7,6 @@ st.set_page_config(
     layout="wide"
 )
 
-count_sessions()
-st.write("test")
 
 # --- Title and Description ---
 st.markdown(
