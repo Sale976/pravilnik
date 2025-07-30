@@ -1,6 +1,6 @@
 import streamlit as st
 import re, os
-from streamlit_analytics2 import log_event, show_dashboard
+from streamlit_analytics2 import Analytics
 
 
 st.set_page_config(
@@ -9,19 +9,16 @@ st.set_page_config(
 )
 
 
-st.title("Pravilnik Search App with Analytics")
 
-# Text input
-query = st.text_input("Enter search query:")
+analytics = Analytics()
 
-# Log only when search button is clicked
-if st.button("Search"):
-    st.write(f"Searching for: {query}")
-    log_event("search_button_clicked", {"query": query})
-
-# Show dashboard only when this button is clicked
-if st.button("Show Analytics Dashboard"):
-    show_dashboard()
+if st.button("Show Dashboard"):
+    analytics.show()
+else:
+    query = st.text_input("Search:")
+    if st.button("Search"):
+        st.write(f"Searching for: {query}")
+        analytics.track("search_clicked", {"query": query})
 
 
 # --- Title and Description ---
