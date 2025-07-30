@@ -1,6 +1,6 @@
 import streamlit as st
 import re, os
-from streamlit_analytics2 import track
+from streamlit_analytics import Analytics
 
 
 st.set_page_config(
@@ -8,8 +8,19 @@ st.set_page_config(
     layout="wide"
 )
 
-with track():
-    st.button(label="Analiza", key="btn_scrape")
+
+analytics = Analytics()
+
+# Add a checkbox or button to show the dashboard
+if st.button("Show Analytics Dashboard"):  # You can rename this
+    analytics.show()
+else:
+    # Your regular app logic
+    query = st.text_input("Enter your search term:")
+    if st.button("Search"):
+        st.write(f"Searching for: {query}")
+        analytics.track("search_button_clicked", {"query": query})
+
 
 # --- Title and Description ---
 st.markdown(
