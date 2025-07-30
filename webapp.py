@@ -11,7 +11,7 @@ st.set_page_config(
 
 # Initialize session state for analytics display
 if 'show_analytics' not in st.session_state:
-    st.session_state.show_analytics = False
+    st.session_state.show_analytics = True
 
 with streamlit_analytics.track():
     st.title("My Streamlit App")
