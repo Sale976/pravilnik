@@ -20,7 +20,7 @@ elif "." in ip:
 else:
     st.error("Unexpected IP address format.")
 
-st.write(f"ip address {ip}
+st.write(f"ip address {ip}")
 
 # --- Title and Description ---
 st.markdown(
