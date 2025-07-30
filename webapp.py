@@ -25,6 +25,7 @@ def get_remote_ip():
 
 st.title("IP Address Logger")
 remote_ip = get_remote_ip()
+st.write(remote_ip)
 
 
 # --- Title and Description ---
