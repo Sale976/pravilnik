@@ -1,6 +1,6 @@
 import streamlit as st
 import re, os
-from streamlit_analytics2 import track
+from streamlit_analytics import track
 
 
 st.set_page_config(
