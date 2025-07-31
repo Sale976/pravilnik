@@ -39,15 +39,14 @@ else:
 st.markdown("""
     <style>
     .my-margin-top {
-        margin-top: -150px;
+        margin-top: -50px;
     }
     </style>
 """, unsafe_allow_html=True)
 
 # --- Show counter in sidebar with st.metric ---
 st.sidebar.markdown("#### 👥 Brojač Posetilaca")
-#st.sidebar.markdown('<div style="margin-top: -50px; left: 5px">👥 Brojač Posetilaca</div>', unsafe_allow_html=True)
-st.sidebar.write(f"Posetilaca:  {count}")
+st.sidebar.write(f"Posetilaca:  **{count}**")
 st.sidebar.write(f"Hvala na poseti!")
 
 
