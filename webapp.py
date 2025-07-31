@@ -18,7 +18,7 @@ st.markdown("""
 
     /* Optional: reduce padding/margin of your content */
     .sidebar-top {
-        margin-top: -1.5rem;
+        margin-top: -2.5rem;
         font-size: 16px;
     }
     <style>
