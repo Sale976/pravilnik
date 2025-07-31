@@ -21,22 +21,14 @@ st.markdown("""
         margin-top: -1.5rem;
         font-size: 16px;
     }
-    </style>
-""", unsafe_allow_html=True)
-
-
-st.markdown(
-    """
     <style>
     /* Sidebar background */
     section[data-testid="stSidebar"] {
         background-color: #ADD8E6;
-        padding-top: 0rem; /* Add space at top */
     }
     </style>
-    """,
-    unsafe_allow_html=True
-)
+""", unsafe_allow_html=True)
+
 
 # --- Config ---
 COUNTER_FILE = "visitor_counter.json"
