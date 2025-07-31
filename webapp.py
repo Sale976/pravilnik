@@ -9,6 +9,22 @@ st.set_page_config(
     layout="wide"
 )
 
+st.markdown("""
+    <style>
+    /* Remove default top padding inside sidebar */
+    section[data-testid="stSidebar"] > div:first-child {
+        padding-top: 0rem;
+    }
+
+    /* Optional: reduce padding/margin of your content */
+    .sidebar-top {
+        margin-top: -1.5rem;
+        font-size: 16px;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+
 st.markdown(
     """
     <style>
