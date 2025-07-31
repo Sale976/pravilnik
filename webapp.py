@@ -41,7 +41,7 @@ with st.sidebar:
         st.markdown("""
         <style>
         .sidebar-text {
-            font-size: 5px;
+            font-size: 15px;
             margin-top: -150;
         }
         </style>
