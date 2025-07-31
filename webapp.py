@@ -1,16 +1,14 @@
 import streamlit as st
 import re, os
-import streamlit_analytics2 as streamlit_analytics
+import json
+from pathlib import Path
+#import streamlit_analytics2 as streamlit_analytics
 
 
 st.set_page_config(
     page_title="Pretraga PoPV - PoTP",
     layout="wide"
 )
-
-import streamlit as st
-import json
-from pathlib import Path
 
 # --- Config ---
 COUNTER_FILE = "visitor_counter.json"
