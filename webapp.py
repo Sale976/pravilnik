@@ -36,6 +36,17 @@ if "counted" not in st.session_state:
     st.session_state.counted = True
 else:
     count = load_counter()
+
+with st.sidebar:
+        st.markdown("""
+        <style>
+        .sidebar-text {
+            font-size: 25px;
+            margin-top: -60;
+        }
+        </style>
+        """, unsafe_allow_html=True)
+
 st.sidebar.markdown("""
     <style>
     .my-margin-top {
@@ -49,6 +60,7 @@ st.sidebar.markdown("""
 st.sidebar.markdown("#### 👥 Brojač Posetilaca")
 st.sidebar.write(f"👥  **{count}**")
 st.sidebar.write(f"Hvala na poseti!")
+
 
 
 # --- Title and Description ---
