@@ -38,8 +38,8 @@ else:
     count = load_counter()
 
 # --- Show counter in sidebar with st.metric ---
-st.sidebar.markdown("# 👥 Visitor Count")
-st.sidebar.metric(label="", value=count)
+st.sidebar.markdown("### 👥 Visitor Count")
+st.sidebar.write(f"👥 **Total Visitors:** {count}")
 
 
 # --- Title and Description ---
