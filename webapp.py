@@ -14,7 +14,7 @@ st.markdown(
     <style>
     /* Sidebar background */
     section[data-testid="stSidebar"] {
-        background-color: #f0f0f5; /* light gray-blue */
+        background-color: #e6f0ff; /* light gray-blue */
     }
     </style>
     """,
