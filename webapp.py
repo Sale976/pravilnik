@@ -8,6 +8,39 @@ st.set_page_config(
     layout="wide"
 )
 
+import streamlit as st
+import json
+from pathlib import Path
+
+# --- Config ---
+COUNTER_FILE = "visitor_counter.json"
+
+# --- Load or create the counter ---
+def load_counter():
+    path = Path(COUNTER_FILE)
+    if path.exists():
+        with open(path, "r") as f:
+            return json.load(f).get("count", 0)
+    else:
+        return 0
+
+# --- Save counter back to file ---
+def save_counter(count):
+    with open(COUNTER_FILE, "w") as f:
+        json.dump({"count": count}, f)
+
+# --- Increment the counter only once per session ---
+if "counted" not in st.session_state:
+    count = load_counter() + 1
+    save_counter(count)
+    st.session_state.counted = True
+else:
+    count = load_counter()
+
+# --- Show counter in sidebar with st.metric ---
+st.sidebar.markdown("### 👥 Visitor Count")
+st.sidebar.metric(label="Total Visitors", value=count)
+
 
 # --- Title and Description ---
 st.markdown(
