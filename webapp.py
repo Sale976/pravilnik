@@ -3,6 +3,7 @@ import re, os
 import json
 from pathlib import Path
 
+st.write("Visitor counter path:", os.path.abspath("visitor_counter.json"))
 
 st.set_page_config(
     page_title="Pretraga PoPV - PoTP",
