@@ -13,7 +13,7 @@ st.markdown("""
     <style>
     /* Sidebar background */
     section[data-testid="stSidebar"] {
-        background-color: #97e0f7;
+        background-color: #ADD8E6;
     }
     /* Remove default top padding inside sidebar */
     section[data-testid="stSidebar"] > div:first-child {
