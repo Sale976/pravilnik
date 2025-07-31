@@ -49,9 +49,8 @@ with st.sidebar:
 
 # --- Show counter in sidebar with st.metric ---
 st.sidebar.markdown("#### 👥 Brojač Posetilaca")
-with st.sidebar:
-    st.write(f"##👥  **{count}**")
-    st.sidebar.write(f"Hvala na poseti!")
+st.write(f"##👥  **{count}**")
+st.sidebar.write(f"Hvala na poseti!")
 
 
 # --- Title and Description ---
