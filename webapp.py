@@ -11,6 +11,10 @@ st.set_page_config(
 
 st.markdown("""
     <style>
+    /* Sidebar background */
+    section[data-testid="stSidebar"] {
+        background-color: #97e0f7;
+    }
     /* Remove default top padding inside sidebar */
     section[data-testid="stSidebar"] > div:first-child {
         padding-top: 0rem;
@@ -20,11 +24,6 @@ st.markdown("""
     .sidebar-top {
         margin-top: -5.5rem;
         font-size: 16px;
-    }
-    <style>
-    /* Sidebar background */
-    section[data-testid="stSidebar"] {
-        background-color: #97e0f7;
     }
     </style>
 """, unsafe_allow_html=True)
