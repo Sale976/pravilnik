@@ -31,7 +31,8 @@ st.markdown("""
 
 
 # --- Config ---
-COUNTER_FILE = "https://github.com/Sale976/pravilnik.git/visitor_counter.json"
+COUNTER_FILE = "data/visitor_counter.json"
+COUNTER_FILE.parent.mkdir(exist_ok=True)
 
 # --- Load or create the counter ---
 def load_counter():
