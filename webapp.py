@@ -36,7 +36,7 @@ if "counted" not in st.session_state:
     st.session_state.counted = True
 else:
     count = load_counter()
-st.sidebar.markdown("""
+st.markdown("""
     <style>
     .my-margin-top {
         margin-top: -80px;
