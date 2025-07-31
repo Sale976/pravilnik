@@ -31,7 +31,6 @@ st.markdown("""
 
 # --- Config ---
 COUNTER_FILE = "visitor_counter.json"
-#COUNTER_FILE.parent.mkdir(exist_ok=True)
 
 # --- Load or create the counter ---
 def load_counter():
