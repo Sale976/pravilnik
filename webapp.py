@@ -146,8 +146,8 @@ with col2:
                 st.markdown(
                     f"""
                     <div style='display: flex; flex-direction: row; align-items: center;
-                                gap: 30px; padding: 5px; background-color: #B9F1C0;
-                                border-left: 4px solid #0077b6; margin-bottom: 5px;
+                                gap: 40px; padding: 5px; background-color: #B9F1C0;
+                                border-left: 2px solid #0077b6; margin-bottom: 5px;
                                 font-size:17px; flex-wrap: wrap;'>
                         <div>{match}</div>
                         <div>{file_link}</div>
