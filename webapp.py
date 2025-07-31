@@ -140,13 +140,13 @@ with col2:
                             f"<a href='{full_url}' target='_blank' "
                             f"title='Otvori PDF na strani {page_number}' "
                             f"style='color:#0077b6; font-weight: bold; text-decoration: none;'>"
-                            f"📄 Otvori Pravilnik u PDF-u</a>"
+                            f"📄 Pravilnik u PDF-u</a>"
                         )
 
                 st.markdown(
                     f"""
                     <div style='display: flex; flex-direction: row; align-items: center;
-                                gap: 40px; padding: 5px; background-color: #B9F1C0;
+                                gap: 35px; padding: 5px; background-color: #B9F1C0;
                                 border-left: 4px solid #0077b6; margin-bottom: 5px;
                                 font-size:17px; flex-wrap: wrap;'>
                         <div>{match}</div>
