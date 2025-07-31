@@ -40,7 +40,7 @@ else:
 # --- Show counter in sidebar with st.metric ---
 #st.sidebar.markdown("### 👥 Brojač Posetilaca")
 #st.sidebar.markdown("---")
-st.sidebar.markdown('<div style="margin-top: 50px;">kdfkaj</div>', unsafe_allow_html=True)
+st.sidebar.markdown('<div style="margin-top: 5px;">kdfkaj</div>', unsafe_allow_html=True)
 st.sidebar.write(f"👥 Posetilaca:  {count}")
 st.sidebar.write(f"Hvala na poseti!")
 
