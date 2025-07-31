@@ -38,8 +38,8 @@ else:
     count = load_counter()
 
 # --- Show counter in sidebar with st.metric ---
-st.sidebar.markdown("### 👥 Brojač Posetilaca")
-st.sidebar.markdown("---")
+#st.sidebar.markdown("### 👥 Brojač Posetilaca")
+#st.sidebar.markdown("---")
 st.sidebar.write(f"👥 Posetilaca:  {count}")
 st.sidebar.write(f"Hvala na poseti!")
 
