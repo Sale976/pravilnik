@@ -42,7 +42,7 @@ with st.sidebar:
         <style>
         .sidebar-text {
             font-size: 25px;
-            margin-top: -60;
+            margin-top: -100;
         }
         </style>
         """, unsafe_allow_html=True)
