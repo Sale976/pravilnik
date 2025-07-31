@@ -30,7 +30,7 @@ st.markdown("""
 
 
 # --- Config ---
-COUNTER_FILE = "visitor_counter.json"
+COUNTER_FILE = "https://github.com/Sale976/pravilnik/visitor_counter.json.git"
 
 # --- Load or create the counter ---
 def load_counter():
