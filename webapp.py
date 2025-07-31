@@ -15,7 +15,7 @@ st.markdown(
     /* Sidebar background */
     section[data-testid="stSidebar"] {
         background-color: #ADD8E6;
-        padding-top: 2rem; /* Add space at top */
+        padding-top: 1rem; /* Add space at top */
     }
     </style>
     """,
