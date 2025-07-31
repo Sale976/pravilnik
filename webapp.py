@@ -39,7 +39,7 @@ else:
 
 # --- Show counter in sidebar with st.metric ---
 #st.sidebar.markdown("### 👥 Visitor Count")
-st.sidebar.write(f"👥 **Posetioci:** {count}")
+st.sidebar.write(f"👥 Posetioci: {count}")
 
 
 # --- Title and Description ---
