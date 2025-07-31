@@ -39,7 +39,7 @@ else:
 st.sidebar.markdown("""
     <style>
     .my-margin-top {
-        margin-top: -40px;
+        margin-top: -80px;
     }
     </style>
 """, unsafe_allow_html=True)
