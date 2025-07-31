@@ -24,7 +24,7 @@ st.markdown("""
     <style>
     /* Sidebar background */
     section[data-testid="stSidebar"] {
-        background-color: #ADD8E6;
+        background-color: #97e0f7;
     }
     </style>
 """, unsafe_allow_html=True)
