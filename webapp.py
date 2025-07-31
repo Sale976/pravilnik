@@ -2,12 +2,23 @@ import streamlit as st
 import re, os
 import json
 from pathlib import Path
-#import streamlit_analytics2 as streamlit_analytics
 
 
 st.set_page_config(
     page_title="Pretraga PoPV - PoTP",
     layout="wide"
+)
+
+st.markdown(
+    """
+    <style>
+    /* Sidebar background */
+    section[data-testid="stSidebar"] {
+        background-color: #f0f0f5; /* light gray-blue */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
 )
 
 # --- Config ---
