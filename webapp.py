@@ -30,7 +30,7 @@ st.markdown("""
 
 
 # --- Config ---
-COUNTER_FILE = "visitor_counter.json"
+COUNTER_FILE = "data/visitor_counter.json"
 
 # --- Load or create the counter ---
 def load_counter():
