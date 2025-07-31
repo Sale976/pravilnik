@@ -40,7 +40,7 @@ st.sidebar.markdown("""
     <style>
     .my-margin-top {
         margin-top: -50px;
-        font-size:25px;
+        font-size:40px;
     }
     </style>
 """, unsafe_allow_html=True)
