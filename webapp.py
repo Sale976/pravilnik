@@ -13,7 +13,7 @@ st.markdown("""
     <style>
     /* Remove default top padding inside sidebar */
     section[data-testid="stSidebar"] > div:first-child {
-        padding-top: 0rem;
+        padding-top: -2rem;
     }
 
     /* Optional: reduce padding/margin of your content */
