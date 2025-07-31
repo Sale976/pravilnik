@@ -47,20 +47,10 @@ with st.sidebar:
         </style>
         """, unsafe_allow_html=True)
 
-st.sidebar.markdown("""
-    <style>
-    .my-margin-top {
-        margin-top: -50px;
-        font-size:40px;
-    }
-    </style>
-""", unsafe_allow_html=True)
-
 # --- Show counter in sidebar with st.metric ---
 st.sidebar.markdown("#### 👥 Brojač Posetilaca")
 st.sidebar.write(f"👥  **{count}**")
 st.sidebar.write(f"Hvala na poseti!")
-
 
 
 # --- Title and Description ---
