@@ -41,6 +41,7 @@ else:
 st.sidebar.markdown("### 👥 Brojač Posetilaca")
 st.sidebar.markdown("---")
 st.sidebar.write(f"👥 Posetilaca:  {count}")
+st.sidebar.write(f"Hvala na poseti!")
 
 
 # --- Title and Description ---
