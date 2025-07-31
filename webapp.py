@@ -40,7 +40,7 @@ st.markdown("""
     <style>
     .my-margin-top {
         margin-top: -100px;
-        left: -20px;
+        text-align: justify;
     }
     </style>
 """, unsafe_allow_html=True)
