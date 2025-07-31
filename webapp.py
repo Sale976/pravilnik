@@ -39,8 +39,8 @@ else:
 st.markdown("""
     <style>
     .my-margin-top {
-        margin-top: -80px;
-        left: -10px;
+        margin-top: -100px;
+        left: -20px;
     }
     </style>
 """, unsafe_allow_html=True)
