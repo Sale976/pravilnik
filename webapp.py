@@ -8,6 +8,7 @@ st.set_page_config(
     layout="wide"
 )
 
+st.sidebar.metric("Visitors", count)
 
 # --- Title and Description ---
 st.markdown(
