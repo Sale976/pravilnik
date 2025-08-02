@@ -62,7 +62,7 @@ st.sidebar.write(f"Hvala na poseti!")
 
 search_mode = st.sidebar.radio(
     "Način pretrage:",
-    ["Tačna fraza", "Bilo koja reč", "Sve reči"],
+    ["Tačna fraza", "Bilo koja reč",],
     index=0
 )
 
@@ -185,4 +185,5 @@ with col2:
         st.info("")
 
     st.markdown("</div>", unsafe_allow_html=True)
+
 
