@@ -77,8 +77,8 @@ search_mode = st.sidebar.radio(
 
 bottom_placeholder = st.sidebar.empty()
 with bottom_placeholder.container():
-    st.sidebar.markdown("---")
     st.sidebar.markdown("\n" * 10)
+    st.sidebar.markdown("---")
     st.sidebar.write("")
     st.sidebar.write("")
     st.sidebar.write("")
@@ -206,6 +206,7 @@ with col2:
         st.info("")
 
     st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 
