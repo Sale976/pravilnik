@@ -62,6 +62,14 @@ st.sidebar.write(f"Hvala na poseti!")
 st.sidebar.write("")
 st.sidebar.write("")
 
+with st.sidebar.expander("ℹ️ Uputstvo"):
+    st.markdown("""
+    - Unesite ključnu reč ili frazu za pretragu.
+    - Kliknite na PDF ikonicu da otvorite dokument.
+    - Pretražite ručno (Ctrl+F) unutar PDF-a ako treba naglasiti pojam.
+    """)
+
+
 search_mode = st.sidebar.radio(
     "Način pretrage:",
     ["Tačna fraza", "Bilo koja reč",],
@@ -187,6 +195,7 @@ with col2:
         st.info("")
 
     st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 
