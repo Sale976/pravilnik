@@ -78,10 +78,10 @@ search_mode = st.sidebar.radio(
 bottom_placeholder = st.sidebar.empty()
 with bottom_placeholder.container():
     st.sidebar.markdown("---")
+    st.sidebar.markdown("")
     st.sidebar.markdown("📄 **Verzija aplikacije:** 1.0.2")
     st.sidebar.markdown("🔧 *Autor: Aleksandar*")
     st.sidebar.markdown("[💬 Prijavite grešku](mailto:aca1976@mts.rs)")
-    st.sidebar.image("https://www.simplehitcounter.com/hit.php?uid=XXXXX&f=0&b=16777215", caption="Posete")
     
 # --- Title and Description ---
 st.markdown(
@@ -201,6 +201,7 @@ with col2:
         st.info("")
 
     st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 
