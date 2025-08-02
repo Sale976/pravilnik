@@ -84,7 +84,7 @@ with bottom_placeholder.container():
     st.sidebar.write("")
     st.sidebar.write("")
     st.sidebar.write("")
-    st.sidebar.markdown("📄 **Aplikacije:** v1.1.2")
+    st.sidebar.markdown("📄 **Aplikacija: ** v1.1.2")
     st.sidebar.markdown("🔧 *Autor: Aleksandar*")
     #st.sidebar.markdown("[💬 Prijavite grešku](mailto:aca1976@mts.rs)")
     
@@ -206,6 +206,7 @@ with col2:
         st.info("")
 
     st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 
