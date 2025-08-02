@@ -65,10 +65,9 @@ st.sidebar.write("")
 with st.sidebar.expander("ℹ️ Uputstvo"):
     st.markdown("""
     - Unesite ključnu reč ili frazu za pretragu.
+    - Pri unosu reči ne koristiti kvačice iznad slova.
     - Kliknite na PDF ikonicu da otvorite dokument.
-    - Pretražite ručno (Ctrl+F) unutar PDF-a ako treba naglasiti pojam.
     """)
-
 
 search_mode = st.sidebar.radio(
     "Način pretrage:",
@@ -195,6 +194,7 @@ with col2:
         st.info("")
 
     st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 
