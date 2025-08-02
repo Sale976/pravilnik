@@ -75,12 +75,10 @@ search_mode = st.sidebar.radio(
     index=0
 )
 
-bottom_placeholder = st.sidebar.empty()
-with bottom_placeholder.container():
-    st.sidebar.markdown("\n" * 60)
-    st.sidebar.markdown("📄 **Verzija aplikacije:** 1.0.2")
-    st.sidebar.markdown("🔧 *Autor: Aleksandar*")
-    st.sidebar.markdown("[💬 Prijavite grešku](mailto:aca1976@mts.rs)")
+st.sidebar.markdown("\n" * 30)
+st.sidebar.markdown("📄 **Verzija aplikacije:** 1.0.2")
+st.sidebar.markdown("🔧 *Autor: Aleksandar*")
+st.sidebar.markdown("[💬 Prijavite grešku](mailto:aca1976@mts.rs)")
     
 # --- Title and Description ---
 st.markdown(
@@ -200,6 +198,7 @@ with col2:
         st.info("")
 
     st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 
