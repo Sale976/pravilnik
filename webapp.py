@@ -59,7 +59,7 @@ else:
 st.sidebar.markdown("#### 👥 Brojač Posetilaca")
 st.sidebar.markdown(f'<div style="font-size: 30px;"><strong>{count}</strong></div>', unsafe_allow_html=True)
 st.sidebar.write(f"Hvala na poseti!")
-st.sidebar.write("")
+st.sidebar.write("---")
 st.sidebar.write("")
 
 with st.sidebar.expander("ℹ️ Uputstvo"):
@@ -75,10 +75,12 @@ search_mode = st.sidebar.radio(
     index=0
 )
 
-st.sidebar.markdown("\n" * 60)
-st.sidebar.markdown("📄 **Verzija aplikacije:** 1.0.2")
-st.sidebar.markdown("🔧 *Autor: Aleksandar*")
-st.sidebar.markdown("[💬 Prijavite grešku](mailto:aca1976@mts.rs)")
+bottom_placeholder = st.sidebar.empty()
+with bottom_placeholder.container():
+    st.sidebar.markdown("---")
+    st.sidebar.markdown("📄 **Verzija aplikacije:** 1.0.2")
+    st.sidebar.markdown("🔧 *Autor: Aleksandar*")
+    st.sidebar.markdown("[💬 Prijavite grešku](mailto:aca1976@mts.rs)")
     
 # --- Title and Description ---
 st.markdown(
@@ -198,6 +200,7 @@ with col2:
         st.info("")
 
     st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 
