@@ -74,7 +74,7 @@ def log_visit_to_csv(count):
     file_exists = log_file.exists()
 
     with open(log_file, mode="a", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
+        writer = csv.writer(f, delimiter=",")
         if not file_exists:
             writer.writerow(["Timestamp", "Count", "IP"])
         writer.writerow([timestamp, count, ip])
