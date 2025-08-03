@@ -68,8 +68,6 @@ if "counted" not in st.session_state:
 else:
     count = load_counter()
 
-st.sidebar.markdown(f"<span style='font-size: 30px;'>👁️ Poseta: <b>{count}</b></span>", unsafe_allow_html=True)
-
 # --- Show counter in sidebar with st.metric ---
 #st.sidebar.markdown("#### 👥 Brojač Posetilaca")
 #st.sidebar.markdown(f'<div style="font-size: 30px;"><strong>{count}</strong></div>', unsafe_allow_html=True)
