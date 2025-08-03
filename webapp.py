@@ -86,25 +86,6 @@ with st.sidebar:
         unsafe_allow_html=True
     )
 
-def log_to_google_sheet(count):
-    # Read credentials from Streamlit secrets
-    credentials_dict = st.secrets["gcp_service_account"]
-
-    # Convert to ServiceAccountCredentials object
-    creds = ServiceAccountCredentials.from_json_keyfile_dict(credentials_dict, [
-        "https://spreadsheets.google.com/feeds",
-        "https://www.googleapis.com/auth/drive"
-    ])
-    client = gspread.authorize(creds)
-
-    # Open the sheet by name
-    sheet = client.open("VisitorLog").sheet1
-
-    # Log timestamp and count
-    timestamp = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
-    ip_address = "N/A"  # Still not available on Streamlit Cloud
-
-    sheet.append_row([timestamp, count, ip_address])
 
 # --- Increment the counter only once per session ---
 if "counted" not in st.session_state:
