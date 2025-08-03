@@ -1,5 +1,4 @@
         streamlit
         streamlit-analytics2
         gspread
-        oauth2client.service_account
         ServiceAccountCredentials
