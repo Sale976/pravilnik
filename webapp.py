@@ -58,6 +58,7 @@ with st.sidebar:
     st.markdown(
         f"<span style='font-size: 25px;'>👁️ Poseta: <b>{load_counter()}</b></span>",
         unsafe_allow_html=True
+    )
 
 # --- Increment the counter only once per session ---
 if "counted" not in st.session_state:
