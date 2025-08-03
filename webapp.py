@@ -4,8 +4,8 @@ import json
 from pathlib import Path
 from datetime import datetime
 import socket
-import gspread
-from oauth2client.service_account import ServiceAccountCredentials
+#import gspread
+#from oauth2client.service_account import ServiceAccountCredentials
 from google.oauth2.service_account import Credentials
 
 creds = st.secrets["gcp_service_account"]
