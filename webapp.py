@@ -85,17 +85,19 @@ def log_to_excel(count):
     new_entry = pd.DataFrame([[timestamp, count, ip]], columns=["Timestamp", "Count", "IP"])
 
     try:
-        # Try to load the file
-        book = load_workbook(excel_file)
-        writer = pd.ExcelWriter(excel_file, engine="openpyxl", mode="a", if_sheet_exists="overlay")
-        writer.book = book
-        writer.sheets = {ws.title: ws for ws in book.worksheets}
-        start_row = writer.sheets["Sheet1"].max_row
-        new_entry.to_excel(writer, index=False, header=False, startrow=start_row)
-        writer.close()
-    except FileNotFoundError:
-        # If file doesn't exist, create it
-        new_entry.to_excel(excel_file, index=False)
+        # Try to load existing Excel file
+        if Path(excel_file).exists():
+            existing_data = pd.read_excel(excel_file)
+            updated_data = pd.concat([existing_data, new_entry], ignore_index=True)
+        else:
+            updated_data = new_entry
+
+        # Save to Excel (overwrite the whole file)
+        updated_data.to_excel(excel_file, index=False)
+        
+    except Exception as e:
+        st.error(f"Error writing to Excel file: {e}")
+
 
 # --- Increment the counter only once per session ---
 if "counted" not in st.session_state:
