@@ -6,25 +6,8 @@ from datetime import datetime
 import socket
 #import gspread
 #from oauth2client.service_account import ServiceAccountCredentials
-from google.oauth2.service_account import Credentials
+#from google.oauth2.service_account import Credentials
 
-scopes = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
-
-# Load credentials from Streamlit secrets
-credentials = Credentials.from_service_account_info(
-    st.secrets["gcp_service_account"],
-    scopes=scopes
-)
-
-# Authorize the client
-gc = gspread.authorize(credentials)
-
-# Open the sheet (replace with your actual sheet name)
-sheet = gc.open("Visitor").sheet1
-
-# Example: Log timestamp
-timestamp = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
-sheet.append_row([timestamp, "Visitor"])
 
 st.set_page_config(
     page_title="Pretraga PoPV - PoTP",
@@ -127,8 +110,8 @@ def log_to_google_sheet(count):
 if "counted" not in st.session_state:
     count = load_counter() + 1
     save_counter(count)
-    log_to_google_sheet(count)
-    #log_visit(count)
+    #log_to_google_sheet(count)
+    log_visit(count)
     st.session_state.counted = True
 else:
     count = load_counter()
