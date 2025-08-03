@@ -68,7 +68,7 @@ with st.sidebar:
         unsafe_allow_html=True
     )
 
-excel_file = "visitor_log.xlsx"
+excel_file = "visitor_logs.xlsx"
 
 def get_ip():
     try:
