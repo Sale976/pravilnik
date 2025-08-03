@@ -82,8 +82,6 @@ st.sidebar.write("")
 st.sidebar.write("")
 st.sidebar.write("")
 st.sidebar.write("")
-st.sidebar.write("")
-st.sidebar.write("")
 st.sidebar.markdown(f"📄 WebApp:**v1.1.2**")
 st.sidebar.markdown("🔧 *Autor: Aleksandar P.*")
 #st.sidebar.markdown("[💬 Prijavite grešku](mailto:aca1976@mts.rs)")
@@ -158,8 +156,6 @@ with col2:
                         match_found = query in line_lower
                     elif search_mode == "Bilo koja reč":
                         match_found = any(word in line_lower for word in words)
-                    elif search_mode == "Sve reči":
-                        match_found = all(word in line_lower for word in words)
 
                     if match_found:
                         highlighted = line.strip()
