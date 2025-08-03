@@ -56,8 +56,6 @@ def reset_counter():
     st.session_state.counted = False  # allow recount in session
 
 
-excel_file = "visitor_logs.xlsx"
-
 def get_ip():
     try:
         hostname = socket.gethostname()
