@@ -8,7 +8,7 @@ import pandas as pd
 from openpyxl import load_workbook
 import csv
 
-st.button("Test Logging", on_click=lambda: log_visit(999))
+
 st.set_page_config(
     page_title="Pretraga PoPV - PoTP",
     layout="wide"
@@ -95,6 +95,8 @@ st.sidebar.markdown(f'<div style="font-size: 30px;"><strong>{count}</strong></di
 st.sidebar.write(f"Hvala na poseti!")
 st.sidebar.write("---")
 #st.sidebar.write("")
+
+st.button("Test Logging", on_click=lambda: log_visit(999))
 
 with st.sidebar.expander("ℹ️ Uputstvo"):
     st.markdown("""
