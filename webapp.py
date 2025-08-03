@@ -8,18 +8,23 @@ import socket
 #from oauth2client.service_account import ServiceAccountCredentials
 from google.oauth2.service_account import Credentials
 
-creds = st.secrets["gcp_service_account"]
+scopes = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
 
-scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-credentials = ServiceAccountCredentials.from_json_keyfile_dict(dict(creds), scope)
-client = gspread.authorize(credentials)
+# Load credentials from Streamlit secrets
+credentials = Credentials.from_service_account_info(
+    st.secrets["gcp_service_account"],
+    scopes=scopes
+)
 
-# Open or create a Google Sheet
-sheet = client.open("YourSheetName").sheet1  # Must match name on Google Drive
+# Authorize the client
+gc = gspread.authorize(credentials)
 
-# Log a row
+# Open the sheet (replace with your actual sheet name)
+sheet = gc.open("Visitor").sheet1
+
+# Example: Log timestamp
 timestamp = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
-sheet.append_row([timestamp, "Visitor info"])
+sheet.append_row([timestamp, "Visitor"])
 
 st.set_page_config(
     page_title="Pretraga PoPV - PoTP",
