@@ -53,12 +53,12 @@ def reset_counter():
 
 with st.sidebar:
     if st.button("🔁 Resetuj brojač poseta"):
-    reset_counter()
-    msg = st.empty()
-    msg.success("Brojač resetovan na 0.")
-    import time
-    time.sleep(3)
-    msg.empty()
+        reset_counter()
+        msg = st.empty()
+        msg.success("Brojač resetovan na 0.")
+        import time
+        time.sleep(3)
+        msg.empty()
 
     st.markdown(
         f"<span style='font-size: 25px;'>👁️ Poseta: <b>{load_counter()}</b></span>",
