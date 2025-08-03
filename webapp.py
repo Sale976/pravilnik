@@ -4,6 +4,8 @@ import json
 from pathlib import Path
 from datetime import datetime
 import socket
+import pandas as pd
+from openpyxl import load_workbook
 
 
 st.set_page_config(
@@ -53,23 +55,6 @@ def reset_counter():
     save_counter(0)
     st.session_state.counted = False  # allow recount in session
 
-VISITOR_LOG_FILE = Path("visitor_log.txt")
-
-def log_visit(count):
-    now = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
-    
-    # Try to get IP from headers (not always possible in Streamlit Cloud)
-    ip_address = None
-    try:
-        ip_address = socket.gethostbyname(socket.gethostname())
-    except:
-        ip_address = "unknown"
-
-    log_line = f"{now} - Visit #{count} - IP: {ip_address}\n"
-    
-    with open(VISITOR_LOG_FILE, "a", encoding="utf-8") as f:
-        f.write(log_line)
-
 with st.sidebar:
     if st.button("🔁 Resetuj brojač poseta"):
         reset_counter()
@@ -83,13 +68,41 @@ with st.sidebar:
         unsafe_allow_html=True
     )
 
+excel_file = "visitor_log.xlsx"
+
+def get_ip():
+    try:
+        hostname = socket.gethostname()
+        ip = socket.gethostbyname(hostname)
+        return ip
+    except:
+        return "N/A"
+
+def log_to_excel(count):
+    timestamp = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+    ip = get_ip()
+
+    new_entry = pd.DataFrame([[timestamp, count, ip]], columns=["Timestamp", "Count", "IP"])
+
+    try:
+        # Try to load the file
+        book = load_workbook(excel_file)
+        writer = pd.ExcelWriter(excel_file, engine="openpyxl", mode="a", if_sheet_exists="overlay")
+        writer.book = book
+        writer.sheets = {ws.title: ws for ws in book.worksheets}
+        start_row = writer.sheets["Sheet1"].max_row
+        new_entry.to_excel(writer, index=False, header=False, startrow=start_row)
+        writer.close()
+    except FileNotFoundError:
+        # If file doesn't exist, create it
+        new_entry.to_excel(excel_file, index=False)
 
 # --- Increment the counter only once per session ---
 if "counted" not in st.session_state:
     count = load_counter() + 1
     save_counter(count)
-    #log_to_google_sheet(count)
-    log_visit(count)
+    log_to_excel(count)
+    #log_visit(count)
     st.session_state.counted = True
 else:
     count = load_counter()
