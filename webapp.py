@@ -65,7 +65,7 @@ def get_ip():
     except:
         return "unknown"
 
-log_file = Path("logs.tsv")
+log_file = Path("logs.csv")
 
 def log_visit(count):
     timestamp = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
