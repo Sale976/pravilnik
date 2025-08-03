@@ -29,15 +29,6 @@ def log_visit(count):
             writer.writerow(["Timestamp", "Counter", "IP"])
         writer.writerow([timestamp, count, ip])
 
-if "counted" not in st.session_state:
-    count = load_counter() + 1
-    save_counter(count)
-    log_visit(count)  # 👈 CALL IT HERE
-    st.session_state.counted = True
-else:
-    count = load_counter()
-
-
 st.markdown("""
     <style>
     /* Sidebar background */
@@ -107,8 +98,7 @@ def log_visit(count):
 if "counted" not in st.session_state:
     count = load_counter() + 1
     save_counter(count)
-    log_visit(count)
-    #log_visit(count)
+    log_visit(count)  # 👈 CALL IT HERE
     st.session_state.counted = True
 else:
     count = load_counter()
