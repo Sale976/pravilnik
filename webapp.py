@@ -6,7 +6,9 @@ from datetime import datetime
 import socket
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
+from google.oauth2 import service_account
 
+creds = service_account.Credentials.from_service_account_info(st.secrets["gcp_service_account"])
 
 st.set_page_config(
     page_title="Pretraga PoPV - PoTP",
