@@ -65,9 +65,9 @@ def get_ip():
     except:
         return "unknown"
 
-log_file = Path("logs.csv")
+log_file = Path("logs.tsv")
 
-def log_visit_to_csv(count):
+def log_visit(count):
     timestamp = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
     ip = get_ip()
 
@@ -83,7 +83,7 @@ def log_visit_to_csv(count):
 if "counted" not in st.session_state:
     count = load_counter() + 1
     save_counter(count)
-    log_visit_to_csv(count)
+    log_visit(count)
     #log_visit(count)
     st.session_state.counted = True
 else:
