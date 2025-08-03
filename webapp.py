@@ -14,6 +14,30 @@ st.set_page_config(
     layout="wide"
 )
 
+def log_visit(count):
+    log_file = "logs.csv"
+    file_exists = os.path.exists(log_file)
+
+    timestamp = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+
+    # You can use a placeholder if IP is unavailable
+    ip = "unknown-ip"
+
+    with open(log_file, mode="a", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f, delimiter=";")
+        if not file_exists:
+            writer.writerow(["Timestamp", "Counter", "IP"])
+        writer.writerow([timestamp, count, ip])
+
+if "counted" not in st.session_state:
+    count = load_counter() + 1
+    save_counter(count)
+    log_visit(count)  # 👈 CALL IT HERE
+    st.session_state.counted = True
+else:
+    count = load_counter()
+
+
 st.markdown("""
     <style>
     /* Sidebar background */
