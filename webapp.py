@@ -110,8 +110,6 @@ st.sidebar.write(f"Hvala na poseti!")
 st.sidebar.write("---")
 #st.sidebar.write("")
 
-st.button("Test Logging", on_click=lambda: log_visit(999))
-
 with st.sidebar.expander("ℹ️ Uputstvo"):
     st.markdown("""
     - Unesite ključnu reč ili frazu za pretragu.
