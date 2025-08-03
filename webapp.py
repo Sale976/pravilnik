@@ -2,6 +2,8 @@ import streamlit as st
 import re, os, time
 import json
 from pathlib import Path
+from datetime import datetime
+import socket
 
 
 st.set_page_config(
@@ -51,6 +53,23 @@ def reset_counter():
     save_counter(0)
     st.session_state.counted = False  # allow recount in session
 
+VISITOR_LOG_FILE = Path("visitor_log.txt")
+
+def log_visit(count):
+    now = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+    
+    # Try to get IP from headers (not always possible in Streamlit Cloud)
+    ip_address = None
+    try:
+        ip_address = socket.gethostbyname(socket.gethostname())
+    except:
+        ip_address = "unknown"
+
+    log_line = f"{now} - Visit #{count} - IP: {ip_address}\n"
+    
+    with open(VISITOR_LOG_FILE, "a", encoding="utf-8") as f:
+        f.write(log_line)
+
 with st.sidebar:
     if st.button("🔁 Resetuj brojač poseta"):
         reset_counter()
@@ -68,6 +87,7 @@ with st.sidebar:
 if "counted" not in st.session_state:
     count = load_counter() + 1
     save_counter(count)
+    log_visit(count)
     st.session_state.counted = True
 else:
     count = load_counter()
