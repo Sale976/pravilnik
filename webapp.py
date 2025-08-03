@@ -32,6 +32,8 @@ st.markdown("""
 # --- Config ---
 COUNTER_FILE = Path("data/visitor_counter.json")
 
+COUNTER_FILE.parent.mkdir(parents=True, exist_ok=True)
+
 # --- Load or create the counter ---
 def load_counter():
     path = Path(COUNTER_FILE)
@@ -54,13 +56,14 @@ if "counted" not in st.session_state:
 else:
     count = load_counter()
 
+st.sidebar.markdown(f"<span style='font-size: 30px;'>👁️ Poseta: <b>{count}</b></span>", unsafe_allow_html=True)
 
 # --- Show counter in sidebar with st.metric ---
-st.sidebar.markdown("#### 👥 Brojač Posetilaca")
-st.sidebar.markdown(f'<div style="font-size: 30px;"><strong>{count}</strong></div>', unsafe_allow_html=True)
-st.sidebar.write(f"Hvala na poseti!")
-st.sidebar.write("---")
-st.sidebar.write("")
+#st.sidebar.markdown("#### 👥 Brojač Posetilaca")
+#st.sidebar.markdown(f'<div style="font-size: 30px;"><strong>{count}</strong></div>', unsafe_allow_html=True)
+#st.sidebar.write(f"Hvala na poseti!")
+#st.sidebar.write("---")
+#st.sidebar.write("")
 
 with st.sidebar.expander("ℹ️ Uputstvo"):
     st.markdown("""
