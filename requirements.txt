@@ -4,4 +4,4 @@
         oauth2client
         openpyxl
         pandas
-        csv
+        python-csv
