@@ -56,7 +56,6 @@ with st.sidebar:
         reset_counter()
         msg = st.empty()
         msg.success("Brojač resetovan na 0.")
-        import time
         time.sleep(3)
         msg.empty()
 
