@@ -92,7 +92,7 @@ def log_visit_to_csv(count):
 if "counted" not in st.session_state:
     count = load_counter() + 1
     save_counter(count)
-    log_to_excel(count)
+    log_visit_to_csv(count)
     #log_visit(count)
     st.session_state.counted = True
 else:
