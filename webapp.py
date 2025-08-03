@@ -56,13 +56,13 @@ def reset_counter():
     st.session_state.counted = False  # allow recount in session
 
 
-def get_ip():
-    try:
-        hostname = socket.gethostname()
-        ip = socket.gethostbyname(hostname)
-        return ip
-    except:
-        return "N/A"
+#def get_ip():
+    #try:
+        #hostname = socket.gethostname()
+        #ip = socket.gethostbyname(hostname)
+        #return ip
+    #except:
+        #return "N/A"
 
 log_file = Path("visitor_log.csv")
 
