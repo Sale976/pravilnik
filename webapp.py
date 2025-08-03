@@ -66,26 +66,27 @@ def get_ip():
     except:
         return "N/A"
 
-def log_to_excel(count):
+log_file = Path("visitor_log.csv")
+
+def get_ip():
+    try:
+        # Fallback IP method (not always accurate on cloud)
+        hostname = socket.gethostname()
+        return socket.gethostbyname(hostname)
+    except:
+        return "unknown"
+
+def log_visit_to_csv(count):
     timestamp = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
     ip = get_ip()
 
-    new_entry = pd.DataFrame([[timestamp, count, ip]], columns=["Timestamp", "Count", "IP"])
+    file_exists = log_file.exists()
 
-    try:
-        # Try to load existing Excel file
-        if Path(excel_file).exists():
-            existing_data = pd.read_excel(excel_file)
-            updated_data = pd.concat([existing_data, new_entry], ignore_index=True)
-        else:
-            updated_data = new_entry
-
-        # Save to Excel (overwrite the whole file)
-        updated_data.to_excel(excel_file, index=False)
-        
-    except Exception as e:
-        st.error(f"Error writing to Excel file: {e}")
-
+    with open(log_file, mode="a", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        if not file_exists:
+            writer.writerow(["Timestamp", "Count", "IP"])
+        writer.writerow([timestamp, count, ip])
 
 # --- Increment the counter only once per session ---
 if "counted" not in st.session_state:
