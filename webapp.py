@@ -14,8 +14,10 @@ st.set_page_config(
     layout="wide"
 )
 
+log_file = Path("logs.csv")
+
 def log_visit(count):
-    log_file = "logs.csv"
+    #log_file = "logs.csv"
     file_exists = os.path.exists(log_file)
 
     timestamp = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
@@ -79,20 +81,6 @@ def get_ip():
         return socket.gethostbyname(hostname)
     except:
         return "unknown"
-
-log_file = Path("logs.csv")
-
-def log_visit(count):
-    timestamp = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
-    ip = get_ip()
-
-    file_exists = log_file.exists()
-
-    with open(log_file, mode="a", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f, delimiter=";")
-        if not file_exists:
-            writer.writerow(["Timestamp", "Count", "IP"])
-        writer.writerow([timestamp, count, ip])
 
 # --- Increment the counter only once per session ---
 if "counted" not in st.session_state:
