@@ -55,18 +55,6 @@ def reset_counter():
     save_counter(0)
     st.session_state.counted = False  # allow recount in session
 
-with st.sidebar:
-    if st.button("🔁 Resetuj brojač poseta"):
-        reset_counter()
-        msg = st.empty()
-        msg.success("Brojač resetovan na 0.")
-        time.sleep(3)
-        msg.empty()
-
-    st.markdown(
-        f"<span style='font-size: 25px;'>👁️ Poseta: <b>{load_counter()}</b></span>",
-        unsafe_allow_html=True
-    )
 
 excel_file = "visitor_logs.xlsx"
 
