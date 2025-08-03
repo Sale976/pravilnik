@@ -31,7 +31,6 @@ st.markdown("""
 
 # --- Config ---
 COUNTER_FILE = Path("data/visitor_counter.json")
-
 COUNTER_FILE.parent.mkdir(parents=True, exist_ok=True)
 
 # --- Load or create the counter ---
@@ -47,6 +46,18 @@ def load_counter():
 def save_counter(count):
     with open(COUNTER_FILE, "w") as f:
         json.dump({"count": count}, f)
+
+def reset_counter():
+    save_counter(0)
+    st.session_state.counted = False  # allow recount in session
+
+with st.sidebar:
+    if st.button("🔁 Resetuj brojač poseta"):
+        reset_counter()
+        st.success("Brojač resetovan na 0.")
+    st.markdown(
+        f"<span style='font-size: 25px;'>👁️ Poseta: <b>{load_counter()}</b></span>",
+        unsafe_allow_html=True
 
 # --- Increment the counter only once per session ---
 if "counted" not in st.session_state:
