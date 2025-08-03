@@ -2,3 +2,5 @@
         streamlit-analytics2
         gspread
         oauth2client
+        openpyxl
+        pandas
