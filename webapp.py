@@ -30,6 +30,8 @@ def log_visit(count):
             writer.writerow(["Timestamp", "Counter", "IP"])
         writer.writerow([timestamp, count, ip])
 
+    st.write("✅ Log written:", timestamp, count, ip)
+
 st.markdown("""
     <style>
     /* Sidebar background */
