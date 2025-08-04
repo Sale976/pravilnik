@@ -31,7 +31,7 @@ def log_visit(count):
     ip = "unknown"  # Replace with actual IP if needed
     try:
         sheet.append_row([timestamp, count, ip])
-        st.write("✅ Visit logged:", timestamp, count, ip)
+        #st.write("✅ Visit logged:", timestamp, count, ip)
     except Exception as e:
         st.error(f"❌ Failed to log visit: {e}")
 
