@@ -132,7 +132,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.sidebar.markdown(
-    '<div class="bottom-sidebar">📄 Verzija: v1.1.2</div>',
+    <h2 style='text-align: left; font-size:15px;'>
+       📄 Verzija: v1.1.2
+    </h2>
     '<div class="bottom-sidebar">Made by: Aleksandar</div>',
     unsafe_allow_html=True
 )
