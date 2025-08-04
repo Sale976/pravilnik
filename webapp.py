@@ -5,7 +5,8 @@ from pathlib import Path
 from datetime import datetime
 import socket
 import pandas as pd
-import csv
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
 
 
 st.set_page_config(
@@ -13,24 +14,24 @@ st.set_page_config(
     layout="wide"
 )
 
-#log_file = Path("logs_file.csv")
+scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
+
+# Authenticate
+credentials = ServiceAccountCredentials.from_json_keyfile_dict(
+    st.secrets["google_service_account"], scope
+)
+gc = gspread.authorize(credentials)
+
+# Open sheet (by name or URL)
+sheet = gc.open("logs_file").sheet1  # Replace with your sheet name
 
 def log_visit(count):
-    log_file = "logs_file.csv"
-    file_exists = os.path.exists(log_file)
-
     timestamp = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+    ip = "unknown"  # Replace with real IP logic if needed
 
-    # You can use a placeholder if IP is unavailable
-    ip = "unknown-ip"
-
-    with open(log_file, mode="a", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f, delimiter=";")
-        if not file_exists:
-            writer.writerow(["Timestamp", "Counter", "IP"])
-        writer.writerow([timestamp, count, ip])
-
-    st.write("✅ Log written:", timestamp, count, ip)
+    # Append to sheet
+    sheet.append_row([timestamp, count, ip])
+    st.success("Log written to Google Sheet")
 
 st.markdown("""
     <style>
