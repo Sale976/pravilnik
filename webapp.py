@@ -117,12 +117,18 @@ search_mode = st.sidebar.radio(
 )
 
 st.sidebar.markdown("---")
-st.sidebar.write("")
-st.sidebar.write("")
-st.sidebar.write("")
-st.sidebar.write("")
-st.sidebar.write("")
-st.sidebar.write("")
+st.markdown("""
+    <style>
+    div[data-testid="stSidebar"] > div:first-child {
+        position: relative;
+    }
+    .bottom-sidebar {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+    }
+    </style>
+""", unsafe_allow_html=True)
 st.sidebar.markdown(f"📄 Verzija App:** v1.1.2**")
 st.sidebar.markdown("🔧 *Autor: Aleksandar P.*")
 st.sidebar.markdown(
