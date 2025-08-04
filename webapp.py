@@ -14,24 +14,27 @@ st.set_page_config(
     layout="wide"
 )
 
+# Google Sheets API scope
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
 
-# Authenticate
+# Authenticate with credentials stored in Streamlit secrets
 credentials = ServiceAccountCredentials.from_json_keyfile_dict(
     st.secrets["google_service_account"], scope
 )
 gc = gspread.authorize(credentials)
 
-# Open sheet (by name or URL)
-sheet = gc.open("logs_file").sheet1  # Replace with your sheet name
+# Open your Google Sheet by name (change "VisitorLog" to your sheet name)
+sheet = gc.open("logs_file").sheet1
 
 def log_visit(count):
     timestamp = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
-    ip = "unknown"  # Replace with real IP logic if needed
+    ip = "unknown"  # Replace with actual IP if needed
+    try:
+        sheet.append_row([timestamp, count, ip])
+        st.write("✅ Visit logged:", timestamp, count, ip)
+    except Exception as e:
+        st.error(f"❌ Failed to log visit: {e}")
 
-    # Append to sheet
-    sheet.append_row([timestamp, count, ip])
-    st.success("Log written to Google Sheet")
 
 st.markdown("""
     <style>
