@@ -117,10 +117,11 @@ search_mode = st.sidebar.radio(
 )
 
 st.sidebar.markdown("---")
-st.sidebar.write()
-st.sidebar.write()
-st.sidebar.write()
-st.sidebar.write()
+st.sidebar.write("")
+st.sidebar.write("")
+st.sidebar.write("")
+st.sidebar.write("")
+st.sidebar.write("")
 st.markdown("""
     <style>
     div[data-testid="stSidebar"] > div:first-child {
