@@ -129,7 +129,7 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
-st.sidebar.markdown(f"📄 Verzija App:** v1.1.2**")
+st.sidebar.write(f"📄 Verzija App:** v1.1.2**")
 #st.sidebar.markdown("🔧 *Autor: Aleksandar P.*")
 st.sidebar.markdown(
     '<div class="bottom-sidebar">Made by: Aleksandar P.</div>',
