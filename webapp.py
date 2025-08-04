@@ -13,10 +13,10 @@ st.set_page_config(
     layout="wide"
 )
 
-#log_file = Path("logs.csv")
+#log_file = Path("logins.csv")
 
 def log_visit(count):
-    log_file = "logs.csv"
+    log_file = "logins.csv"
     file_exists = os.path.exists(log_file)
 
     timestamp = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
