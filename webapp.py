@@ -124,7 +124,7 @@ st.markdown("""
     }
     .bottom-sidebar {
         position: absolute;
-        bottom: 20px;
+        bottom: -20px;
         width: 100%;
     }
     </style>
