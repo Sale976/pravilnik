@@ -124,14 +124,14 @@ st.markdown("""
     }
     .bottom-sidebar {
         position: absolute;
-        bottom: -40px;
+        bottom: 0px;
         width: 100%;
     }
     </style>
 """, unsafe_allow_html=True)
 
 st.sidebar.markdown(
-    '<div class="bottom-sidebar">Made by: Aleksandar P.</div>',
+    '<div class="bottom-sidebar">Made by: Aleksandar</div>',
     unsafe_allow_html=True
 )
 st.sidebar.write(f"📄 Verzija: v1.1.2")
