@@ -123,7 +123,7 @@ st.sidebar.write("")
 st.sidebar.write("")
 st.sidebar.write("")
 st.sidebar.write("")
-st.sidebar.markdown(f"📄 WebApp:**v1.1.2**")
+st.sidebar.markdown(f"📄 Verzija App:  **v1.1.2**")
 st.sidebar.markdown("🔧 *Autor: Aleksandar P.*")
 #st.sidebar.markdown("[💬 Prijavite grešku](mailto:aca1976@mts.rs)")
     
