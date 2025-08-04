@@ -117,7 +117,10 @@ search_mode = st.sidebar.radio(
 )
 
 st.sidebar.markdown("---")
-st.sidebar.write(f"📄 Verzija: v1.1.2")
+st.sidebar.write()
+st.sidebar.write()
+st.sidebar.write()
+st.sidebar.write()
 st.markdown("""
     <style>
     div[data-testid="stSidebar"] > div:first-child {
@@ -134,8 +137,8 @@ st.markdown("""
 st.sidebar.markdown(
     '''
     <div class="bottom-sidebar">
-        <div style="font-size: 0.85rem;">📄 Verzija: v1.1.2</div>
-        <div style="font-size: 0.9rem;">Made by: Aleksandar</div>
+        <div style="font-size: 1rem;">📄 Verzija: v1.1.2</div>
+        <div style="font-size: 1rem;">Made by: Aleksandar</div>
     </div>
     ''',
     unsafe_allow_html=True
