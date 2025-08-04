@@ -117,6 +117,7 @@ search_mode = st.sidebar.radio(
 )
 
 st.sidebar.markdown("---")
+st.sidebar.write(f"📄 Verzija: v1.1.2")
 st.markdown("""
     <style>
     div[data-testid="stSidebar"] > div:first-child {
@@ -134,7 +135,6 @@ st.sidebar.markdown(
     '<div class="bottom-sidebar">Made by: Aleksandar</div>',
     unsafe_allow_html=True
 )
-st.sidebar.write(f"📄 Verzija: v1.1.2")
 #st.sidebar.markdown("🔧 *Autor: Aleksandar P.*")
 
 #st.sidebar.markdown("[💬 Prijavite grešku](mailto:aca1976@mts.rs)")
