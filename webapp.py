@@ -124,17 +124,19 @@ st.markdown("""
     }
     .bottom-sidebar {
         position: absolute;
-        bottom: -20px;
+        bottom: -40px;
         width: 100%;
     }
     </style>
 """, unsafe_allow_html=True)
-st.sidebar.write(f"📄 Verzija App:** v1.1.2**")
-#st.sidebar.markdown("🔧 *Autor: Aleksandar P.*")
+
 st.sidebar.markdown(
     '<div class="bottom-sidebar">Made by: Aleksandar P.</div>',
     unsafe_allow_html=True
 )
+st.sidebar.write(f"📄 Verzija: v1.1.2")
+#st.sidebar.markdown("🔧 *Autor: Aleksandar P.*")
+
 #st.sidebar.markdown("[💬 Prijavite grešku](mailto:aca1976@mts.rs)")
     
 # --- Title and Description ---
