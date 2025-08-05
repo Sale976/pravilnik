@@ -158,13 +158,13 @@ st.sidebar.markdown(
     '''
     <div class="bottom-sidebar">
         <div style="font-size: 1rem;">📄 Verzija: v1.1.2</div>
-        <div style="font-size: 1rem;">Made by: Aleksandar</div>
+        <div style="font-size: 1rem;">🔧 *Autor: Aleksandar + AI*</div>
     </div>
     ''',
     unsafe_allow_html=True
 )
 
-#st.sidebar.markdown("🔧 *Autor: Aleksandar P.*")
+#st.sidebar.markdown("🔧 *Autor: Aleksandar*")
 
 #st.sidebar.markdown("[💬 Prijavite grešku](mailto:aca1976@mts.rs)")
     
