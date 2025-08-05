@@ -112,8 +112,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-#################
-
 # --- Show counter in sidebar with st.metric ---
 st.sidebar.markdown("#### 👥 Brojač Posetilaca")
 st.sidebar.markdown(f'<div style="font-size: 30px;"><strong>{count}</strong></div>', unsafe_allow_html=True)
@@ -157,8 +155,8 @@ st.markdown("""
 st.sidebar.markdown(
     '''
     <div class="bottom-sidebar">
-        <div style="font-size: 1rem;">📄 Verzija: v1.1.2</div>
-        <div style="font-size: 1rem;">🔧 *Autor: Aleksandar + AI*</div>
+        <div style="font-size: 1rem;">📄 Verzija: v1.1.5</div>
+        <div style="font-size: 1rem;">🔧 Autor: Aleksandar + AI</div>
     </div>
     ''',
     unsafe_allow_html=True
