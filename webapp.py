@@ -85,9 +85,9 @@ def reset_counter():
 
 # Admin-only reset section
 with st.sidebar.expander("🔐 Admin Panel"):
-    admin_password = st.text_input("Enter admin password to reset", type="password")
+    admin_password = st.text_input("Enter admin password to reset", type="nuliranje")
 
-    if admin_password == st.secrets["nuliranje"]:
+    if admin_password == st.secrets["admin_password"]:
         if st.button("Reset Visitor Counter"):
             reset_counter()
     elif admin_password:
