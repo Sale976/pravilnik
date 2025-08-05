@@ -213,7 +213,6 @@ file_path = "pravilnik.txt"
 
 # --- Create demo file if not exist ---
 try:
-    @st.cache_data
     with open(file_path, "x", encoding="utf-8") as f:
         f.write("ABS (kočenje) -- Član 30 (PoPV) str. 35\n")
         f.write("Pregled svetala -- Član 12 (PoTP) str. 15\n")
