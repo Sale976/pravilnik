@@ -28,14 +28,13 @@ gc = gspread.authorize(credentials)
 sheet = gc.open("logs_file").sheet1
 
 def get_ip():
-    """Get IP once per session (or fallback to 'unknown')"""
-    if "visitor_ip" not in st.session_state:
-        try:
-            response = requests.get("https://api.ipify.org?format=text", timeout=3)
-            st.session_state.visitor_ip = response.text
-        except:
-            st.session_state.visitor_ip = "unknown"
-    return st.session_state.visitor_ip
+    try:
+        response = requests.get("https://api64.ipify.org?format=json", timeout=3)
+        if response.status_code == 200:
+            return response.json().get("ip", "unknown")
+    except Exception:
+        pass
+    return "unknown"
 
 def log_visit(count):
     """Log timestamp, count, and IP to Google Sheet safely"""
@@ -101,14 +100,6 @@ def reset_counter():
     save_counter(0)
     st.session_state.counted = False  # allow recount in session
 
-
-def get_ip():
-    try:
-        # Fallback IP method (not always accurate on cloud)
-        hostname = socket.gethostname()
-        return socket.gethostbyname(hostname)
-    except:
-        return "unknown"
 
 #################
 
