@@ -149,7 +149,7 @@ st.markdown("""
             width: 15rem;
             text-align: center;
             font-size: 0.9rem;
-            opacity: 0.8;
+            opacity: 1;
         }
         </style>
     """, unsafe_allow_html=True)
