@@ -144,10 +144,10 @@ st.markdown("""
         <style>
         .bottom-sidebar {
             position: fixed;
-            bottom: 1rem;
+            bottom: 0rem;
             left: 0;
             width: 15rem;
-            text-align: center;
+            text-align: left;
             font-size: 0.9rem;
             opacity: 0.7;
         }
