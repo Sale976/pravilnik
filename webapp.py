@@ -155,8 +155,8 @@ st.markdown("""
 st.sidebar.markdown(
     '''
     <div class="bottom-sidebar">
-        <div style="font-size: 1rem; style="margin-left: 5px;"">📄 Verzija: v1.1.5</div>
-        <div style="font-size: 1rem; style="margin-left: 5px;"">🔧 Autor: Aleksandar + AI</div>
+        <div style="font-size: 1rem; letter-spacing: 2px;">📄 Verzija: v1.1.5</div>
+        <div style="font-size: 1rem; letter-spacing: 2px;">🔧 Autor: Aleksandar + AI</div>
     </div>
     ''',
     unsafe_allow_html=True
