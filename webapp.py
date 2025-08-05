@@ -154,19 +154,6 @@ st.markdown("""
         </style>
     """, unsafe_allow_html=True)
 
-#st.markdown("""
-    #<style>
-    #div[data-testid="stSidebar"] > div:first-child {
-        #position: relative;
-    #}
-    #.bottom-sidebar {
-        #position: absolute;
-        #bottom: -80px;
-        #width: 100%;
-    #}
-    #</style>
-#""", unsafe_allow_html=True)
-
 st.sidebar.markdown(
     '''
     <div class="bottom-sidebar">
@@ -176,8 +163,6 @@ st.sidebar.markdown(
     ''',
     unsafe_allow_html=True
 )
-
-#st.sidebar.markdown("🔧 *Autor: Aleksandar*")
 
 #st.sidebar.markdown("[💬 Prijavite grešku](mailto:aca1976@mts.rs)")
     
