@@ -141,17 +141,31 @@ st.sidebar.markdown("")
 st.sidebar.markdown("")
 
 st.markdown("""
-    <style>
-    div[data-testid="stSidebar"] > div:first-child {
-        position: relative;
-    }
-    .bottom-sidebar {
-        position: absolute;
-        bottom: -80px;
-        width: 100%;
-    }
-    </style>
-""", unsafe_allow_html=True)
+        <style>
+        .bottom-sidebar {
+            position: fixed;
+            bottom: 1rem;
+            left: 0;
+            width: 15rem;
+            text-align: center;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
+#st.markdown("""
+    #<style>
+    #div[data-testid="stSidebar"] > div:first-child {
+        #position: relative;
+    #}
+    #.bottom-sidebar {
+        #position: absolute;
+        #bottom: -80px;
+        #width: 100%;
+    #}
+    #</style>
+#""", unsafe_allow_html=True)
 
 st.sidebar.markdown(
     '''
