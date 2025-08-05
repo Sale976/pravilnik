@@ -49,6 +49,9 @@ def reset_counter():
     save_counter(0)
     st.session_state.counted = False  # allow recount in session
 
+if st.button("Reset Counter"):
+    reset_counter()
+    st.success("Visitor counter reset!")
 
 def get_ip():
     try:
