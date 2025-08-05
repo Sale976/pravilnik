@@ -24,6 +24,28 @@ credentials = ServiceAccountCredentials.from_json_keyfile_dict(
 )
 gc = gspread.authorize(credentials)
 
+# --- Config ---
+COUNTER_FILE = Path("data/visitor_counter.json")
+COUNTER_FILE.parent.mkdir(parents=True, exist_ok=True)
+
+# --- Load or create the counter ---
+def load_counter():
+    path = Path(COUNTER_FILE)
+    if path.exists():
+        with open(path, "r") as f:
+            return json.load(f).get("count", 0)
+    else:
+        return 0
+
+# --- Save counter back to file ---
+def save_counter(count):
+    with open(COUNTER_FILE, "w") as f:
+        json.dump({"count": count}, f)
+
+def reset_counter():
+    save_counter(0)
+    st.session_state.counted = False  # allow recount in session
+
 # Open your Google Sheet (change "logs_file" if needed)
 sheet = gc.open("logs_file").sheet1
 
@@ -76,30 +98,6 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
-
-
-# --- Config ---
-COUNTER_FILE = Path("data/visitor_counter.json")
-COUNTER_FILE.parent.mkdir(parents=True, exist_ok=True)
-
-# --- Load or create the counter ---
-def load_counter():
-    path = Path(COUNTER_FILE)
-    if path.exists():
-        with open(path, "r") as f:
-            return json.load(f).get("count", 0)
-    else:
-        return 0
-
-# --- Save counter back to file ---
-def save_counter(count):
-    with open(COUNTER_FILE, "w") as f:
-        json.dump({"count": count}, f)
-
-def reset_counter():
-    save_counter(0)
-    st.session_state.counted = False  # allow recount in session
-
 
 #################
 
