@@ -231,7 +231,6 @@ with col1:
     )
     st.button("Obrišite rezultate pretrage", on_click=clear_search)
 
-@st.cache_data
 with col2:
     st.markdown("<div style='margin-top: 32px;'>", unsafe_allow_html=True)
 
