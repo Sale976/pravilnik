@@ -44,14 +44,7 @@ def load_counter():
 def save_counter(count):
     with open(COUNTER_FILE, "w") as f:
         json.dump({"count": count}, f)
-
-#def reset_counter():
-    #save_counter(0)
-    #st.session_state.counted = False  # Only use it if you want to reset Visitor Count!
-
-#if st.button("Reset Counter"):
-    #reset_counter()
-    #st.success("Visitor counter reset!") Only use it if you want to reset Visitor Count!
+        
 
 def get_ip():
     try:
@@ -83,6 +76,22 @@ if "counted" not in st.session_state:
     st.session_state.counted = True
 else:
     count = load_counter()
+
+# Function to reset counter
+def reset_counter():
+    save_counter(0)
+    st.session_state.counted = False  # allow recount in session
+    st.success("✅ Visitor counter has been reset.")
+
+# Admin-only reset section
+with st.sidebar.expander("🔐 Admin Panel"):
+    admin_password = st.text_input("Enter admin password to reset", type="password")
+
+    if admin_password == st.secrets["admin_password"]:
+        if st.button("Reset Visitor Counter"):
+            reset_counter()
+    elif admin_password:
+        st.error("❌ Incorrect password")
 
 st.markdown("""
     <style>
