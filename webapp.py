@@ -147,9 +147,9 @@ st.markdown("""
             bottom: 0rem;
             left: 0;
             width: 15rem;
-            text-align: left;
+            text-align: center;
             font-size: 0.9rem;
-            opacity: 0.7;
+            opacity: 0.8;
         }
         </style>
     """, unsafe_allow_html=True)
