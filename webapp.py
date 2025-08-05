@@ -144,7 +144,7 @@ st.markdown("""
         <style>
         .bottom-sidebar {
             position: fixed;
-            bottom: 0rem;
+            bottom: 1rem;
             left: 0;
             width: 15rem;
             text-align: center;
