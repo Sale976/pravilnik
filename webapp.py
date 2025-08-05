@@ -9,6 +9,7 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import requests
 
+
 # Function to reset counter
 def reset_counter():
     save_counter(0)
@@ -134,8 +135,6 @@ search_mode = st.sidebar.radio(
 )
 
 st.sidebar.markdown("---")
-st.sidebar.markdown("")
-st.sidebar.markdown("")
 st.sidebar.markdown("")
 st.sidebar.markdown("")
 st.sidebar.markdown("")
