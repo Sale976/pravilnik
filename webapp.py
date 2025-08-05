@@ -212,6 +212,7 @@ def clear_search():
 file_path = "pravilnik.txt"
 
 # --- Create demo file if not exist ---
+@st.cache_data
 try:
     with open(file_path, "x", encoding="utf-8") as f:
         f.write("ABS (kočenje) -- Član 30 (PoPV) str. 35\n")
@@ -231,6 +232,7 @@ with col1:
     )
     st.button("Obrišite rezultate pretrage", on_click=clear_search)
 
+@st.cache_data
 with col2:
     st.markdown("<div style='margin-top: 32px;'>", unsafe_allow_html=True)
 
