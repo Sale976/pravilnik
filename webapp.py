@@ -10,22 +10,6 @@ from oauth2client.service_account import ServiceAccountCredentials
 import requests
 
 
-# Function to reset counter
-def reset_counter():
-    save_counter(0)
-    st.session_state.counted = False  # allow recount in session
-    st.success("✅ Visitor counter has been reset.")
-
-# Admin-only reset section
-with st.sidebar.expander("🔐 Admin Panel"):
-    admin_password = st.text_input("Enter admin password to reset", type="password")
-
-    if admin_password == st.secrets["admin_password"]:
-        if st.button("Reset Visitor Counter"):
-            reset_counter()
-    elif admin_password:
-        st.error("❌ Incorrect password")
-
 st.set_page_config(
     page_title="Pretraga PoPV - PoTP",
     layout="wide"
@@ -92,6 +76,23 @@ if "counted" not in st.session_state:
     st.session_state.counted = True
 else:
     count = load_counter()
+
+# Function to reset counter
+def reset_counter():
+    save_counter(0)
+    st.session_state.counted = False  # allow recount in session
+    st.success("✅ Visitor counter has been reset.")
+
+# Admin-only reset section
+with st.sidebar.expander("🔐 Admin Panel"):
+    admin_password = st.text_input("Enter admin password to reset", type="password")
+
+    if admin_password == st.secrets["admin_password"]:
+        if st.button("Reset Visitor Counter"):
+            reset_counter()
+    elif admin_password:
+        st.error("❌ Incorrect password")
+
 
 st.markdown("""
     <style>
