@@ -7,6 +7,7 @@ import socket
 import pandas as pd
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
+import requests
 
 
 st.set_page_config(
@@ -23,17 +24,31 @@ credentials = ServiceAccountCredentials.from_json_keyfile_dict(
 )
 gc = gspread.authorize(credentials)
 
-# Open your Google Sheet by name (change "VisitorLog" to your sheet name)
+# Open your Google Sheet (change "logs_file" if needed)
 sheet = gc.open("logs_file").sheet1
 
+def get_ip():
+    """Get IP once per session (or fallback to 'unknown')"""
+    if "visitor_ip" not in st.session_state:
+        try:
+            response = requests.get("https://api.ipify.org?format=text", timeout=3)
+            st.session_state.visitor_ip = response.text
+        except:
+            st.session_state.visitor_ip = "unknown"
+    return st.session_state.visitor_ip
+
 def log_visit(count):
+    """Log timestamp, count, and IP to Google Sheet safely"""
     timestamp = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
-    ip = "unknown"  # Replace with actual IP if needed
+    ip = get_ip()
+
     try:
         sheet.append_row([timestamp, count, ip])
-        #st.write("✅ Visit logged:", timestamp, count, ip)
+        # Optional debug:
+        # st.write("✅ Visit logged:", timestamp, count, ip)
     except Exception as e:
         st.error(f"❌ Failed to log visit: {e}")
+
 
 # --- Increment the counter only once per session ---
 if "counted" not in st.session_state:
