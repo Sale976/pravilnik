@@ -24,6 +24,9 @@ credentials = ServiceAccountCredentials.from_json_keyfile_dict(
 )
 gc = gspread.authorize(credentials)
 
+# Open your Google Sheet (change "logs_file" if needed)
+sheet = gc.open("logs_file").sheet1
+
 # --- Config ---
 COUNTER_FILE = Path("data/visitor_counter.json")
 COUNTER_FILE.parent.mkdir(parents=True, exist_ok=True)
@@ -46,8 +49,6 @@ def reset_counter():
     save_counter(0)
     st.session_state.counted = False  # allow recount in session
 
-# Open your Google Sheet (change "logs_file" if needed)
-sheet = gc.open("logs_file").sheet1
 
 def get_ip():
     try:
