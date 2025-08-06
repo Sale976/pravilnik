@@ -27,7 +27,7 @@ credentials = ServiceAccountCredentials.from_json_keyfile_dict(
 gc = gspread.authorize(credentials)
 
 # Open your Google Sheet (change "logs_file" if needed)
-sheet = gc.open("logs_file").Sheet1
+sheet = gc.open("logs_file").worksheet("Sheet1")
 
 
 def get_ip():
