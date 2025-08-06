@@ -27,15 +27,7 @@ credentials = ServiceAccountCredentials.from_json_keyfile_dict(
 gc = gspread.authorize(credentials)
 
 # Open your Google Sheet (change "logs_file" if needed)
-sheet = gc.open("logs_file").sheet1
-
-if st.button("TEST WRITE ROW"):
-    try:
-        test_row = ["Test", "123", "127.0.0.1"]
-        sheet.append_row(test_row)
-        st.success("✅ Test row written.")
-    except Exception as e:
-        st.error(f"❌ Failed: {e}")
+sheet = gc.open("logs_file").Sheet1
 
 
 def get_ip():
