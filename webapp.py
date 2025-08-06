@@ -50,16 +50,6 @@ def log_visit(count):
     except Exception as e:
         st.error(f"❌ Failed to log visit: {e}")
 
-
-# --- Increment the counter only once per session ---
-if "counted" not in st.session_state:
-    count = load_counter() + 1
-    save_counter(count)
-    log_visit(count)  # 👈 CALL IT HERE
-    st.session_state.counted = True
-else:
-    count = load_counter()
-
 # --- Config ---
 COUNTER_FILE = Path("data/visitor_counter.json")
 COUNTER_FILE.parent.mkdir(parents=True, exist_ok=True)
@@ -77,6 +67,15 @@ def load_counter():
 def save_counter(count):
     with open(COUNTER_FILE, "w") as f:
         json.dump({"count": count}, f)
+
+# --- Increment the counter only once per session ---
+if "counted" not in st.session_state:
+    count = load_counter() + 1
+    save_counter(count)
+    log_visit(count)  # 👈 CALL IT HERE
+    st.session_state.counted = True
+else:
+    count = load_counter()
 
 # Function to reset counter
 def reset_counter():
