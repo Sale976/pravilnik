@@ -17,6 +17,9 @@ st.set_page_config(
     layout="wide"
 )
 
+st.write("admin_password" in st.secrets)
+st.write("google_service_account" in st.secrets)
+
 # Google Sheets API scope
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
 
