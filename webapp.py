@@ -29,6 +29,15 @@ gc = gspread.authorize(credentials)
 # Open your Google Sheet (change "logs_file" if needed)
 sheet = gc.open("logs_file").sheet1
 
+if st.button("🔁 Test Google Sheet Write"):
+    try:
+        now = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+        sheet.append_row([now, "TestCount", "127.0.0.1"])
+        st.success("✅ Test row written to Google Sheet.")
+    except Exception as e:
+        st.error(f"❌ Test write failed: {e}")
+
+
 def get_ip():
     try:
         response = requests.get("https://api64.ipify.org?format=json", timeout=3)
