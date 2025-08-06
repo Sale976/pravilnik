@@ -27,7 +27,7 @@ credentials = ServiceAccountCredentials.from_json_keyfile_dict(
 gc = gspread.authorize(credentials)
 
 # Open your Google Sheet (change "logs_file" if needed)
-sheet = gc.open_by_url("https://docs.google.com/spreadsheets/d/1jXw517eCBbEWvhgJ3uxxASnTZ5kdqyWZT0e9ke-KQ4U/edit?gid=0#gid=0").worksheet("Sheet1")
+sheet = gc.open_by_url("https://docs.google.com/spreadsheets/d/1jXw517eCBbEWvhgJ3uxxASnTZ5kdqyWZT0e9ke-KQ4U/edit?gid=0#gid=0").worksheet("logs")
 
 # Test button
 if st.button("WRITE TEST ROW"):
