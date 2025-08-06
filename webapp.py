@@ -31,33 +31,41 @@ sheet = gc.open("logs_file").sheet1
 
 def get_ip():
     try:
-        response = requests.get("https://api64.ipify.org?format=json", timeout=2)
+        response = requests.get("https://api64.ipify.org?format=json", timeout=3)
         if response.status_code == 200:
             return response.json().get("ip", "unknown")
-    except Exception as e:
-        st.write("IP fetch error:", e)
+    except Exception:
+        pass
     return "unknown"
 
-#def get_ip():
-    #try:
-        #response = requests.get("https://api64.ipify.org?format=json", timeout=3)
-        #if response.status_code == 200:
-            #return response.json().get("ip", "unknown")
-    #except Exception:
-        #pass
-    #return "unknown"
-
 def log_visit(count):
-    """Log timestamp, count, and IP to Google Sheet safely"""
     timestamp = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
     ip = get_ip()
 
+    st.write("🛠 Logging visit:")
+    st.write("Timestamp:", timestamp)
+    st.write("Count:", count)
+    st.write("IP:", ip)
+
     try:
         sheet.append_row([timestamp, count, ip])
+        st.success("✅ Visit successfully logged.")
+    except Exception as e:
+        st.error("❌ Error while logging visit:")
+        st.error(e)
+
+
+#def log_visit(count):
+    #"""Log timestamp, count, and IP to Google Sheet safely"""
+    #timestamp = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+    #ip = get_ip()
+
+    #try:
+        #sheet.append_row([timestamp, count, ip])
         # Optional debug:
         # st.write("✅ Visit logged:", timestamp, count, ip)
-    except Exception as e:
-        st.error(f"❌ Failed to log visit: {e}")
+    #except Exception as e:
+        #st.error(f"❌ Failed to log visit: {e}")
 
 # --- Config ---
 COUNTER_FILE = Path("data/visitor_counter.json")
