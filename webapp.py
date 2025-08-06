@@ -230,17 +230,19 @@ with col2:
                 for line in f:
                     line_lower = line.lower()
                     match_found = False
-
+                    
                     if search_mode == "Tačna fraza":
-                        match_found = query in line_lower
+                        pattern = r'\b' + re.escape(query) + r'\b'
+                        match_found = re.search(pattern, line_lower)
                     elif search_mode == "Bilo koja reč":
-                        match_found = any(re.search(rf"\b{re.escape(word)}\b", line_lower) for word in words)
-
+                        match_found = any(re.search(r'\b' + re.escape(word) + r'\b', line_lower) for word in words)
+                        
                     if match_found:
                         highlighted = line.strip()
+                        
                         if search_mode == "Tačna fraza":
                             highlighted = re.sub(
-                                f"({re.escape(query)})",
+                                f"\\b({re.escape(query)})\\b",
                                 r"<mark>\1</mark>",
                                 highlighted,
                                 flags=re.IGNORECASE
@@ -248,13 +250,14 @@ with col2:
                         else:
                             for word in words:
                                 highlighted = re.sub(
-                                    rf"\b({re.escape(word)})\b",
+                                    f"\\b({re.escape(word)})\\b",
                                     r"<mark>\1</mark>",
                                     highlighted,
                                     flags=re.IGNORECASE
                                 )
+                                
                         matching_lines.append(highlighted)
-
+        
         except FileNotFoundError:
             st.error(f"Greška: Fajl '{file_path}' nije pronađen.")
 
