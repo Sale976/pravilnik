@@ -29,6 +29,16 @@ gc = gspread.authorize(credentials)
 # Open your Google Sheet (change "logs_file" if needed)
 sheet = gc.open_by_url("https://docs.google.com/spreadsheets/d/1jXw517eCBbEWvhgJ3uxxASnTZ5kdqyWZT0e9ke-KQ4U/edit?gid=0#gid=0").worksheet("Sheet1")
 
+# Test button
+if st.button("WRITE TEST ROW"):
+    timestamp = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+    try:
+        sheet.append_row([timestamp, "123", "192.168.1.1"])
+        st.success("✅ Test row written to Google Sheet.")
+        st.write("📄 Title:", sheet.spreadsheet.title)
+        st.write("🔗 URL:", sheet.spreadsheet.url)
+    except Exception as e:
+        st.error(f"❌ Failed to write: {e}")
 
 # --- Config ---
 COUNTER_FILE = Path("data/visitor_counter.json")
