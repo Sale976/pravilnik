@@ -8,6 +8,7 @@ import pandas as pd
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import requests
+import string
 
 
 st.set_page_config(
@@ -216,7 +217,6 @@ with col1:
     )
     st.button("Obrišite rezultate pretrage", on_click=clear_search)
 
-import string
 
 def clean_and_tokenize(text):
     # Remove punctuation, make lowercase, and split into words
