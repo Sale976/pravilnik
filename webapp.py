@@ -216,6 +216,14 @@ with col1:
     )
     st.button("Obrišite rezultate pretrage", on_click=clear_search)
 
+import string
+
+def clean_and_tokenize(text):
+    # Remove punctuation, make lowercase, and split into words
+    translator = str.maketrans(string.punctuation, " " * len(string.punctuation))
+    cleaned = text.translate(translator)
+    return cleaned.lower().split()
+
 with col2:
     st.markdown("<div style='margin-top: 32px;'>", unsafe_allow_html=True)
 
@@ -228,18 +236,21 @@ with col2:
         try:
             with open(file_path, "r", encoding="utf-8") as f:
                 for line in f:
-                    line_lower = line.lower()
+                    line_clean = line.strip()
+                    words_in_line = clean_and_tokenize(line_clean)
+                    
                     match_found = False
                     
                     if search_mode == "Tačna fraza":
-                        pattern = r'\b' + re.escape(query) + r'\b'
-                        match_found = re.search(pattern, line_lower)
+                        # Check if the exact phrase is in line using word boundaries
+                        pattern = r'\b' + re.escape(query.lower()) + r'\b'
+                        match_found = re.search(pattern, line_clean.lower())
+                    
                     elif search_mode == "Bilo koja reč":
-                        match_found = any(re.search(r'\b' + re.escape(word) + r'\b', line_lower) for word in words)
-                        
+                        match_found = any(word.lower() in words_in_line for word in words)
+                    
                     if match_found:
-                        highlighted = line.strip()
-                        
+                        highlighted = line_clean
                         if search_mode == "Tačna fraza":
                             highlighted = re.sub(
                                 f"\\b({re.escape(query)})\\b",
