@@ -29,6 +29,10 @@ gc = gspread.authorize(credentials)
 # Open your Google Sheet (change "logs_file" if needed)
 sheet = gc.open_by_url("https://docs.google.com/spreadsheets/d/1jXw517eCBbEWvhgJ3uxxASnTZ5kdqyWZT0e9ke-KQ4U/edit?gid=0#gid=0").worksheet("Sheet1")
 
+st.write("📄 Sheet title:", "logs_file")
+st.write("🔗 Sheet URL:", "https://docs.google.com/spreadsheets/d/1jXw517eCBbEWvhgJ3uxxASnTZ5kdqyWZT0e9ke-KQ4U/edit?gid=0#gid=0").worksheet("Sheet1")
+
+
 if st.button("WRITE TEST ROW"):
     try:
         sheet.append_row(["Streamlit Test", "456", "127.0.0.1"])
