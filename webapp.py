@@ -29,16 +29,14 @@ gc = gspread.authorize(credentials)
 # Open your Google Sheet (change "logs_file" if needed)
 sheet = gc.open("logs_file").sheet1
 
-if st.button("🔁 Test Google Sheet Write"):
+if st.button("TEST WRITE ROW"):
     try:
-        now = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
-        sheet.append_row([now, "TestCount", "127.0.0.1"])
-        st.success("✅ Test row written to Google Sheet.")
+        test_row = ["Test", "123", "127.0.0.1"]
+        sheet.append_row(test_row)
+        st.success("✅ Test row written.")
     except Exception as e:
-        st.error(f"❌ Test write failed: {e}")
+        st.error(f"❌ Failed: {e}")
 
-st.write("📄 Connected Sheet URL:")
-st.write(sheet.spreadsheet.url)
 
 def get_ip():
     try:
