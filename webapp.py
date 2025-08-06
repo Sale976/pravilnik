@@ -9,6 +9,7 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import requests
 import string
+import snowballstemmer
 
 
 st.set_page_config(
@@ -218,11 +219,26 @@ with col1:
     st.button("Obrišite rezultate pretrage", on_click=clear_search)
 
 
-def clean_and_tokenize(text):
+#def clean_and_tokenize(text):
     # Remove punctuation, make lowercase, and split into words
-    translator = str.maketrans(string.punctuation, " " * len(string.punctuation))
-    cleaned = text.translate(translator)
-    return cleaned.lower().split()
+    #translator = str.maketrans(string.punctuation, " " * len(string.punctuation))
+    #cleaned = text.translate(translator)
+    #return cleaned.lower().split()
+
+# --- Stemmer setup ---
+stemmer = snowballstemmer.stemmer("serbian")
+
+def clean_and_tokenize(text):
+    """Remove punctuation and split to words."""
+    return text.translate(str.maketrans('', '', string.punctuation)).lower().split()
+
+def stem_words(word_list):
+    """Return list of stemmed lowercase words."""
+    return [stemmer.stemWord(word.lower()) for word in word_list]
+
+def find_words_by_stem(stem_target, line_words):
+    """Return list of words in line matching the target stem."""
+    return [word for word in line_words if stemmer.stemWord(word.lower()) == stem_target]
 
 with col2:
     st.markdown("<div style='margin-top: 32px;'>", unsafe_allow_html=True)
@@ -242,16 +258,21 @@ with col2:
                     match_found = False
                     
                     if search_mode == "Tačna fraza":
-                        # Check if the exact phrase is in line using word boundaries
+                        # Exact phrase using word boundaries
                         pattern = r'\b' + re.escape(query.lower()) + r'\b'
                         match_found = re.search(pattern, line_clean.lower())
                     
                     elif search_mode == "Bilo koja reč":
-                        match_found = any(word.lower() in words_in_line for word in words)
-                    
+                        # Match stemmed forms
+                        query_stems = stem_words(words)
+                        line_stems = stem_words(words_in_line)
+                        match_found = any(qs in line_stems for qs in query_stems)
+                        
                     if match_found:
                         highlighted = line_clean
+                        
                         if search_mode == "Tačna fraza":
+                            # Highlight exact phrase
                             highlighted = re.sub(
                                 f"\\b({re.escape(query)})\\b",
                                 r"<mark>\1</mark>",
@@ -259,19 +280,22 @@ with col2:
                                 flags=re.IGNORECASE
                             )
                         else:
-                            for word in words:
-                                highlighted = re.sub(
-                                    f"\\b({re.escape(word)})\\b",
-                                    r"<mark>\1</mark>",
-                                    highlighted,
-                                    flags=re.IGNORECASE
-                                )
-                                
+                            # Highlight each word in line that matches query stems
+                            for qword in words:
+                                qstem = stemmer.stemWord(qword.lower())
+                                matches = find_words_by_stem(qstem, words_in_line)
+                                for actual_word in set(matches):
+                                    highlighted = re.sub(
+                                        f"\\b({re.escape(actual_word)})\\b",
+                                        r"<mark>\1</mark>",
+                                        highlighted,
+                                        flags=re.IGNORECASE
+                                    )
+                                    
                         matching_lines.append(highlighted)
-        
         except FileNotFoundError:
             st.error(f"Greška: Fajl '{file_path}' nije pronađen.")
-
+        
         if matching_lines:
             st.markdown(
                 "<h3 style='color: #0077b6; margin-top: -20px; font-size: 20px;'>🔍 Rezultati pretrage:</h3>",
