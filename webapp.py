@@ -260,20 +260,18 @@ with col2:
 
         if matching_lines:
             st.markdown(
-                "<h3 style='color: #0077b6; margine-top: -20px; font-size: 20px;'>🔍 Rezultati pretrage:</h3>",
+                "<h3 style='color: #0077b6; margin-top: -20px; font-size: 20px;'>🔍 Rezultati pretrage:</h3>",
                 unsafe_allow_html=True
             )
-
             for match in matching_lines:
                 acronym_match = re.search(r"\((PoPV|PoTP)\)", match)
                 page_match = re.search(r"[Ss]tr\.*\s*(\d+)", match)
-
+                
                 acronym = acronym_match.group(1) if acronym_match else None
                 page_number = page_match.group(1) if page_match else None
-
+                
                 file_link = ""
                 if acronym and page_number:
-                    # GitHub-hosted PDFs via jsDelivr
                     pdf_links = {
                         "PoPV": "https://cdn.jsdelivr.net/gh/Sale976/pravilnik/popv.pdf",
                         "PoTP": "https://cdn.jsdelivr.net/gh/Sale976/pravilnik/potp.pdf"
@@ -287,13 +285,13 @@ with col2:
                             f"style='color:#0077b6; font-weight: bold; text-decoration: none;'>"
                             f"📄 Pravilnik u PDF-u</a>"
                         )
-
+                        
                 st.markdown(
                     f"""
                     <div style='display: flex; flex-direction: row; align-items: center;
-                                gap: 10px; padding: 5px; background-color: #B9F1C0;
-                                border-left: 4px solid #0077b6; margin-bottom: 5px;
-                                font-size:17px; flex-wrap: wrap;'>
+                            gap: 10px; padding: 5px; background-color: #B9F1C0;
+                            border-left: 4px solid #0077b6; margin-bottom: 5px;
+                            font-size:17px; flex-wrap: wrap;'>
                         <div>{match}</div>
                         <div>{file_link}</div>
                     </div>
@@ -302,7 +300,3 @@ with col2:
                 )
         else:
             st.info("Nisu pronađeni odgovarajući rezultati.")
-    else:
-        st.info("")
-
-    st.markdown("</div>", unsafe_allow_html=True)
