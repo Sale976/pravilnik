@@ -31,12 +31,21 @@ sheet = gc.open("logs_file").sheet1
 
 def get_ip():
     try:
-        response = requests.get("https://api64.ipify.org?format=json", timeout=3)
+        response = requests.get("https://api64.ipify.org?format=json", timeout=2)
         if response.status_code == 200:
             return response.json().get("ip", "unknown")
-    except Exception:
-        pass
+    except Exception as e:
+        st.write("IP fetch error:", e)
     return "unknown"
+
+#def get_ip():
+    #try:
+        #response = requests.get("https://api64.ipify.org?format=json", timeout=3)
+        #if response.status_code == 200:
+            #return response.json().get("ip", "unknown")
+    #except Exception:
+        #pass
+    #return "unknown"
 
 def log_visit(count):
     """Log timestamp, count, and IP to Google Sheet safely"""
