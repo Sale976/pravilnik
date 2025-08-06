@@ -29,45 +29,6 @@ gc = gspread.authorize(credentials)
 # Open your Google Sheet (change "logs_file" if needed)
 sheet = gc.open("logs_file").worksheet("Sheet1")
 
-
-def get_ip():
-    try:
-        response = requests.get("https://api64.ipify.org?format=json", timeout=3)
-        if response.status_code == 200:
-            return response.json().get("ip", "unknown")
-    except Exception:
-        pass
-    return "unknown"
-
-def log_visit(count):
-    timestamp = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
-    ip = get_ip()
-
-    st.write("🛠 Logging visit:")
-    st.write("Timestamp:", timestamp)
-    st.write("Count:", count)
-    st.write("IP:", ip)
-
-    try:
-        sheet.append_row([timestamp, count, ip])
-        st.success("✅ Visit successfully logged.")
-    except Exception as e:
-        st.error("❌ Error while logging visit:")
-        st.error(e)
-
-
-#def log_visit(count):
-    #"""Log timestamp, count, and IP to Google Sheet safely"""
-    #timestamp = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
-    #ip = get_ip()
-
-    #try:
-        #sheet.append_row([timestamp, count, ip])
-        # Optional debug:
-        # st.write("✅ Visit logged:", timestamp, count, ip)
-    #except Exception as e:
-        #st.error(f"❌ Failed to log visit: {e}")
-
 # --- Config ---
 COUNTER_FILE = Path("data/visitor_counter.json")
 COUNTER_FILE.parent.mkdir(parents=True, exist_ok=True)
@@ -85,6 +46,28 @@ def load_counter():
 def save_counter(count):
     with open(COUNTER_FILE, "w") as f:
         json.dump({"count": count}, f)
+
+def get_ip():
+    try:
+        response = requests.get("https://api64.ipify.org?format=json", timeout=3)
+        if response.status_code == 200:
+            return response.json().get("ip", "unknown")
+    except Exception:
+        pass
+    return "unknown"
+
+def log_visit(count):
+    """Log timestamp, count, and IP to Google Sheet safely"""
+    timestamp = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+    ip = get_ip()
+
+    try:
+        sheet.append_row([timestamp, count, ip])
+        # Optional debug:
+        # st.write("✅ Visit logged:", timestamp, count, ip)
+    except Exception as e:
+        st.error(f"❌ Failed to log visit: {e}")
+
 
 # --- Increment the counter only once per session ---
 if "counted" not in st.session_state:
