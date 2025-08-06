@@ -29,6 +29,14 @@ gc = gspread.authorize(credentials)
 # Open your Google Sheet (change "logs_file" if needed)
 sheet = gc.open("logs_file").worksheet("Sheet1")
 
+if st.button("WRITE TEST ROW"):
+    try:
+        sheet.append_row(["Streamlit Test", "456", "127.0.0.1"])
+        st.success("✅ Test row written to Google Sheet.")
+        st.write("🔗 Sheet URL:", sheet.spreadsheet.url)
+    except Exception as e:
+        st.error(f"❌ Failed to write to sheet: {e}")
+
 # --- Config ---
 COUNTER_FILE = Path("data/visitor_counter.json")
 COUNTER_FILE.parent.mkdir(parents=True, exist_ok=True)
