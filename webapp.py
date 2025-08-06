@@ -74,6 +74,7 @@ def log_visit(count):
 
     try:
         sheet.append_row([timestamp, count, ip])
+        time.sleep(2)
         # Optional debug:
         # st.write("✅ Visit logged:", timestamp, count, ip)
     except Exception as e:
