@@ -37,6 +37,8 @@ if st.button("🔁 Test Google Sheet Write"):
     except Exception as e:
         st.error(f"❌ Test write failed: {e}")
 
+st.write("📄 Connected Sheet URL:")
+st.write(sheet.spreadsheet.url)
 
 def get_ip():
     try:
