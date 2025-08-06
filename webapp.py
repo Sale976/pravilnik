@@ -229,13 +229,12 @@ with col2:
             with open(file_path, "r", encoding="utf-8") as f:
                 for line in f:
                     line_lower = line.lower()
-
-                    # --- Search Logic based on mode ---
                     match_found = False
+
                     if search_mode == "Tačna fraza":
                         match_found = query in line_lower
                     elif search_mode == "Bilo koja reč":
-                        match_found = any(word in line_lower for word in words)
+                        match_found = any(re.search(rf"\b{re.escape(word)}\b", line_lower) for word in words)
 
                     if match_found:
                         highlighted = line.strip()
@@ -249,16 +248,15 @@ with col2:
                         else:
                             for word in words:
                                 highlighted = re.sub(
-                                    f"({re.escape(word)})",
+                                    rf"\b({re.escape(word)})\b",
                                     r"<mark>\1</mark>",
                                     highlighted,
                                     flags=re.IGNORECASE
                                 )
-
                         matching_lines.append(highlighted)
+
         except FileNotFoundError:
             st.error(f"Greška: Fajl '{file_path}' nije pronađen.")
-
 
         if matching_lines:
             st.markdown(
