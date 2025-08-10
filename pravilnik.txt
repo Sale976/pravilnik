@@ -24,7 +24,7 @@ odnos najvece nominalne snage -- clan 24(PoPV) str. 30
 sistem za upravljanje-opste odredbe (volan) -- clan 25(PoPV) str.31
 kocni sistem-opste odredbe (kocnice) -- clan 26(PoPV) str. 31
 kocne obloge (plocice, pakne, diskovi, dobosi) -- clan 27(PoPV) str. 31
-pneumatski kocni sistem (kocnice) -- clan 28(PoPV) str. 31
+pneumatski kocni sistem (kocnice) -- clan 28(PoPV) str. 32
 sistem za kocenje-funkcije kocnog sistema (radno, pomocno, parkirno, dugotrajno usporavanje) -- clan 29(PoPV) str. 33
 abs (kocenje) -- clan 30(PoPV) str. 34
 radno kocenje -- clan 31(PoPV) str. 34
