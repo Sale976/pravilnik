@@ -71,8 +71,8 @@ normalna vidljivost (podela) -- član 71(PoPV) str. 64
 vetrobran i sva stakla -- član 72(PoPV) str.  str. 64
 brisači vetrobrana -- član 73(PoPV) str. 65
 perači vetrobrana -- član 74(PoPV) str. 66
-vozačko ogledalo -- član 75(PoPV) str. 66
-vozačko ogledalo N2, N3 -- 75a(PoPV) str. 68
+vozačko ogledalo (retrovizor) -- član 75(PoPV) str. 66
+vozačko ogledalo N2, N3 (retrovizor) -- 75a(PoPV) str. 68
 zvučni znakovi (sirena) -- član 76(PoPV) str. 68
 zvučni znakovi - jačina zvuka(db) (sirena) -- član 77(PoPV) str. 69
 buka vozila -- član 78(PoPV) str. 69
@@ -119,12 +119,12 @@ TNG, KPG (prelazne i završne odredbe) -- član 117(PoPV) str. 94
 izduvni gasovi (prelazne i završne odredbe) -- član 118a(PoPV) str. 94
 izduvni gasovi (prelazne i završne odredbe) -- član 118b(PoPV) str. 94
 taksi Euro 3 (prelazne i završne odredbe) -- član 119(PoPV) str. 95
-coc, brisač i perač vetrabrana za T i C (prelazne i završne odredbe) -- član 120(PoPV) str. 95
+coc, brisač i perač vetrobrana za T i C (prelazne i završne odredbe) -- član 120(PoPV) str. 95
 homologacija za N (prelazne i završne odredbe) -- član 120a(PoPV) str. 95
 radno kočenje za R i S (prelazne i završne odredbe) -- član 120b(PoPV) str. 95
 vrsta N specijalna (prelazne i završne odredbe) -- član 120v(PoPV) str. 95
 konture vozila (prelazne i završne odredbe) -- član 121(PoPV) str. 95
-vozačko ogledalo N2, N3 (prelazne i završne odredbe) -- član 121a(PoPV) str. 96
+vozačko ogledalo N2, N3 (retrovizor, prelazne i završne odredbe) -- član 121a(PoPV) str. 96
 tahograf (prelazne i završne odredbe) -- član 122(PoPV) str. 96
 kabina ili ram (prelazne i završne odredbe) -- član 123(PoPV) str. 96
 ---------------------------------------------------------------------
