@@ -71,8 +71,8 @@ normalna vidljivost (podela) -- clan 71(PoPV) str. 64
 vetrobran i sva stakla -- clan 72(PoPV) str.  str. 64
 brisaci vetrobrana -- clan 73(PoPV) str. 65
 peraci vetrobrana -- clan 74(PoPV) str. 66
-vozacko ogledalo -- clan 75(PoPV) str. 66
-vozacko ogledalo N2, N3 -- 75a(PoPV) str. 68
+vozacko ogledalo (retrovizor) -- clan 75(PoPV) str. 66
+vozacko ogledalo N2, N3 (retrovizor) -- 75a(PoPV) str. 68
 zvucni znakovi (sirena) -- clan 76(PoPV) str. 68
 zvucni znakovi - jacina zvuka(db) (sirena) -- clan 77(PoPV) str. 69
 buka vozila -- clan 78(PoPV) str. 69
@@ -124,7 +124,7 @@ homologacija za N (prelazne i zavrsne odredbe) -- clan 120a(PoPV) str. 95
 radno kocenje za R i S (prelazne i zavrsne odredbe) -- clan 120b(PoPV) str. 95
 vrsta N specijalna (prelazne i zavrsne odredbe) -- clan 120v(PoPV) str. 95
 konture vozila (prelazne i zavrsne odredbe) -- clan 121(PoPV) str. 95
-vozacko ogledalo N2, N3 (prelazne i zavrsne odredbe) -- clan 121a(PoPV) str. 96
+vozacko ogledalo N2, N3 ( retrovizor prelazne i zavrsne odredbe) -- clan 121a(PoPV) str. 96
 tahograf (prelazne i zavrsne odredbe) -- clan 122(PoPV) str. 96
 kabina ili ram (prelazne i zavrsne odredbe) -- clan 123(PoPV) str. 96
 ---------------------------------------------------------------------
@@ -152,7 +152,7 @@ Prilog 1:  identifikacija vozila -- tacka 0(PoTP) str. 26
 Prilog 1:  uredaj za upravljanje (volan) -- tacka 1(PoTP) str. 26
 Prilog 1:  uredaj za zaustavljanje (kocnice) -- tacka 2(PoTP) str. 27
 Prilog 1:  svetlosni i svetlosno-signalni uredaji (svetla) -- tacka 3(PoTP) str. 31
-Prilog 1:  uredaji koji omogucavaju normalnu vidljivost (vetrobran, ogledalo) -- tacka 4(PoTP) str. 34
+Prilog 1:  uredaji koji omogucavaju normalnu vidljivost (vetrobran, ogledalo - retrovizor, uredjaj za kvasenje, brisanje) -- tacka 4(PoTP) str. 34
 Prilog 1:  uredaji za davanje zvucnih znakova (sirena) -- tacka 5(PoTP) str. 35
 Prilog 1:  uredaji za kontrolu i davanje znakova (odometar, tahograf) -- tacka 6(PoTP) str. 35
 Prilog 1:  uredaji za odvodenje i regulisanje izduvnih gasova (auspuh) -- tacka 7(PoTP) str. 36
