@@ -1,0 +1,167 @@
+pravilnik propisuje -- član 1(PoPV) str. 1
+coc (za nova vozila) -- član 2(PoPV) str. 2
+izrazi korišteni u pravilniku -- član 4(PoPV) str. 3
+uređaji i oprema na vozilima -- član 5(PoPV) str. 8
+vrsta L -- član 6(PoPV) str. 9
+vrsta M -- član 7(PoPV) str. 10
+vrsta N -- član 8(PoPV) str. 11
+uslovi za vozila vrste N -- član 9(PoPV) str. 11
+vrsta O -- član 10(PoPV) str. 14
+oblik karoserije za vozila vrste M, N, O -- član 11(PoPV) str. 15
+vrsta T, Tm ,TR i C -- član 12(PoPV) str. 20
+vrsta R, S -- član 13(PoPV) str. 21
+priključak za izvođenje radova za vozila vrste R i S -- član 14(PoPV) str. 22
+vrsta K -- član 15(PoPV) str. 23
+terenska vozila - podvrsta G -- član 16(PoPV) str. 23
+dužina vozila -- član 17(PoPV) str. 23
+širina vozila -- član 18(PoPV) str. 25
+visina vozila, klirens -- član 19(PoPV) str. 25
+vožnja u krug -- član 20(PoPV) str. 26
+najveća dozvoljena ukupna masa motornog vozila i prikolice -- član 21(PoPV) str. 26
+osovinsko opterećenje -- član 22(PoPV) str. 28
+najveća dozvoljena masa vozila sa točkovima od metala, pune gume itd -- član 23(PoPV) str. 29
+odnos najveće nominalne snage -- član 24(PoPV) str. 30
+sistem za upravljanje-opšte odredbe (volan) -- član 25(PoPV) str.30
+kočni sistem-opšte odredbe (kočnice) -- član 26(PoPV) str. 31
+kočne obloge (pločice, pakne, diskovi, doboši) -- član 27(PoPV) str. 31
+pneumatski kočni sistem (kočnice) -- član 28(PoPV) str. 31
+sistem za kočenje-funkcije kočnog sistema (radno, pomoćno, parkirno, dugotrajno usporavanje) -- član 29(PoPV) str. 33
+abs (kočenje) -- član 30(PoPV) str. 34
+radno kočenje -- član 31(PoPV) str. 34
+električno kočenje (regenerativno) -- član 31a(PoPV) str. 35
+sistem za dugotrajno usporavanje -- član 32(PoPV) str. 36
+komande kočenja -- član 33(PoPV) str. 36
+servo -- član 34(PoPV) str. 37
+radno kočenje R -- član 35(PoPV) str. 37
+radno kočenje L, M, N, O -- član 36(PoPV) str. 38
+radno kočenje L1, L3 -- član 37(PoPV) str. 39
+radno kočenje L2, L5, L6, L7 -- član 38(PoPV) str. 39
+radno kočenje L4 -- član 39(PoPV) str. 40
+radno kočenje T, C, K, Tm, TR -- član 40(PoPV) str. 40
+normativi kočnih koeficijenata -- član 41(PoPV) str. 40
+svetlosno i svelosno signalni uređaji (vrste) -- član 42(PoPV) str. 45
+svetlosno i svelosno signalni uređaji (prednji deo vozila) -- član 43(PoPV) str. 45
+svetlosno i svelosno signalni uređaji (istovetni, udvojeni) -- član 44(PoPV) str. 45
+svetlosno i svelosno signalni uređaji (osvetljavanje puta) -- član 45(PoPV) str. 45
+osvetljavanje puta (podela) -- član 46(PoPV) str. 46
+glavni farovi -- član 47(PoPV) str. 47
+glavni farovi M, N (gasni izvor, nivelacija snopa, dinamičko praćenje, LED moduli) -- član 48(PoPV) str. 47
+svetlosni snop (kratka svetla) -- član 49(PoPV) str. 48
+svetla za vožnju unazad (rikverc svetlo) -- član 50(PoPV) str. 49
+svetla za maglu (maglenke) -- član 51(PoPV) str. 50
+farovi i svetlo za osvetljavanje radova -- član 53(PoPV) str. 50
+označavanje vozila (podela) -- član 55(PoPV) str. 51
+označavanje vozila (uslovi) -- član 56(PoPV) str. 51
+prednja poziciona svetla -- član 57(PoPV) str. 52
+zadnja poziciona svetla -- član 58(PoPV) str. 52
+dnevna svetla -- član 58a(PoPV) str. 53
+zadnje svetlo za maglu (maglenke) -- član 59(PoPV) str. 54
+parkirna svetla -- član 60(PoPV) str. 55
+gabaritna svetla -- član 61(PoPV) str. 55
+svetlo zadnje registarske tablice -- član 62(PoPV) str. 56
+rotaciona i trepćuća svetla (žuta, crvena, plava) -- član 63(PoPV) str. 57
+katadiopteri -- član 64(PoPV) str. 57
+svetla za označavanje vozila posebnih namena (taksi, obuka vozača, putna pomoć, gradski prevoz) -- član 65(PoPV) str. 59
+oznake dugih, teških i sporih vozila -- član 66(PoPV) str. 59
+reklamni natpisi -- član 67(PoPV) str. 61
+uređaji za davanje svetlosnih znakova (podela) -- član 68(PoPV) str. 61
+stop svetla -- član 69(PoPV) str. 61
+pokazivači pravca (žmigavci) -- član 70(PoPV) str. 62
+normalna vidljivost (podela) -- član 71(PoPV) str. 64
+vetrobran i sva stakla -- član 72(PoPV) str.  str. 64
+brisači vetrobrana -- član 73(PoPV) str. 65
+perači vetrobrana -- član 74(PoPV) str. 66
+vozačko ogledalo -- član 75(PoPV) str. 66
+vozačko ogledalo N2, N3 -- 75a(PoPV) str. 68
+zvučni znakovi (sirena) -- član 76(PoPV) str. 68
+zvučni znakovi - jačina zvuka(db) (sirena) -- član 77(PoPV) str. 69
+buka vozila -- član 78(PoPV) str. 69
+kontrola i davanje znakova (odometar, tahograf itd) -- član 79(PoPV) str. 70
+tahograf (uslovi) -- član 80(PoPV) str. 73
+izduvni sistem (auspuh) -- član 81(PoPV) str. 73
+izduvni gasovi - normativi -- član 82(PoPV) str. 74
+vučni uređaj (kuka) -- član 83(PoPV) str. 76
+uređaj za kretanje unazad (rikverc) -- član 84(PoPV) str. 77
+sistem za oslanjanje -- član 85(PoPV) str. 77
+pneumatici (gume) -- član 86(PoPV) str. 78
+etektrična instalacija (akumulator, elektro instalacija) -- član 87(PoPV) str. 78
+pogonski uređaj (motor) -- član 88(PoPV) str. 78
+prenos snage (menjač) -- član 89(PoPV) str. 79
+delovi vozila od posebnog značaja (karoserija, VIN, kabina ili ram) -- član 90(PoPV) str. 79
+boja, reklamne table i napisi -- član 91(PoPV) str. 82
+registarska tablica -- član 92(PoPV) str. 82
+površina za stajanje putnika -- član 93(PoPV) str. 83
+vrata na vozilima M2, M3, O -- član 94(PoPV) str. 83
+brave, vrata, poklopci -- član 95(PoPV) str. 85
+provetravanje u vozilu -- član 96(PoPV) str. 85
+sedišta, kabina -- član 97(PoPV) str. 85
+odmrzavanje i odmagljivanje vetrobrana, grejanje) -- član 98(PoPV) str. 86
+blatobrani -- član 99(PoPV) str. 86
+branici, zaštitnik od podletanja -- član 100(PoPV) str. 87
+sigurnosni pojasevi, bezbedonosna sedišta, nasloni za glavu -- član 101(PoPV) str. 88
+priključak za vuču (šlepanje) -- član 102(PoPV) str. 89
+neovlašćena upotreba vozila M1 -- član 103(PoPV) str. 89
+TNG, KPG -- član 104(PoPV) str. 89
+lako električno vozilo -- član 104a(PoPV) str. 90
+rezervni točak -- član 105(PoPV) str. 90
+aparat za gašenje požara -- član 106(PoPV) str. 91
+sigurnosni trougao -- član 107(PoPV) str. 91
+prva pomoć -- član 108(PoPV) str. 92
+klinasti podmetači -- član 109(PoPV) str. 92
+čekić za razbijanje stakla -- član 110(PoPV) str. 92
+svetloodbojni prsluk -- član 111(PoPV) str. 92
+uže ili poluga za vuču vozila -- član 112(PoPV) str. 92
+zimska oprema (zimske gume, lanci, lopata, period za zimsku opremu) -- član 113(PoPV) str. 93
+zaštitna kaciga za L vozila -- član 114(PoPV) str. 93
+čišćenje gusenica za vozila C -- član 115(PoPV) str. 94
+oprema za vozila Tm i S -- član 115a(PoPV) str. 94
+TNG, KPG (prelazne i završne odredbe) -- član 117(PoPV) str. 94
+izduvni gasovi (prelazne i završne odredbe) -- član 118a(PoPV) str. 94
+izduvni gasovi (prelazne i završne odredbe) -- član 118b(PoPV) str. 94
+taksi Euro 3 (prelazne i završne odredbe) -- član 119(PoPV) str. 95
+coc, brisač i perač vetrabrana za T i C (prelazne i završne odredbe) -- član 120(PoPV) str. 95
+homologacija za N (prelazne i završne odredbe) -- član 120a(PoPV) str. 95
+radno kočenje za R i S (prelazne i završne odredbe) -- član 120b(PoPV) str. 95
+vrsta N specijalna (prelazne i završne odredbe) -- član 120v(PoPV) str. 95
+konture vozila (prelazne i završne odredbe) -- član 121(PoPV) str. 95
+vozačko ogledalo N2, N3 (prelazne i završne odredbe) -- član 121a(PoPV) str. 96
+tahograf (prelazne i završne odredbe) -- član 122(PoPV) str. 96
+kabina ili ram (prelazne i završne odredbe) -- član 123(PoPV) str. 96
+---------------------------------------------------------------------
+boja vozila (određivanje boje vozila) -- član 24(PoTP) str. 13
+baza podataka, propisi, uputstva, stručna literatura, tehnička dokumentacija, elaborat, baždarenje -- član 27(PoTP) str. 14
+vrste tehničkog pregleda (podela) -- član 28(PoTP) str. 15
+uslovi za vršenje tehničkog pregleda -- član 29(PoTP) str. 15
+sumnja u tačnost podataka -- član 30(PoTP) str. 17
+tehnički pregled vozila (obuhvata) -- član 31(PoTP) str. 17
+tehnički pregled vozila (vrši se u celini) -- član 32(PoTP) str. 18
+ponovni tehnički pregled vozila -- član 33(PoTP) str. 18
+tehnički pregled vozila (obuhvata pregled uređaja, opreme itd) -- član 34(PoTP) str. 18
+utvrđivanje tehničkih karakteristika vozila -- član 35(PoTP) str. 19
+kontrolori (uslovi za kontrolore) -- član 36(PoTP) str. 19
+snimanje vršenja tehničkog pregleda (video sistem) -- član 37(PoTP) str. 19
+tehnologija vršenja tehničkog pregleda (minimalna vremena za vršenje tehničkog pregleda) -- član 38(PoTP) str. 20
+ID broj -- član 39(PoTP) str. 20
+evidencija -- član 40(PoTP) str. 20
+potvrda, registracioni list, izveštaj -- član 41(PoTP) str. 21
+tehnički pregled vozila na poligonu (poligon) -- član 42(PoTP) str. 22
+boja vozila -- član 44(PoTP) str. 23
+fotografija vozila (fotografosanje vozila) -- član 49(PoTP) str. 24
+registar pregledanih vozila (registar) -- član 50(PoTP) str. 24
+Prilog 1:  identifikacija vozila -- tačka 0(PoTP) str. 26
+Prilog 1:  uređaj za upravljanje (volan) -- tačka 1(PoTP) str. 26
+Prilog 1:  uređaj za zaustavljanje (kočnice) -- tačka 2(PoTP) str. 27
+Prilog 1:  svetlosni i svetlosno-signalni uređaji (svetla) -- tačka 3(PoTP) str. 31
+Prilog 1:  uređaji koji omogućavaju normalnu vidljivost (vetrobran, retrovizor) -- tačka 4(PoTP) str. 34
+Prilog 1:  uređaji za davanje zvučnih znakova (sirena) -- tačka 5(PoTP) str. 35
+Prilog 1:  uređaji za kontrolu i davanje znakova (odometar, tahograf) -- tačka 6(PoTP) str. 35
+Prilog 1:  uređaji za odvođenje i regulisanje izduvnih gasova (auspuh) -- tačka 7(PoTP) str. 36
+Prilog 1:  uređaj za spajanje vučnog i priključnog vozila (kuka) -- tačka 8(PoTP) str. 37
+Prilog 1:  uređaj za kretanje vozila unazad (rikverc) -- tačka 9(PoTP) str. 37
+Prilog 1:  uređaji za oslanjanje -- tačka 10(PoTP) str. 37
+Prilog 1:  uređaji za kretanje (pneumatici - gume) -- tačka 11(PoTP) str. 38
+Prilog 1:  elektro-uređaji i instalacija -- tačka 12(PoTP) str. 39
+Prilog 1:  pogonski uređaj (motor) -- tačka 13(PoTP) str. 39
+Prilog 1:  uređaj za prenos snage (menjač) -- tačka 14(PoTP) str. 40
+Prilog 1:  delovi vozila od posebnog značaja za bezbednost (karoserija, ram, VIN, ukrasni predmeti, oslonci za noge) -- tačka 15(PoTP) str. 41
+Prilog 1:  oprema vozila -- tačka 16(PoTP) str. 44
