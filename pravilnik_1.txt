@@ -152,7 +152,7 @@ Prilog 1:  identifikacija vozila -- tačka 0(PoTP) str. 26
 Prilog 1:  uređaj za upravljanje (volan) -- tačka 1(PoTP) str. 26
 Prilog 1:  uređaj za zaustavljanje (kočnice) -- tačka 2(PoTP) str. 27
 Prilog 1:  svetlosni i svetlosno-signalni uređaji (svetla) -- tačka 3(PoTP) str. 31
-Prilog 1:  uređaji koji omogućavaju normalnu vidljivost (vetrobran, retrovizor) -- tačka 4(PoTP) str. 34
+Prilog 1:  uređaji koji omogućavaju normalnu vidljivost (vetrobran, ogledalo - retrovizor, uređaj za kvašenje, brisanje - metlice) -- tačka 4(PoTP) str. 34
 Prilog 1:  uređaji za davanje zvučnih znakova (sirena) -- tačka 5(PoTP) str. 35
 Prilog 1:  uređaji za kontrolu i davanje znakova (odometar, tahograf) -- tačka 6(PoTP) str. 35
 Prilog 1:  uređaji za odvođenje i regulisanje izduvnih gasova (auspuh) -- tačka 7(PoTP) str. 36
