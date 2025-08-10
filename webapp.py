@@ -190,7 +190,7 @@ def clear_search():
     st.session_state.search_query = ""
 
 # --- File path ---
-file_path = "pravilnik_1.txt"
+file_path = "pravilnik.txt"
 
 # --- Create demo file if not exist ---
 try:
