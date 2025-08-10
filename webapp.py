@@ -135,11 +135,10 @@ search_mode = st.sidebar.radio(
 )
 
 st.sidebar.markdown("---")
-st.sidebar.markdown("")
-st.sidebar.markdown("")
-st.sidebar.markdown("")
-st.sidebar.markdown("")
-st.sidebar.markdown("")
+#st.sidebar.markdown("")
+#st.sidebar.markdown("")
+#st.sidebar.markdown("")
+#st.sidebar.markdown("")
 
 st.markdown("""
         <style>
@@ -159,7 +158,7 @@ st.sidebar.markdown(
     '''
     <div class="bottom-sidebar">
         <div style="font-size: 1rem; word-spacing: 3px;">📄 Verzija: v1.1.5</div>
-        <div style="font-size: 1rem; word-spacing: 3px;">🔧 Autor: Aleksandar & AI</div>
+        <div style="font-size: 1rem; word-spacing: 3px;">🔧 Autor: AI & Aleksandar</div>
     </div>
     ''',
     unsafe_allow_html=True
