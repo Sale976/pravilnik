@@ -115,7 +115,7 @@ zimska oprema (zimske gume, lanci, lopata, period za zimsku opremu) -- clan 113(
 zastitna kaciga za L vozila -- clan 114(PoPV) str. 93
 ciscenje gusenica za vozila C -- clan 115(PoPV) str. 94
 oprema za vozila Tm i S -- clan 115a(PoPV) str. 94
-prepravljena vozila (prelazne i zavrsne odredbe) -- clan 117(PoPV) str. 94
+prepravljena vozila TNG, KPG (prelazne i zavrsne odredbe) -- clan 117(PoPV) str. 94
 izduvni gasovi N i M2, M3 (prelazne i zavrsne odredbe) -- clan 118a(PoPV) str. 94
 izduvni gasovi N, G i M2, M3 (prelazne i zavrsne odredbe) -- clan 118b(PoPV) str. 94
 taksi Euro 3 (prelazne i zavrsne odredbe) -- clan 119(PoPV) str. 95
