@@ -119,12 +119,12 @@ prepravljena vozila TNG, KPG (prelazne i zavrsne odredbe) -- clan 117(PoPV) str.
 izduvni gasovi N i M2, M3 (prelazne i zavrsne odredbe) -- clan 118a(PoPV) str. 94
 izduvni gasovi N, G i M2, M3 (prelazne i zavrsne odredbe) -- clan 118b(PoPV) str. 94
 taksi Euro 3 (prelazne i zavrsne odredbe) -- clan 119(PoPV) str. 95
-coc, brisac i perac vetrabrana za T i C (prelazne i zavrsne odredbe) -- clan 120(PoPV) str. 95
+coc, brisac i perac vetrobrana za T i C (prelazne i zavrsne odredbe) -- clan 120(PoPV) str. 95
 homologacija za N (prelazne i zavrsne odredbe) -- clan 120a(PoPV) str. 95
 radno kocenje za R i S (prelazne i zavrsne odredbe) -- clan 120b(PoPV) str. 95
 vrsta N specijalna (prelazne i zavrsne odredbe) -- clan 120v(PoPV) str. 95
 konture vozila (prelazne i zavrsne odredbe) -- clan 121(PoPV) str. 95
-vozacko ogledalo N2, N3 ( retrovizor prelazne i zavrsne odredbe) -- clan 121a(PoPV) str. 96
+vozacko ogledalo N2, N3 ( retrovizor, prelazne i zavrsne odredbe) -- clan 121a(PoPV) str. 96
 tahograf (prelazne i zavrsne odredbe) -- clan 122(PoPV) str. 96
 kabina ili ram (prelazne i zavrsne odredbe) -- clan 123(PoPV) str. 96
 ---------------------------------------------------------------------
