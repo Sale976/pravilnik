@@ -21,7 +21,7 @@ najveca dozvoljena ukupna masa motornog vozila i prikolice -- clan 21(PoPV) str.
 osovinsko opterecenje -- clan 22(PoPV) str. 28
 najveca dozvoljena masa vozila sa tockovima od metala, pune gume itd -- clan 23(PoPV) str. 29
 odnos najvece nominalne snage -- clan 24(PoPV) str. 30
-sistem za upravljanje-opste odredbe (volan) -- clan 25(PoPV) str.30
+sistem za upravljanje-opste odredbe (volan) -- clan 25(PoPV) str.31
 kocni sistem-opste odredbe (kocnice) -- clan 26(PoPV) str. 31
 kocne obloge (plocice, pakne, diskovi, dobosi) -- clan 27(PoPV) str. 31
 pneumatski kocni sistem (kocnice) -- clan 28(PoPV) str. 31
