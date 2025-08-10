@@ -21,10 +21,10 @@ najveća dozvoljena ukupna masa motornog vozila i prikolice -- član 21(PoPV) st
 osovinsko opterećenje -- član 22(PoPV) str. 28
 najveća dozvoljena masa vozila sa točkovima od metala, pune gume itd -- član 23(PoPV) str. 29
 odnos najveće nominalne snage -- član 24(PoPV) str. 30
-sistem za upravljanje-opšte odredbe (volan) -- član 25(PoPV) str.30
+sistem za upravljanje-opšte odredbe (volan) -- član 25(PoPV) str.31
 kočni sistem-opšte odredbe (kočnice) -- član 26(PoPV) str. 31
 kočne obloge (pločice, pakne, diskovi, doboši) -- član 27(PoPV) str. 31
-pneumatski kočni sistem (kočnice) -- član 28(PoPV) str. 31
+pneumatski kočni sistem (kočnice) -- član 28(PoPV) str. 32
 sistem za kočenje-funkcije kočnog sistema (radno, pomoćno, parkirno, dugotrajno usporavanje) -- član 29(PoPV) str. 33
 abs (kočenje) -- član 30(PoPV) str. 34
 radno kočenje -- član 31(PoPV) str. 34
