@@ -3,6 +3,5 @@
         gspread
         oauth2client
         openpyxl
-        pandas
         python-csv
         snowballstemmer
