@@ -172,7 +172,7 @@ st.markdown(
     </p>
     </h2>
     <p style='font-size:18px; text-align: justify;'>
-        🛈 Pravilnik o Podeli Vozila, <b>br. 53 од 20. јуна 2025.</b>&#160; &#160; &#160;|&#160; &#160; &#160;Pravilnik o Tehničkom Pregledu, <b>br. 62 od 26. маја 2022.</b> 
+        🛈 Pravilnik o Podeli Motornih i Priključnih Vozila, <b>br. 53 од 20. јуна 2025.</b>&#160; &#160; &#160;|&#160; &#160; &#160;Pravilnik o Tehničkom Pregledu Vozila, <b>br. 62 od 26. маја 2022.</b> 
     </p>
     """,
     unsafe_allow_html=True
