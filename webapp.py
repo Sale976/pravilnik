@@ -3,7 +3,6 @@ import re
 import json
 from pathlib import Path
 from datetime import datetime
-# import pandas as pd
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import requests
