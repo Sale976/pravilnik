@@ -54,25 +54,25 @@ def get_ip():
         pass
     return "unknown"
 
-def log_visit(count):
-    """Log timestamp, count, and IP to Google Sheet safely"""
-    timestamp = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
-    ip = get_ip()
+# def log_visit(count):
+#     """Log timestamp, count, and IP to Google Sheet safely"""
+#     timestamp = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+#     ip = get_ip()
 
-    try:
-        sheet.append_row([timestamp, count, ip])
-        #time.sleep(2)
-        # Optional debug:
-        # st.write("✅ Visit logged:", timestamp, count, ip)
-    except Exception as e:
-        st.error(f"❌ Failed to log visit: {e}")
+#     try:
+#         sheet.append_row([timestamp, count, ip])
+#         #time.sleep(2)
+#         # Optional debug:
+#         # st.write("✅ Visit logged:", timestamp, count, ip)
+#     except Exception as e:
+#         st.error(f"❌ Failed to log visit: {e}")
 
 
 # --- Increment the counter only once per session ---
 if "counted" not in st.session_state:
     count = load_counter() + 1
     save_counter(count)
-    log_visit(count)  # 👈 CALL IT HERE
+    #log_visit(count)  # 👈 CALL IT HERE
     st.session_state.counted = True
 else:
     count = load_counter()
