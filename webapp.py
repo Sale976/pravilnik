@@ -62,14 +62,14 @@ def reset_counter():
     st.success("✅ Visitor counter has been reset.")
 
 # Admin-only reset section
-with st.sidebar.expander("🔐 Admin Panel"):
-    admin_password = st.text_input("Enter admin password to reset", type="password")
+# with st.sidebar.expander("🔐 Admin Panel"):
+#     admin_password = st.text_input("Enter admin password to reset", type="password")
 
-    if admin_password == st.secrets["admin_password"]:
-        if st.button("Reset Visitor Counter"):
-            reset_counter()
-    elif admin_password:
-        st.error("❌ Incorrect password")
+#     if admin_password == st.secrets["admin_password"]:
+#         if st.button("Reset Visitor Counter"):
+#             reset_counter()
+#     elif admin_password:
+#         st.error("❌ Incorrect password")
 
 
 st.markdown("""
