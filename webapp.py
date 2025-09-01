@@ -97,7 +97,7 @@ st.markdown("""
         .bottom-sidebar {
             position: fixed;
             bottom: 1rem;
-            left: justify;
+            left: 0;
             width: 15rem;
             text-align: center;
             font-size: 0.9rem;
