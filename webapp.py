@@ -95,7 +95,7 @@ st.sidebar.markdown("---")
 st.markdown("""
         <style>
         .bottom-sidebar {
-            position: fixed;
+            position: content;
             bottom: 1rem;
             left: 0;
             width: 15rem;
