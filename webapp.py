@@ -75,7 +75,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # --- Show counter in sidebar with st.metric ---
-st.sidebar.markdown(f'<div style="font-size: 30px;"><strong>{count}</strong></div>', unsafe_allow_html=True)
+# st.sidebar.markdown(f'<div style="font-size: 30px;"><strong>{count}</strong></div>', unsafe_allow_html=True)
 
 with st.sidebar.expander("ℹ️ Uputstvo"):
     st.markdown("""
