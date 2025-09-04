@@ -120,7 +120,7 @@ st.sidebar.markdown(
     details[open] div {
         animation: expandUp 0.3s ease-in-out;
     }
-    @keyframes expandUp {
+    @keyframes expandDown {
         from { opacity: 0; transform: translateY(10px); }
         to   { opacity: 1; transform: translateY(0); }
     }
