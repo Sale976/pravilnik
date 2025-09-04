@@ -139,7 +139,7 @@ search_mode = st.sidebar.radio(
     index=0
 )
 
-st.sidebar.markdown("---")
+# st.sidebar.markdown("---")
 
 # st.markdown("""
 #         <style>
