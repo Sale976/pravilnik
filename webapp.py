@@ -127,7 +127,7 @@ st.sidebar.markdown(
         margin-top: 8px;
     }
     details[open] div {
-        animation: expandUp 0.7s ease-in-out;
+        animation: expandUp 1s ease-in-out;
     }
     @keyframes expandUp {
         from { opacity: 0; transform: translateY(10px); }
