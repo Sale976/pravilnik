@@ -55,6 +55,29 @@ if "counted" not in st.session_state:
 else:
     count = load_counter()
 
+# --- About Section ---
+with st.sidebar.expander("ℹ️ About", expanded=False):
+    st.markdown(
+        """
+        **Web aplikacija za pretragu Pravilnika (PoPV, PoTP)**  
+        
+        🔍 Omogućava brzo pronalaženje članova i stranica u pravilnicima.  
+        
+        📄 Klikom na link otvarate odgovarajući PDF fajl na traženoj stranici.  
+        
+        👨‍💻 Autor: **Aleksandar Popov**  
+        🛠️ Izrađeno pomoću [Streamlit](https://streamlit.io)
+        """,
+        unsafe_allow_html=True
+    )
+
+# --- Footer Section ---
+st.sidebar.markdown(
+    '<div class="bottom-sidebar">Made with ❤️ by Aleksandar</div>',
+    unsafe_allow_html=True
+)
+
+
 st.markdown("""
     <style>
     /* Sidebar background */
