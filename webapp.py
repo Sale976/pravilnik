@@ -55,25 +55,27 @@ if "counted" not in st.session_state:
 else:
     count = load_counter()
 
-# --- About Section ---
-with st.sidebar.expander("ℹ️ O Aplikaciji", expanded=False):
-    st.markdown(
-        """
-        **Web aplikacija za pretragu Pravilnika (PoPV, PoTP)**  
-        
-        🔍 Omogućava brzo pronalaženje članova i stranica u pravilnicima.  
-        
-        📄 Klikom na link otvarate odgovarajući PDF fajl na traženoj stranici.  
-        
-        👨‍💻 Autor: **Aleksandar Popov**  
-        🛠️ Izrađeno pomoću [Streamlit](https://streamlit.io)
-        """,
-        unsafe_allow_html=True
-    )
 
-# --- Footer Section ---
+# --- Sidebar About Section at Bottom ---
 st.sidebar.markdown(
-    '<div class="bottom-sidebar"></div>',
+    """
+    <div style="
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 18rem;  /* default Streamlit sidebar width */
+        background-color: #f0f4f8;
+        border-top: 2px solid #0077b6;
+        padding: 12px;
+        font-size: 14px;
+        line-height: 1.4;
+        border-radius: 8px 8px 0 0;
+    ">
+        <b>ℹ️ O aplikaciji</b><br>
+        Ova aplikacija omogućava pretragu i pregled pravilnika.<br><br>
+        <i>Made with ❤️ by Aleksandar</i>
+    </div>
+    """,
     unsafe_allow_html=True
 )
 
