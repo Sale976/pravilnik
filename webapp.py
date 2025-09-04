@@ -91,6 +91,8 @@ search_mode = st.sidebar.radio(
     index=0
 )
 
+st.sidebar.markdown("---")
+
 # --- Sidebar About section pinned to bottom, expanding upward ---
 st.sidebar.markdown(
     """
@@ -139,7 +141,6 @@ st.sidebar.markdown(
     unsafe_allow_html=True
 )
 
-# st.sidebar.markdown("---")
 
 # st.markdown("""
 #         <style>
