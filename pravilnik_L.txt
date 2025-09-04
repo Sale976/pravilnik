@@ -44,7 +44,7 @@ svetlosno i svelosno signalni uređaji (prednji deo vozila) -- član 43(PoPV) st
 svetlosno i svelosno signalni uređaji (istovetni, udvojeni) -- član 44(PoPV) str. 45
 svetlosno i svelosno signalni uređaji (osvetljavanje puta) -- član 45(PoPV) str. 45
 osvetljavanje puta (podela) -- član 46(PoPV) str. 46
-glavni farovi -- član 47(PoPV) str. 47
+glavni farovi -- član 47(PoPV) str. 46
 glavni farovi M, N (gasni izvor, nivelacija snopa, dinamičko praćenje, LED moduli) -- član 48(PoPV) str. 47
 svetlosni snop (kratka svetla) -- član 49(PoPV) str. 48
 svetla za vožnju unazad (rikverc svetlo) -- član 50(PoPV) str. 49
