@@ -55,6 +55,42 @@ if "counted" not in st.session_state:
 else:
     count = load_counter()
 
+
+st.markdown("""
+    <style>
+    /* Sidebar background */
+    section[data-testid="stSidebar"] {
+        background-color: #ADD8E6;
+    }
+    /* Remove default top padding inside sidebar */
+    section[data-testid="stSidebar"] > div:first-child {
+        padding-top: 0rem;
+    }
+
+    /* Optional: reduce padding/margin of your content */
+    .sidebar-top {
+        margin-top: -5.5rem;
+        font-size: 16px;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# --- Show counter in sidebar with st.metric ---
+# st.sidebar.markdown(f'<div style="font-size: 30px;"><strong>{count}</strong></div>', unsafe_allow_html=True)
+
+with st.sidebar.expander("ℹ️ Uputstvo"):
+    st.markdown("""
+    - Unesite ključnu reč ili frazu za pretragu.
+    - Pri unosu reči ne koristiti kvačice iznad slova.
+    - Kliknite na PDF ikonicu da otvorite dokument.
+    """)
+
+search_mode = st.sidebar.radio(
+    "Način pretrage:",
+    ["Tačna fraza", "Bilo koja reč"],
+    index=0
+)
+
 # --- Sidebar About section pinned to bottom, expanding upward ---
 st.sidebar.markdown(
     """
@@ -101,42 +137,6 @@ st.sidebar.markdown(
     </div>
     """,
     unsafe_allow_html=True
-)
-
-
-st.markdown("""
-    <style>
-    /* Sidebar background */
-    section[data-testid="stSidebar"] {
-        background-color: #ADD8E6;
-    }
-    /* Remove default top padding inside sidebar */
-    section[data-testid="stSidebar"] > div:first-child {
-        padding-top: 0rem;
-    }
-
-    /* Optional: reduce padding/margin of your content */
-    .sidebar-top {
-        margin-top: -5.5rem;
-        font-size: 16px;
-    }
-    </style>
-""", unsafe_allow_html=True)
-
-# --- Show counter in sidebar with st.metric ---
-# st.sidebar.markdown(f'<div style="font-size: 30px;"><strong>{count}</strong></div>', unsafe_allow_html=True)
-
-with st.sidebar.expander("ℹ️ Uputstvo"):
-    st.markdown("""
-    - Unesite ključnu reč ili frazu za pretragu.
-    - Pri unosu reči ne koristiti kvačice iznad slova.
-    - Kliknite na PDF ikonicu da otvorite dokument.
-    """)
-
-search_mode = st.sidebar.radio(
-    "Način pretrage:",
-    ["Tačna fraza", "Bilo koja reč"],
-    index=0
 )
 
 # st.sidebar.markdown("---")
