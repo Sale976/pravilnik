@@ -55,7 +55,7 @@ if "counted" not in st.session_state:
 else:
     count = load_counter()
 
-# --- Sidebar About section pinned to bottom with smooth animation ---
+# --- Sidebar About section pinned to bottom, expanding upward ---
 st.sidebar.markdown(
     """
     <style>
@@ -64,30 +64,33 @@ st.sidebar.markdown(
         bottom: 0;
         left: 0;
         right: 0;
-        padding: 12px;
         background-color: #f8f9fa;
         border-top: 2px solid #0077b6;
         border-radius: 8px 8px 0 0;
         box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
         font-size: 14px;
+        padding: 8px 12px;
     }
     details summary {
         cursor: pointer;
         font-size: 15px;
         list-style: none;
     }
-    details[open] div {
-        animation: expand 0.3s ease-in-out;
+    details div {
+        margin-top: 8px;
     }
-    @keyframes expand {
-        from { opacity: 0; transform: translateY(-5px); }
+    details[open] div {
+        animation: expandUp 0.3s ease-in-out;
+    }
+    @keyframes expandUp {
+        from { opacity: 0; transform: translateY(10px); }
         to   { opacity: 1; transform: translateY(0); }
     }
     </style>
     <div class="about-box">
         <details>
           <summary><strong>ℹ️ O aplikaciji</strong></summary>
-          <div style="margin-top:10px;">
+          <div>
             <b>Web aplikacija za pretragu Pravilnika (PoPV, PoTP)</b><br><br>
             🔍 Omogućava brzo pronalaženje članova i stranica u pravilnicima.<br><br>
             📄 Klikom na link otvarate odgovarajući PDF fajl na traženoj stranici.<br><br>
