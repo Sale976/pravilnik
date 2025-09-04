@@ -56,7 +56,7 @@ else:
     count = load_counter()
 
 # --- About Section ---
-with st.sidebar.expander("ℹ️ About", expanded=False):
+with st.sidebar.expander("ℹ️ O Aplikaciji", expanded=False):
     st.markdown(
         """
         **Web aplikacija za pretragu Pravilnika (PoPV, PoTP)**  
