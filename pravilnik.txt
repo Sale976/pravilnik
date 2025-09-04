@@ -65,7 +65,7 @@ svetla za oznacavanje vozila posebnih namena (taksi, obuka vozaca, putna pomoc, 
 oznake dugih, teskih i sporih vozila -- clan 66(PoPV) str. 59
 reklamni natpisi -- clan 67(PoPV) str. 61
 uredaji za davanje svetlosnih znakova (podela) -- clan 68(PoPV) str. 61
-stop svetla -- clan 69(PoPV) str. 61
+stop svetla -- clan 69(PoPV) str. 62
 pokazivaci pravca (zmigavci) -- clan 70(PoPV) str. 62
 normalna vidljivost (podela) -- clan 71(PoPV) str. 64
 vetrobran i sva stakla -- clan 72(PoPV) str.  str. 64
