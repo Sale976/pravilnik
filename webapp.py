@@ -55,6 +55,51 @@ if "counted" not in st.session_state:
 else:
     count = load_counter()
 
+# --- Sidebar About section pinned to bottom with smooth animation ---
+st.sidebar.markdown(
+    """
+    <style>
+    [data-testid="stSidebar"] .about-box {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 12px;
+        background-color: #f8f9fa;
+        border-top: 2px solid #0077b6;
+        border-radius: 8px 8px 0 0;
+        box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        font-size: 14px;
+    }
+    details summary {
+        cursor: pointer;
+        font-size: 15px;
+        list-style: none;
+    }
+    details[open] div {
+        animation: expand 0.3s ease-in-out;
+    }
+    @keyframes expand {
+        from { opacity: 0; transform: translateY(-5px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+    </style>
+    <div class="about-box">
+        <details>
+          <summary><strong>ℹ️ O aplikaciji</strong></summary>
+          <div style="margin-top:10px;">
+            <b>Web aplikacija za pretragu Pravilnika (PoPV, PoTP)</b><br><br>
+            🔍 Omogućava brzo pronalaženje članova i stranica u pravilnicima.<br><br>
+            📄 Klikom na link otvarate odgovarajući PDF fajl na traženoj stranici.<br><br>
+            👨‍💻 Autor: <b>Aleksandar Popov</b><br>
+            🛠️ Izrađeno pomoću <a href="https://streamlit.io" target="_blank">Streamlit</a>
+          </div>
+        </details>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 
 st.markdown("""
     <style>
