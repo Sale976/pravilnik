@@ -115,7 +115,7 @@ st.sidebar.markdown(
         list-style: none;
     }
     details div {
-        margin-top: 20px;
+        margin-top: 100px;
     }
     details[open] div {
         animation: expandUp 0.3s ease-in-out;
