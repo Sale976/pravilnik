@@ -44,7 +44,7 @@ svetlosno i svelosno signalni uredaji (prednji deo vozila) -- clan 43(PoPV) str.
 svetlosno i svelosno signalni uredaji (istovetni, udvojeni) -- clan 44(PoPV) str. 45
 svetlosno i svelosno signalni uredaji (osvetljavanje puta) -- clan 45(PoPV) str. 45
 osvetljavanje puta (podela) -- clan 46(PoPV) str. 46
-glavni farovi -- clan 47(PoPV) str. 47
+glavni farovi -- clan 47(PoPV) str. 46
 glavni farovi M, N (gasni izvor, nivelacija snopa, dinamicko pracenje, LED moduli) -- clan 48(PoPV) str. 47
 svetlosni snop (kratka svetla) -- clan 49(PoPV) str. 48
 svetla za voznju unazad (rikverc svetlo) -- clan 50(PoPV) str. 49
