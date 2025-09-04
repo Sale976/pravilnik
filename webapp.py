@@ -56,30 +56,6 @@ else:
     count = load_counter()
 
 
-# --- Sidebar About Section at Bottom ---
-st.sidebar.markdown(
-    """
-    <div style="
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 18rem;  /* default Streamlit sidebar width */
-        background-color: #f0f4f8;
-        border-top: 2px solid #0077b6;
-        padding: 12px;
-        font-size: 14px;
-        line-height: 1.4;
-        border-radius: 8px 8px 0 0;
-    ">
-        <b>ℹ️ O aplikaciji</b><br>
-        Ova aplikacija omogućava pretragu i pregled pravilnika.<br><br>
-        <i>Made with ❤️ by Aleksandar</i>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-
-
 st.markdown("""
     <style>
     /* Sidebar background */
