@@ -115,7 +115,7 @@ st.sidebar.markdown(
         list-style: none;
     }
     details div {
-        margin-top: 8px;
+        margin-top: 20px;
     }
     details[open] div {
         animation: expandUp 0.3s ease-in-out;
@@ -132,7 +132,7 @@ st.sidebar.markdown(
             <b>Web aplikacija za pretragu Pravilnika (PoPV, PoTP)</b><br><br>
             🔍 Omogućava brzo pronalaženje članova i stranica u pravilnicima.<br><br>
             📄 Klikom na link otvarate odgovarajući PDF fajl na traženoj stranici.<br><br>
-            👨‍💻 Autor: <b>Aleksandar Popov</b><br>
+            👨‍💻 Autor: <b>AI & Aleksandar</b><br>
             🛠️ Izrađeno pomoću <a href="https://streamlit.io" target="_blank">Streamlit</a>
           </div>
         </details>
