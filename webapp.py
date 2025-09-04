@@ -73,7 +73,7 @@ with st.sidebar.expander("ℹ️ About", expanded=False):
 
 # --- Footer Section ---
 st.sidebar.markdown(
-    '<div class="bottom-sidebar">Made with ❤️ by Aleksandar</div>',
+    '<div class="bottom-sidebar"></div>',
     unsafe_allow_html=True
 )
 
