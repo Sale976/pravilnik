@@ -88,7 +88,7 @@ st.markdown("""
         border-radius: 8px 8px 0 0;
         box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
         font-size: 14px;
-        padding: 6px 10px;
+        padding: 20px 10px;
         margin-top: 150px;
     }
 
