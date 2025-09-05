@@ -57,14 +57,17 @@ else:
 
 ##### st.sidebar.markdown("---")
 
+# --- CSS STYLES ---
 st.markdown("""
     <style>
+    /* Target the sidebar itself */
     section[data-testid="stSidebar"] {
-        background-color: #ADD8E6;
         display: flex;
         flex-direction: column;
-        height: 100%;
+        justify-content: space-between; /* This is a key part */
     }
+
+    /* Style for the bottom container */
     .sidebar-bottom {
         background-color: #f8f9fa;
         border-top: 2px solid #0077b6;
@@ -72,18 +75,19 @@ st.markdown("""
         box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
         font-size: 14px;
         padding: 6px 10px;
-        position: sticky;
-        bottom: 0;   /* 👈 sticks to bottom */
-        z-index: 999;
     }
-    details summary {
+
+    /* Styles for the expandable details section */
+    .sidebar-bottom details summary {
         cursor: pointer;
         font-size: 15px;
-        list-style: none;
+        list-style: none; /* Removes the default triangle */
     }
-    details[open] div {
+    
+    .sidebar-bottom details[open] div {
         animation: expandUp 0.3s ease-in-out;
     }
+
     @keyframes expandUp {
         from { opacity: 0; transform: translateY(10px); }
         to   { opacity: 1; transform: translateY(0); }
@@ -92,8 +96,12 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
+# --- SIDEBAR CONTENT ---
 with st.sidebar:
-    with st.expander("ℹ️ Uputstvo"):
+    # --- TOP PART ---
+    # This div is needed to group the top elements together
+    st.container() 
+    with st.expander("ℹ️ Uputstvo", expanded=True):
         st.markdown("""
         - Unesite ključnu reč ili frazu za pretragu.  
         - Pri unosu reči ne koristiti kvačice iznad slova.  
@@ -106,25 +114,25 @@ with st.sidebar:
         index=0
     )
 
-    # --- Bottom sticky "O aplikaciji"
+    # --- BOTTOM PART ---
+    # The custom CSS class "sidebar-bottom" is applied here
     st.markdown(
         """
         <div class="sidebar-bottom">
             <details>
-              <summary><strong>ℹ️ O aplikaciji</strong></summary>
-              <div>
-                <b>Web aplikacija za pretragu Pravilnika (PoPV, PoTP)</b><br><br>
-                🔍 Omogućava brzo pronalaženje članova i stranica u pravilnicima.<br><br>
-                📄 Klikom na link otvarate odgovarajući PDF fajl na traženoj stranici.<br><br>
-                👨‍💻 Autor: <b>Aleksandar Popov</b><br>
-                🛠️ Izrađeno pomoću <a href="https://streamlit.io" target="_blank">Streamlit</a>
-              </div>
+                <summary><strong>ℹ️ O aplikaciji</strong></summary>
+                <div>
+                    <b>Web aplikacija za pretragu Pravilnika (PoPV, PoTP)</b><br><br>
+                    🔍 Omogućava brzo pronalaženje članova i stranica u pravilnicima.<br><br>
+                    📄 Klikom na link otvarate odgovarajući PDF fajl na traženoj stranici.<br><br>
+                    👨‍💻 Autor: <b>Aleksandar Popov</b><br>
+                    🛠️ Izrađeno pomoću <a href="https://streamlit.io" target="_blank">Streamlit</a>
+                </div>
             </details>
         </div>
         """,
         unsafe_allow_html=True
     )
-
 
 
 # st.markdown("""
