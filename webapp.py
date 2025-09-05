@@ -89,7 +89,7 @@ st.markdown("""
         box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
         font-size: 14px;
         padding: 6px 10px;
-        margin-top: 80px;
+        margin-top: 150px;
     }
 
     /* Your original styles for the expandable details section */
