@@ -59,24 +59,14 @@ else:
 
 st.markdown("""
     <style>
-    /* Make sidebar a full-height flex column */
     section[data-testid="stSidebar"] {
-        display: flex;
-        flex-direction: column;
+        position: relative;
     }
-    section[data-testid="stSidebar"] > div:first-child {
-        flex: 1;                /* take full height */
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* Spacer grows to push content down */
-    .sidebar-spacer {
-        flex-grow: 1;
-    }
-
-    /* Bottom box */
-    .sidebar-bottom {
+    .sidebar-bottom-fixed {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
         background-color: #f8f9fa;
         border-top: 2px solid #0077b6;
         border-radius: 8px 8px 0 0;
@@ -99,10 +89,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-
-# --- Sidebar content ---
 with st.sidebar:
-    # Top part
     with st.expander("ℹ️ Uputstvo"):
         st.markdown("""
         - Unesite ključnu reč ili frazu za pretragu.  
@@ -116,13 +103,10 @@ with st.sidebar:
         index=0
     )
 
-    # Spacer fills all space between top & bottom
-    st.markdown("<div class='sidebar-spacer'></div>", unsafe_allow_html=True)
-
-    # Bottom "O aplikaciji"
+    # Fixed bottom section
     st.markdown(
         """
-        <div class="sidebar-bottom">
+        <div class="sidebar-bottom-fixed">
             <details>
               <summary><strong>ℹ️ O aplikaciji</strong></summary>
               <div>
@@ -137,7 +121,6 @@ with st.sidebar:
         """,
         unsafe_allow_html=True
     )
-
 
 
 # st.markdown("""
