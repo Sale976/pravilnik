@@ -82,11 +82,11 @@ st.markdown("""
         width: 100%;
     }
     
-    .sidebar-bottom-fixed {
+    .sidebar-bottom {
         position: center;
-        bottom: 1px;
-        left: 5px;
-        right: 5px;
+        bottom: 5px;
+        left: 0;
+        right: 0;
         background-color: #f8f9fa;
         border-top: 2px solid #0077b6;
         border-radius: 8px 8px 8px 8px;
