@@ -84,7 +84,7 @@ st.markdown("""
     
     .sidebar-bottom {
         position: absolute;
-        bottom: 5px;
+        bottom: -400px;
         left: 2px;
         right: 2px;
         background-color: #f8f9fa;
@@ -93,7 +93,6 @@ st.markdown("""
         box-shadow: 0 -2px 5px rgba(0,0,0,0.5);
         font-size: 14px;
         padding: 5px 12px;
-        # margin-top: 350px;
     }
 
     /* Your original styles for the expandable details section */
@@ -179,12 +178,12 @@ with st.sidebar:
         """
         <div class="sidebar-bottom">
             <details>
-                <summary><strong>ℹ️ About</strong></summary>
+                <summary><strong>ℹ️ O Aplikaciji</strong></summary>
                 <div>
                     <b>Web aplikacija za pretragu Pravilnika (PoPV, PoTP)</b><br><br>
                     🔍 Omogućava brzo pronalaženje članova i stranica u pravilnicima.<br><br>
                     📄 Klikom na link otvarate odgovarajući PDF fajl na traženoj stranici.<br><br>
-                    👨‍💻 Autor: <b>Aleksandar Popov</b><br>
+                    👨‍💻 Autor: <b>AI & Aleksandar</b><br>
                     🛠️ Izrađeno pomoću <a href="https://streamlit.io" target="_blank">Streamlit</a>
                 </div>
             </details>
