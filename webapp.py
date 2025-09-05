@@ -55,7 +55,9 @@ if "counted" not in st.session_state:
 else:
     count = load_counter()
 
+# st.sidebar.markdown("---")
 
+# --- Sidebar top style ---
 st.markdown("""
     <style>
     /* Sidebar background */
@@ -66,43 +68,12 @@ st.markdown("""
     section[data-testid="stSidebar"] > div:first-child {
         padding-top: 0rem;
     }
-
     /* Optional: reduce padding/margin of your content */
     .sidebar-top {
         margin-top: -5.5rem;
         font-size: 16px;
     }
-    </style>
-""", unsafe_allow_html=True)
-
-with st.sidebar.expander("ℹ️ Uputstvo"):
-    st.markdown("""
-    - Unesite ključnu reč ili frazu za pretragu.
-    - Pri unosu reči ne koristiti kvačice iznad slova.
-    - Kliknite na PDF ikonicu da otvorite dokument.
-    """)
-
-search_mode = st.sidebar.radio(
-    "Način pretrage:",
-    ["Tačna fraza", "Bilo koja reč"],
-    index=0
-)
-
-st.sidebar.markdown("---")
-st.sidebar.markdown("---")
-st.sidebar.markdown("---")
-st.sidebar.markdown("---")
-st.sidebar.markdown("---")
-st.sidebar.markdown("---")
-st.sidebar.markdown("---")
-st.sidebar.markdown("---")
-st.sidebar.markdown("---")
-
-
-# --- Sidebar About section pinned to bottom, expanding upward ---
-st.sidebar.markdown(
-    """
-    <style>
+    /* About section pinned at bottom */
     [data-testid="stSidebar"] .about-box {
         position: absolute;
         bottom: 0;
@@ -124,13 +95,34 @@ st.sidebar.markdown(
         margin-top: 8px;
     }
     details[open] div {
-        animation: expandUp 1s ease-in-out;
+        animation: expandUp 0.3s ease-in-out;
     }
     @keyframes expandUp {
         from { opacity: 0; transform: translateY(10px); }
         to   { opacity: 1; transform: translateY(0); }
     }
     </style>
+""", unsafe_allow_html=True)
+
+
+# --- Sidebar top content ---
+with st.sidebar.expander("ℹ️ Uputstvo"):
+    st.markdown("""
+    - Unesite ključnu reč ili frazu za pretragu.  
+    - Pri unosu reči ne koristiti kvačice iznad slova.  
+    - Kliknite na PDF ikonicu da otvorite dokument.  
+    """)
+
+search_mode = st.sidebar.radio(
+    "Način pretrage:",
+    ["Tačna fraza", "Bilo koja reč"],
+    index=0
+)
+
+
+# --- Sidebar bottom "O aplikaciji" ---
+st.sidebar.markdown(
+    """
     <div class="about-box">
         <details>
           <summary><strong>ℹ️ O aplikaciji</strong></summary>
@@ -138,7 +130,7 @@ st.sidebar.markdown(
             <b>Web aplikacija za pretragu Pravilnika (PoPV, PoTP)</b><br><br>
             🔍 Omogućava brzo pronalaženje članova i stranica u pravilnicima.<br><br>
             📄 Klikom na link otvarate odgovarajući PDF fajl na traženoj stranici.<br><br>
-            👨‍💻 Autor: <b>AI & Aleksandar</b><br>
+            👨‍💻 Autor: <b>Aleksandar Popov</b><br>
             🛠️ Izrađeno pomoću <a href="https://streamlit.io" target="_blank">Streamlit</a>
           </div>
         </details>
@@ -146,6 +138,10 @@ st.sidebar.markdown(
     """,
     unsafe_allow_html=True
 )
+
+
+
+
 
 
 # st.markdown("""
