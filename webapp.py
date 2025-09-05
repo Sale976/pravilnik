@@ -79,7 +79,7 @@ st.markdown("""
         margin-top: auto;
         position: sticky;
         bottom: 0;
-        width: 100%;
+        width: 10%;
     }
     
     .sidebar-bottom {
