@@ -192,9 +192,6 @@ with st.sidebar:
     </div>
     """, unsafe_allow_html=True)
 
-# --- MAIN CONTENT ---
-st.markdown("<div class='main-content'>", unsafe_allow_html=True)
-
 
 # st.markdown("""
 #         <style>
