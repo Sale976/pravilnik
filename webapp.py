@@ -60,14 +60,14 @@ else:
 # --- Sidebar styling ---
 st.markdown("""
     <style>
-    section[data-testid="stSidebar"] {
-        background-color: #ADD8E6;
+    /* Full-height flex sidebar */
+    section[data-testid="stSidebar"] > div:first-child {
         display: flex;
         flex-direction: column;
         height: 100%;
     }
     .sidebar-spacer {
-        flex-grow: 1;  /* pushes content below */
+        flex-grow: 1;  /* pushes bottom content down */
     }
     .sidebar-bottom {
         background-color: #f8f9fa;
@@ -92,7 +92,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-
 # --- Sidebar content ---
 with st.sidebar:
     # Top part
@@ -109,7 +108,7 @@ with st.sidebar:
         index=0
     )
 
-    # Spacer pushes next block to bottom
+    # Spacer fills all space between top & bottom
     st.markdown("<div class='sidebar-spacer'></div>", unsafe_allow_html=True)
 
     # Bottom "O aplikaciji"
@@ -130,7 +129,6 @@ with st.sidebar:
         """,
         unsafe_allow_html=True
     )
-
 
 
 
