@@ -143,7 +143,7 @@ st.markdown("""
 # --- SIDEBAR CONTENT ---
 with st.sidebar:
     # Logo at the top
-    st.markdown('<div class="logo">📘 Pravilnik Pretraga</div>', unsafe_allow_html=True)
+    st.markdown('<div class="logo">📘 Pretraga Pravilnika</div>', unsafe_allow_html=True)
     
     # Container for top elements
     st.markdown('<div class="sidebar-top">', unsafe_allow_html=True)
