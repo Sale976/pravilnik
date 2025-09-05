@@ -83,7 +83,7 @@ st.markdown("""
     }
     
     .sidebar-bottom {
-        position: fixed;
+        position: center;
         bottom: 5px;
         left: 5px;
         right: 5px;
