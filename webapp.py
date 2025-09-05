@@ -61,18 +61,20 @@ else:
 st.markdown("""
     <style>
     /* Make the sidebar a flex container, flowing vertically */
-    section[data-testid="stSidebar"] {
-        background-color: #ADD8E6;
+    section[data-testid="stSidebar"] > div {
         display: flex;
         flex-direction: column;
+        height: 100%;
     }
-
-    /* Target the custom div for the bottom section */
+    
+    /* Container for the top content */
+    .sidebar-top {
+        flex-shrink: 0;
+    }
+    
+    /* Container for the bottom content */
     .sidebar-bottom {
-        /* This is the magic rule that pushes it to the bottom */
-        margin-top: auto; 
-        
-        /* Your original styling for the container */
+        margin-top: auto; /* This pushes it to the bottom */
         background-color: #f8f9fa;
         border-top: 2px solid #0077b6;
         border-radius: 8px 8px 0 0;
@@ -102,6 +104,9 @@ st.markdown("""
 
 # --- SIDEBAR CONTENT ---
 with st.sidebar:
+    # Container for top elements
+    st.markdown('<div class="sidebar-top">', unsafe_allow_html=True)
+    
     # --- TOP ELEMENTS ---
     with st.expander("ℹ️ Uputstvo"):
         st.markdown("""
@@ -115,6 +120,8 @@ with st.sidebar:
         ["Tačna fraza", "Bilo koja reč"],
         index=0
     )
+    
+    st.markdown('</div>', unsafe_allow_html=True)  # Close top container
 
     # --- BOTTOM ELEMENT ---
     # This markdown block with the "sidebar-bottom" class will be pushed down
