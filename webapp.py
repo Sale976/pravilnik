@@ -66,7 +66,6 @@ st.markdown("""
         height: 100vh;
         display: flex;
         flex-direction: column;
-        position: relative;
     }
     
     /* Container for the top content */
@@ -74,13 +73,12 @@ st.markdown("""
         flex-shrink: 0;
     }
     
-    /* Container for the bottom content - ABSOLUTE POSITIONING */
+    /* Container for the bottom content - FIXED POSITIONING */
     .sidebar-bottom-container {
-        position: absolute;
+        margin-top: auto;
+        position: sticky;
         bottom: 0;
-        left: 0;
-        right: 0;
-        padding: 0 1rem 1rem 1rem;
+        width: 100%;
     }
     
     .sidebar-bottom {
@@ -89,7 +87,8 @@ st.markdown("""
         border-radius: 8px 8px 0 0;
         box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
         font-size: 14px;
-        padding: 12px 15px;
+        padding: 6px 10px;
+        margin-top: 20px;
     }
 
     /* Your original styles for the expandable details section */
@@ -138,11 +137,6 @@ st.markdown("""
         font-weight: bold;
         color: #0077b6;
     }
-    
-    /* Spacer to push content away from bottom */
-    .spacer {
-        height: 30px;
-    }
     </style>
 """, unsafe_allow_html=True)
 
@@ -171,12 +165,13 @@ with st.sidebar:
     st.markdown('</div>', unsafe_allow_html=True)  # Close top container
 
     # Spacer to push content to bottom
-    st.markdown('<div class="spacer"></div>', unsafe_allow_html=True)
+    st.markdown('<div style="flex-grow: 1;"></div>', unsafe_allow_html=True)
     
     # --- BOTTOM ELEMENT ---
-    # This uses absolute positioning to ensure it's at the very bottom
-    st.markdown("""
-    <div class="sidebar-bottom-container">
+    # This markdown block with the "sidebar-bottom" class will be pushed down
+    st.markdown('<div class="sidebar-bottom-container">', unsafe_allow_html=True)
+    st.markdown(
+        """
         <div class="sidebar-bottom">
             <details>
                 <summary><strong>ℹ️ O aplikaciji</strong></summary>
@@ -189,8 +184,10 @@ with st.sidebar:
                 </div>
             </details>
         </div>
-    </div>
-    """, unsafe_allow_html=True)
+        """,
+        unsafe_allow_html=True
+    )
+    st.markdown('</div>', unsafe_allow_html=True)
 
 
 # st.markdown("""
