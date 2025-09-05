@@ -84,7 +84,7 @@ st.markdown("""
     
     .sidebar-bottom {
         position: center;
-        bottom: 5px;
+        bottom: 1px;
         left: 5px;
         right: 5px;
         background-color: #f8f9fa;
