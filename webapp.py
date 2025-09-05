@@ -102,7 +102,7 @@ with st.sidebar:
     # --- TOP PART ---
     # This div is needed to group the top elements together
     st.container() 
-    with st.expander("ℹ️ Uputstvo", expanded=True):
+    with st.expander("ℹ️ Uputstvo", expanded=False):
         st.markdown("""
         - Unesite ključnu reč ili frazu za pretragu.  
         - Pri unosu reči ne koristiti kvačice iznad slova.  
