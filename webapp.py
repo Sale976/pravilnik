@@ -57,18 +57,25 @@ else:
 
 ##### st.sidebar.markdown("---")
 
-# --- Sidebar styling ---
 st.markdown("""
     <style>
-    /* Full-height flex sidebar */
-    section[data-testid="stSidebar"] > div:first-child {
+    /* Make sidebar a full-height flex column */
+    section[data-testid="stSidebar"] {
         display: flex;
         flex-direction: column;
-        height: 100%;
     }
+    section[data-testid="stSidebar"] > div:first-child {
+        flex: 1;                /* take full height */
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Spacer grows to push content down */
     .sidebar-spacer {
-        flex-grow: 1;  /* pushes bottom content down */
+        flex-grow: 1;
     }
+
+    /* Bottom box */
     .sidebar-bottom {
         background-color: #f8f9fa;
         border-top: 2px solid #0077b6;
@@ -91,6 +98,7 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
+
 
 # --- Sidebar content ---
 with st.sidebar:
