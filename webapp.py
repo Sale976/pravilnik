@@ -60,39 +60,28 @@ else:
 # --- Sidebar styling ---
 st.markdown("""
     <style>
-    /* Sidebar background */
     section[data-testid="stSidebar"] {
         background-color: #ADD8E6;
         display: flex;
         flex-direction: column;
         height: 100%;
     }
-
-    /* Top content should grow naturally */
-    .sidebar-top {
-        flex: 1 1 auto;
+    .sidebar-spacer {
+        flex-grow: 1;  /* pushes content below */
     }
-
-    /* Bottom pinned section */
     .sidebar-bottom {
-        flex-shrink: 0;
         background-color: #f8f9fa;
         border-top: 2px solid #0077b6;
         border-radius: 8px 8px 0 0;
         box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
         font-size: 14px;
         padding: 6px 10px;
-        margin-top: auto; /* pushes it to very bottom */
     }
-
-    /* Style for clickable summary */
     details summary {
         cursor: pointer;
         font-size: 15px;
         list-style: none;
     }
-
-    /* Animate expand upwards */
     details[open] div {
         animation: expandUp 0.3s ease-in-out;
     }
@@ -104,10 +93,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# --- Sidebar TOP content ---
+# --- Sidebar content ---
 with st.sidebar:
-    st.markdown("<div class='sidebar-top'>", unsafe_allow_html=True)
-
+    # Top part
     with st.expander("ℹ️ Uputstvo"):
         st.markdown("""
         - Unesite ključnu reč ili frazu za pretragu.  
@@ -121,27 +109,28 @@ with st.sidebar:
         index=0
     )
 
-    st.markdown("</div>", unsafe_allow_html=True)
+    # Spacer pushes next block to bottom
+    st.markdown("<div class='sidebar-spacer'></div>", unsafe_allow_html=True)
 
+    # Bottom "O aplikaciji"
+    st.markdown(
+        """
+        <div class="sidebar-bottom">
+            <details>
+              <summary><strong>ℹ️ O aplikaciji</strong></summary>
+              <div>
+                <b>Web aplikacija za pretragu Pravilnika (PoPV, PoTP)</b><br><br>
+                🔍 Omogućava brzo pronalaženje članova i stranica u pravilnicima.<br><br>
+                📄 Klikom na link otvarate odgovarajući PDF fajl na traženoj stranici.<br><br>
+                👨‍💻 Autor: <b>Aleksandar Popov</b><br>
+                🛠️ Izrađeno pomoću <a href="https://streamlit.io" target="_blank">Streamlit</a>
+              </div>
+            </details>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
-# --- Sidebar BOTTOM pinned content ---
-st.sidebar.markdown(
-    """
-    <div class="sidebar-bottom">
-        <details>
-          <summary><strong>ℹ️ O aplikaciji</strong></summary>
-          <div>
-            <b>Web aplikacija za pretragu Pravilnika (PoPV, PoTP)</b><br><br>
-            🔍 Omogućava brzo pronalaženje članova i stranica u pravilnicima.<br><br>
-            📄 Klikom na link otvarate odgovarajući PDF fajl na traženoj stranici.<br><br>
-            👨‍💻 Autor: <b>Aleksandar Popov</b><br>
-            🛠️ Izrađeno pomoću <a href="https://streamlit.io" target="_blank">Streamlit</a>
-          </div>
-        </details>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
 
 
 
