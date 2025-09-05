@@ -93,7 +93,7 @@ st.markdown("""
         box-shadow: 0 -2px 5px rgba(0,0,0,0.5);
         font-size: 14px;
         padding: 5px 12px;
-        margin-top: 250px;
+        # margin-top: 250px;
     }
 
     /* Your original styles for the expandable details section */
