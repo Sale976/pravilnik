@@ -64,9 +64,6 @@ st.markdown("""
         flex-direction: column;
         height: 100%;
     }
-    .sidebar-content {
-        flex-grow: 1; /* takes all free space */
-    }
     .sidebar-bottom {
         background-color: #f8f9fa;
         border-top: 2px solid #0077b6;
@@ -74,7 +71,9 @@ st.markdown("""
         box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
         font-size: 14px;
         padding: 6px 10px;
-        margin-top: auto; /* pushes it to bottom */
+        position: sticky;
+        bottom: 0;   /* 👈 sticks to bottom */
+        z-index: 999;
     }
     details summary {
         cursor: pointer;
@@ -92,26 +91,20 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 with st.sidebar:
-    # Top content wrapped in sidebar-content
-    with st.container():
-        st.markdown("<div class='sidebar-content'>", unsafe_allow_html=True)
+    with st.expander("ℹ️ Uputstvo"):
+        st.markdown("""
+        - Unesite ključnu reč ili frazu za pretragu.  
+        - Pri unosu reči ne koristiti kvačice iznad slova.  
+        - Kliknite na PDF ikonicu da otvorite dokument.  
+        """)
 
-        with st.expander("ℹ️ Uputstvo"):
-            st.markdown("""
-            - Unesite ključnu reč ili frazu za pretragu.  
-            - Pri unosu reči ne koristiti kvačice iznad slova.  
-            - Kliknite na PDF ikonicu da otvorite dokument.  
-            """)
+    search_mode = st.radio(
+        "Način pretrage:",
+        ["Tačna fraza", "Bilo koja reč"],
+        index=0
+    )
 
-        search_mode = st.radio(
-            "Način pretrage:",
-            ["Tačna fraza", "Bilo koja reč"],
-            index=0
-        )
-
-        st.markdown("</div>", unsafe_allow_html=True)
-
-    # Bottom section
+    # --- Bottom sticky "O aplikaciji"
     st.markdown(
         """
         <div class="sidebar-bottom">
