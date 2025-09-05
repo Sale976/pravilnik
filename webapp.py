@@ -92,8 +92,8 @@ st.markdown("""
         border-radius: 8px 8px 8px 8px;
         box-shadow: 0 -2px 5px rgba(0,0,0,0.5);
         font-size: 14px;
-        padding: 5px 12px;
-        margin-top: 350px;
+        padding: 5px 25px;
+        # margin-top: 350px;
     }
 
     /* Your original styles for the expandable details section */
