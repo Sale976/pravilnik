@@ -91,6 +91,8 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+st.sidebar.markdown("---")
+
 with st.sidebar:
     with st.expander("ℹ️ Uputstvo"):
         st.markdown("""
