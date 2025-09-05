@@ -60,16 +60,19 @@ else:
 # --- CSS STYLES ---
 st.markdown("""
     <style>
-    /* Target the sidebar itself */
+    /* Make the sidebar a flex container, flowing vertically */
     section[data-testid="stSidebar"] {
         background-color: #ADD8E6;
         display: flex;
         flex-direction: column;
-        justify-content: space-between; /* This is a key part */
     }
 
-    /* Style for the bottom container */
+    /* Target the custom div for the bottom section */
     .sidebar-bottom {
+        /* This is the magic rule that pushes it to the bottom */
+        margin-top: auto; 
+        
+        /* Your original styling for the container */
         background-color: #f8f9fa;
         border-top: 2px solid #0077b6;
         border-radius: 8px 8px 0 0;
@@ -78,7 +81,7 @@ st.markdown("""
         padding: 6px 10px;
     }
 
-    /* Styles for the expandable details section */
+    /* Your original styles for the expandable details section */
     .sidebar-bottom details summary {
         cursor: pointer;
         font-size: 15px;
@@ -99,10 +102,8 @@ st.markdown("""
 
 # --- SIDEBAR CONTENT ---
 with st.sidebar:
-    # --- TOP PART ---
-    # This div is needed to group the top elements together
-    st.container() 
-    with st.expander("ℹ️ Uputstvo", expanded=False):
+    # --- TOP ELEMENTS ---
+    with st.expander("ℹ️ Uputstvo"):
         st.markdown("""
         - Unesite ključnu reč ili frazu za pretragu.  
         - Pri unosu reči ne koristiti kvačice iznad slova.  
@@ -115,8 +116,8 @@ with st.sidebar:
         index=0
     )
 
-    # --- BOTTOM PART ---
-    # The custom CSS class "sidebar-bottom" is applied here
+    # --- BOTTOM ELEMENT ---
+    # This markdown block with the "sidebar-bottom" class will be pushed down
     st.markdown(
         """
         <div class="sidebar-bottom">
