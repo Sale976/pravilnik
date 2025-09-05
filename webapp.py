@@ -61,11 +61,12 @@ else:
 # --- CSS STYLES ---
 st.markdown("""
     <style>
-    /* Make the sidebar a flex container, flowing vertically */
-    section[data-testid="stSidebar"] > div {
+    /* Main sidebar container */
+    section[data-testid="stSidebar"] > div:first-child {
         display: flex;
         flex-direction: column;
-        height: 100%;
+        height: 100vh;
+        padding-bottom: 2rem;
     }
     
     /* Container for the top content */
@@ -75,7 +76,7 @@ st.markdown("""
     
     /* Container for the bottom content */
     .sidebar-bottom {
-        margin-top: auto; /* This pushes it to the bottom */
+        margin-top: auto;
         background-color: #f8f9fa;
         border-top: 2px solid #0077b6;
         border-radius: 8px 8px 0 0;
@@ -99,17 +100,50 @@ st.markdown("""
         from { opacity: 0; transform: translateY(10px); }
         to   { opacity: 1; transform: translateY(0); }
     }
+    
+    /* Custom styling for the main content */
+    .main-content {
+        padding: 2rem;
+    }
+    
+    .search-box {
+        background-color: #f0f2f6;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .results-table {
+        margin-top: 20px;
+    }
+    
+    .highlight {
+        background-color: #fff8e1;
+        padding: 2px 4px;
+        border-radius: 3px;
+    }
+    
+    /* Logo styling */
+    .logo {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #0077b6;
+    }
     </style>
 """, unsafe_allow_html=True)
 
-
 # --- SIDEBAR CONTENT ---
 with st.sidebar:
+    # Logo at the top
+    st.markdown('<div class="logo">📘 Pravilnik Pretraga</div>', unsafe_allow_html=True)
+    
     # Container for top elements
     st.markdown('<div class="sidebar-top">', unsafe_allow_html=True)
     
     # --- TOP ELEMENTS ---
-    with st.expander("ℹ️ Uputstvo"):
+    with st.expander("ℹ️ Uputstvo", expanded=True):
         st.markdown("""
         - Unesite ključnu reč ili frazu za pretragu.  
         - Pri unosu reči ne koristiti kvačice iznad slova.  
