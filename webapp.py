@@ -76,7 +76,7 @@ st.markdown("""
     
     /* Container for the bottom content - FIXED POSITIONING */
     .sidebar-bottom-container {
-        margin-top: 200px;
+        margin-top: 20px;
         position: sticky;
         bottom: 0;
         width: 100%;
