@@ -104,7 +104,7 @@ st.markdown("""
     }
     
     .sidebar-bottom details[open] div {
-        animation: expandUp 0.3s ease-in-out;
+        animation: expandUp 0.1s ease-in-out;
     }
 
     @keyframes expandUp {
