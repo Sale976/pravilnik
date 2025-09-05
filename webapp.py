@@ -82,7 +82,7 @@ st.markdown("""
         width: 100%;
     }
     
-    .sidebar-bottom-fixed{
+    .sidebar-bottom-fixed {
         position: center;
         bottom: 1px;
         left: 5px;
