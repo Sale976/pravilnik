@@ -61,13 +61,11 @@ else:
 # --- CSS STYLES ---
 st.markdown("""
     <style>
-    /* Main sidebar container */
+    /* Main sidebar container with fixed height */
     section[data-testid="stSidebar"] > div:first-child {
-        background-color: #ADD8E6;
+        height: 100vh;
         display: flex;
         flex-direction: column;
-        height: 100vh;
-        padding-bottom: 2rem;
     }
     
     /* Container for the top content */
@@ -75,15 +73,22 @@ st.markdown("""
         flex-shrink: 0;
     }
     
-    /* Container for the bottom content */
-    .sidebar-bottom {
+    /* Container for the bottom content - FIXED POSITIONING */
+    .sidebar-bottom-container {
         margin-top: auto;
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .sidebar-bottom {
         background-color: #f8f9fa;
         border-top: 2px solid #0077b6;
         border-radius: 8px 8px 0 0;
         box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
         font-size: 14px;
         padding: 6px 10px;
+        margin-top: 20px;
     }
 
     /* Your original styles for the expandable details section */
@@ -159,8 +164,12 @@ with st.sidebar:
     
     st.markdown('</div>', unsafe_allow_html=True)  # Close top container
 
+    # Spacer to push content to bottom
+    st.markdown('<div style="flex-grow: 1;"></div>', unsafe_allow_html=True)
+    
     # --- BOTTOM ELEMENT ---
     # This markdown block with the "sidebar-bottom" class will be pushed down
+    st.markdown('<div class="sidebar-bottom-container">', unsafe_allow_html=True)
     st.markdown(
         """
         <div class="sidebar-bottom">
