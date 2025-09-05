@@ -62,6 +62,7 @@ st.markdown("""
     <style>
     /* Target the sidebar itself */
     section[data-testid="stSidebar"] {
+        background-color: #ADD8E6;
         display: flex;
         flex-direction: column;
         justify-content: space-between; /* This is a key part */
