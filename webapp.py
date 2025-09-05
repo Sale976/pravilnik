@@ -60,19 +60,21 @@ else:
 st.markdown("""
     <style>
     section[data-testid="stSidebar"] {
-        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
     }
-    .sidebar-bottom-fixed {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
+    .sidebar-content {
+        flex-grow: 1; /* takes all free space */
+    }
+    .sidebar-bottom {
         background-color: #f8f9fa;
         border-top: 2px solid #0077b6;
         border-radius: 8px 8px 0 0;
         box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
         font-size: 14px;
         padding: 6px 10px;
+        margin-top: auto; /* pushes it to bottom */
     }
     details summary {
         cursor: pointer;
@@ -90,23 +92,29 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 with st.sidebar:
-    with st.expander("ℹ️ Uputstvo"):
-        st.markdown("""
-        - Unesite ključnu reč ili frazu za pretragu.  
-        - Pri unosu reči ne koristiti kvačice iznad slova.  
-        - Kliknite na PDF ikonicu da otvorite dokument.  
-        """)
+    # Top content wrapped in sidebar-content
+    with st.container():
+        st.markdown("<div class='sidebar-content'>", unsafe_allow_html=True)
 
-    search_mode = st.radio(
-        "Način pretrage:",
-        ["Tačna fraza", "Bilo koja reč"],
-        index=0
-    )
+        with st.expander("ℹ️ Uputstvo"):
+            st.markdown("""
+            - Unesite ključnu reč ili frazu za pretragu.  
+            - Pri unosu reči ne koristiti kvačice iznad slova.  
+            - Kliknite na PDF ikonicu da otvorite dokument.  
+            """)
 
-    # Fixed bottom section
+        search_mode = st.radio(
+            "Način pretrage:",
+            ["Tačna fraza", "Bilo koja reč"],
+            index=0
+        )
+
+        st.markdown("</div>", unsafe_allow_html=True)
+
+    # Bottom section
     st.markdown(
         """
-        <div class="sidebar-bottom-fixed">
+        <div class="sidebar-bottom">
             <details>
               <summary><strong>ℹ️ O aplikaciji</strong></summary>
               <div>
@@ -121,6 +129,7 @@ with st.sidebar:
         """,
         unsafe_allow_html=True
     )
+
 
 
 # st.markdown("""
