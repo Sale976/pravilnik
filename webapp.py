@@ -65,29 +65,34 @@ st.markdown("""
         background-color: #ADD8E6;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        height: 100%;
     }
 
-    /* Top content takes natural space */
+    /* Top content should grow naturally */
     .sidebar-top {
-        flex-grow: 1;
+        flex: 1 1 auto;
     }
 
-    /* Bottom About section fixed */
+    /* Bottom pinned section */
     .sidebar-bottom {
+        flex-shrink: 0;
         background-color: #f8f9fa;
         border-top: 2px solid #0077b6;
         border-radius: 8px 8px 0 0;
         box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
         font-size: 14px;
-        padding: 8px 12px;
-        margin-top: 10px;
+        padding: 6px 10px;
+        margin-top: auto; /* pushes it to very bottom */
     }
+
+    /* Style for clickable summary */
     details summary {
         cursor: pointer;
         font-size: 15px;
         list-style: none;
     }
+
+    /* Animate expand upwards */
     details[open] div {
         animation: expandUp 0.3s ease-in-out;
     }
@@ -119,7 +124,7 @@ with st.sidebar:
     st.markdown("</div>", unsafe_allow_html=True)
 
 
-# --- Sidebar BOTTOM content ---
+# --- Sidebar BOTTOM pinned content ---
 st.sidebar.markdown(
     """
     <div class="sidebar-bottom">
