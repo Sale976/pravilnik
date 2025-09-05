@@ -63,6 +63,7 @@ st.markdown("""
     <style>
     /* Main sidebar container with fixed height */
     section[data-testid="stSidebar"] > div:first-child {
+        background-color: #ADD8E6;
         height: 100vh;
         display: flex;
         flex-direction: column;
