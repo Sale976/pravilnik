@@ -179,7 +179,7 @@ with st.sidebar:
         """
         <div class="sidebar-bottom">
             <details>
-                <summary><strong>ℹ️ O aplikaciji</strong></summary>
+                <summary><strong>ℹ️ About</strong></summary>
                 <div>
                     <b>Web aplikacija za pretragu Pravilnika (PoPV, PoTP)</b><br><br>
                     🔍 Omogućava brzo pronalaženje članova i stranica u pravilnicima.<br><br>
