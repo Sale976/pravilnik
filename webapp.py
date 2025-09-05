@@ -55,44 +55,38 @@ if "counted" not in st.session_state:
 else:
     count = load_counter()
 
-# st.sidebar.markdown("---")
+##### st.sidebar.markdown("---")
 
-# --- Sidebar top style ---
+# --- Sidebar styling ---
 st.markdown("""
     <style>
     /* Sidebar background */
     section[data-testid="stSidebar"] {
         background-color: #ADD8E6;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
-    /* Remove default top padding inside sidebar */
-    section[data-testid="stSidebar"] > div:first-child {
-        padding-top: 0rem;
-    }
-    /* Optional: reduce padding/margin of your content */
+
+    /* Top content takes natural space */
     .sidebar-top {
-        margin-top: -5.5rem;
-        font-size: 16px;
+        flex-grow: 1;
     }
-    /* About section pinned at bottom */
-    [data-testid="stSidebar"] .about-box {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
+
+    /* Bottom About section fixed */
+    .sidebar-bottom {
         background-color: #f8f9fa;
         border-top: 2px solid #0077b6;
         border-radius: 8px 8px 0 0;
         box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
         font-size: 14px;
         padding: 8px 12px;
+        margin-top: 10px;
     }
     details summary {
         cursor: pointer;
         font-size: 15px;
         list-style: none;
-    }
-    details div {
-        margin-top: 8px;
     }
     details[open] div {
         animation: expandUp 0.3s ease-in-out;
@@ -105,25 +99,30 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# --- Sidebar top content ---
-with st.sidebar.expander("ℹ️ Uputstvo"):
-    st.markdown("""
-    - Unesite ključnu reč ili frazu za pretragu.  
-    - Pri unosu reči ne koristiti kvačice iznad slova.  
-    - Kliknite na PDF ikonicu da otvorite dokument.  
-    """)
+# --- Sidebar TOP content ---
+with st.sidebar:
+    st.markdown("<div class='sidebar-top'>", unsafe_allow_html=True)
 
-search_mode = st.sidebar.radio(
-    "Način pretrage:",
-    ["Tačna fraza", "Bilo koja reč"],
-    index=0
-)
+    with st.expander("ℹ️ Uputstvo"):
+        st.markdown("""
+        - Unesite ključnu reč ili frazu za pretragu.  
+        - Pri unosu reči ne koristiti kvačice iznad slova.  
+        - Kliknite na PDF ikonicu da otvorite dokument.  
+        """)
+
+    search_mode = st.radio(
+        "Način pretrage:",
+        ["Tačna fraza", "Bilo koja reč"],
+        index=0
+    )
+
+    st.markdown("</div>", unsafe_allow_html=True)
 
 
-# --- Sidebar bottom "O aplikaciji" ---
+# --- Sidebar BOTTOM content ---
 st.sidebar.markdown(
     """
-    <div class="about-box">
+    <div class="sidebar-bottom">
         <details>
           <summary><strong>ℹ️ O aplikaciji</strong></summary>
           <div>
@@ -138,9 +137,6 @@ st.sidebar.markdown(
     """,
     unsafe_allow_html=True
 )
-
-
-
 
 
 
