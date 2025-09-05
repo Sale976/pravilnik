@@ -62,6 +62,7 @@ st.markdown("""
     <style>
     /* Make the sidebar a flex container, flowing vertically */
     section[data-testid="stSidebar"] {
+        background-color: #ADD8E6;
         display: flex;
         flex-direction: column;
     }
