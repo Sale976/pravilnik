@@ -60,6 +60,7 @@ else:
 st.markdown("""
     <style>
     section[data-testid="stSidebar"] {
+        background-color: #ADD8E6;
         display: flex;
         flex-direction: column;
         height: 100%;
