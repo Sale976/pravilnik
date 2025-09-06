@@ -86,7 +86,7 @@ st.markdown("""
         position: fixed;
         bottom: 1rem;
         left: 1.2rem;
-        right: 0;
+        right: 1.2rem;
         width: 17rem;
         background-color: #f8f9fa;
         border-top: 3px solid #0077b6;
