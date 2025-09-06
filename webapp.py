@@ -83,8 +83,8 @@ st.markdown("""
     }
     
     .sidebar-bottom {
-        position: absolute;
-        bottom: -430px;
+        position: fixed;
+        bottom: 1rem;
         left: 2px;
         right: 2px;
         background-color: #f8f9fa;
