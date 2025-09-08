@@ -56,7 +56,6 @@ if "counted" not in st.session_state:
 else:
     count = load_counter()
 
-##### st.sidebar.markdown("---")
 
 # --- CSS STYLES ---
 st.markdown("""
