@@ -149,7 +149,7 @@ st.markdown("""
 with st.sidebar:
     # Logo at the top
     # st.markdown('<div class="logo">📘 Pretraga Pravilnika</div>', unsafe_allow_html=True)
-    image.open("./data/inspect_9.jpg", use_column_width=True)
+    st.image("./data/inspect_9.jpg", use_column_width=True)
     #st.image("https://inspektlabs.com/blog/content/images/2020/09/Pre-Purchase_Inspection_Preview-3.jpg", width=240)
     
     # Container for top elements
