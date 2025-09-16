@@ -2,7 +2,7 @@ pravilnik propisuje -- clan 1(PoPV) str. 1
 oznacavanje vrste vozila -- clan 2(PoPV) str. 2
 homogolacija delova, uredaja i opreme -- clan 3(PoPV) str. 2
 izrazi koristeni u pravilniku -- clan 4(PoPV) str. 2
-potvrda o saobraznosti (CoC) -- clan 4 tacka 1(PoPV) str.2
+  1) potvrda o saobraznosti (CoC) -- clan 4 (PoPV) str.2
 uredaji i oprema na vozilima -- clan 5(PoPV) str. 8
 vrsta L -- clan 6(PoPV) str. 9
 vrsta M -- clan 7(PoPV) str. 10
