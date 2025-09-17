@@ -1,4 +1,5 @@
 pravilnik propisuje -- član 1(PoPV) str. 1
+označavanje vrste vozila -- član 2(PoPV) str. 2
 homogolacija delova, uređaja i opreme -- član 3(PoPV) str. 2
 izrazi korišteni u pravilniku -- član 4(PoPV) str. 2
     1) potvrda o saobraznosti (CoC) -- član 4(PoPV) str. 2
@@ -12,52 +13,52 @@ izrazi korišteni u pravilniku -- član 4(PoPV) str. 2
     5) masa neopterećenog vozila -- član 4(PoPV) str. 3
     6) proizvođačka tablica -- član 4(PoPV) str. 3
     7) najveća dozvoljena masa teretnog vozila (tegljač) -- član 4(PoPV) str. 3
-    8) najveca konstruktivna brzina vozila -- clan 4(PoPV) str. 3
-    9) vetrobran -- clan 4(PoPV) str. 3
-    10) bocna okna u ravni vozaca -- clan 4(PoPV) str. 4
-    11) svetlo -- clan 4(PoPV) str. 4
-    12) tovarni prostor -- clan 4(PoPV) str. 4
-    13) visina otvora za utovar -- clan 4(PoPV) str. 4
-    14) povrsina otvora za utovar -- clan 4(PoPV) str. 4
-    15) zglobni autobus -- clan 4(PoPV) str. 4
-    16) tegljac -- clan 4(PoPV) str. 4
-    17) platforma za prevoz vangabaritnih tereta -- clan 4(PoPV) str. 4
-    18) homologacija vozila, opreme ili delova vozila (postupak homologacije) -- clan 4(PoPV) str. 4
-    19) klirens -- clan 4(PoPV) str. 4
-    20) sirina traga -- clan 4(PoPV) str. 4
-    21) meduosovinsko rastojanje -- clan 4(PoPV) str. 4
-    22) razmak osovina motornih vozila i prikolica -- clan 4(PoPV) str. 5
-    23) ukupni razmak osovina -- clan 4(PoPV) str. 5
-    24) motor sa nadpunjenjem -- clan 4(PoPV) str. 5
-    25) kocni sistem sa potpunim servo dejstvom -- clan 4(PoPV) str. 5
-    26) kocni sistem sa delimicnim servo dejstvom -- clan 4(PoPV) str. 5
-    27) proizvodac vozila -- clan 4(PoPV) str. 5
-    28) marka vozila -- clan 4(PoPV) str. 5
-    29) komercijalna oznaka -- clan 4(PoPV) str. 5
-    30) vrsta vozila -- clan 4(PoPV) str. 5
-    31) tip vozila -- clan 4(PoPV) str. 5
-    32) varijanta tipa vozila -- clan 4(PoPV) str. 6
-    33) verzija varijante vozila -- clan 4(PoPV) str. 6
-    34) oblik karoserije -- clan 4(PoPV) str. 6
-    35) identifikaciona oznaka vozila (VIN) -- clan 4(PoPV) str. 6
-    36) analogni tahograf -- clan 4(PoPV) str. 6
-    37) dnevno svetlo -- clan 4(PoPV) str. 6
-    38) digitalni tahograf -- clan 4(PoPV) str. 6
-    39) granicnik brzine -- clan 4(PoPV) str. 6
-    39a) osovina (znacenje) -- clan 4(PoPV) str. 6
-    40) grupa osovina (znacenje) -- clan 4(PoPV) str. 6
-    41) udvojeni tockovi vozila vrste L -- clan 4(PoPV) str. 7
-    42) kocna obloga -- clan 4(PoPV) str. 7
-    43) identifikacioni kod kocnih diskova ili dobosa -- clan 4(PoPV) str. 7
-    44) referentne sile kocenja -- clan 4(PoPV) str. 7
-    45) elektricno regenerativno kocenje -- clan 4(PoPV) str. 7
-    46) automatski upravljano kocenje -- clan 4(PoPV) str. 7
-    47) nedeljiv teret -- clan 4(PoPV) str. 7
-    48) alternativno gorivo -- clan 4(PoPV) str. 7
-    49) vozilo na alternativno gorivo -- clan 4(PoPV) str. 8
-    50) vozilo nulte emisije -- clan 4(PoPV) str. 8
-    51) najveca nominalna snaga motora -- clan 4(PoPV) str. 8
-    52) najveca trajna nominalna snaga elektromotora -- clan 4(PoPV) str. 8
+    8) najveća konstruktivna brzina vozila -- član 4(PoPV) str. 3
+    9) vetrobran -- član 4(PoPV) str. 3
+    10) bočna okna u ravni vozača -- član 4(PoPV) str. 4
+    11) svetlo -- član 4(PoPV) str. 4
+    12) tovarni prostor -- član 4(PoPV) str. 4
+    13) visina otvora za utovar -- član 4(PoPV) str. 4
+    14) površina otvora za utovar -- član 4(PoPV) str. 4
+    15) zglobni autobus -- član 4(PoPV) str. 4
+    16) tegljač -- član 4(PoPV) str. 4
+    17) platforma za prevoz vangabaritnih tereta -- član 4(PoPV) str. 4
+    18) homologacija vozila, opreme ili delova vozila (postupak homologacije) -- član 4(PoPV) str. 4
+    19) klirens -- član 4(PoPV) str. 4
+    20) širina traga -- član 4(PoPV) str. 4
+    21) međuosovinsko rastojanje -- član 4(PoPV) str. 4
+    22) razmak osovina motornih vozila i prikolica -- član 4(PoPV) str. 5
+    23) ukupni razmak osovina -- član 4(PoPV) str. 5
+    24) motor sa nadpunjenjem -- član 4(PoPV) str. 5
+    25) kočni sistem sa potpunim servo dejstvom -- član 4(PoPV) str. 5
+    26) kočni sistem sa delimičnim servo dejstvom -- član 4(PoPV) str. 5
+    27) proizvođač vozila -- član 4(PoPV) str. 5
+    28) marka vozila -- član 4(PoPV) str. 5
+    29) komercijalna oznaka -- član 4(PoPV) str. 5
+    30) vrsta vozila -- član 4(PoPV) str. 5
+    31) tip vozila -- član 4(PoPV) str. 5
+    32) varijanta tipa vozila -- član 4(PoPV) str. 6
+    33) verzija varijante vozila -- član 4(PoPV) str. 6
+    34) oblik karoserije -- član 4(PoPV) str. 6
+    35) identifikaciona oznaka vozila (VIN) -- član 4(PoPV) str. 6
+    36) analogni tahograf -- član 4(PoPV) str. 6
+    37) dnevno svetlo -- član 4(PoPV) str. 6
+    38) digitalni tahograf -- član 4(PoPV) str. 6
+    39) graničnik brzine -- član 4(PoPV) str. 6
+    39a) osovina (značenje) -- član 4(PoPV) str. 6
+    40) grupa osovina (značenje) -- član 4(PoPV) str. 6
+    41) udvojeni točkovi vozila vrste L -- član 4(PoPV) str. 7
+    42) kočna obloga -- član 4(PoPV) str. 7
+    43) identifikacioni kod kočnih diskova ili doboša -- član 4(PoPV) str. 7
+    44) referentne sile kočenja -- član 4(PoPV) str. 7
+    45) električno regenerativno kočenje -- član 4(PoPV) str. 7
+    46) automatski upravljano kočenje -- član 4(PoPV) str. 7
+    47) nedeljiv teret -- član 4(PoPV) str. 7
+    48) alternativno gorivo -- član 4(PoPV) str. 7
+    49) vozilo na alternativno gorivo -- član 4(PoPV) str. 8
+    50) vozilo nulte emisije -- član 4(PoPV) str. 8
+    51) najveća nominalna snaga motora -- član 4(PoPV) str. 8
+    52) najveća trajna nominalna snaga elektromotora -- član 4(PoPV) str. 8
 uređaji i oprema na vozilima -- član 5(PoPV) str. 8
 vrsta L -- član 6(PoPV) str. 9
 vrsta M -- član 7(PoPV) str. 10
