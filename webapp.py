@@ -197,30 +197,6 @@ with st.sidebar:
     st.markdown('</div>', unsafe_allow_html=True)
 
 
-# st.markdown("""
-#         <style>
-#         .bottom-sidebar {
-#             position: fixed;
-#             bottom: 1rem;
-#             left: 0;
-#             width: 15rem;
-#             text-align: center;
-#             font-size: 0.9rem;
-#             opacity: 1;
-#         }
-#         </style>
-#     """, unsafe_allow_html=True)
-
-# st.sidebar.markdown(
-#     '''
-#     <div class="bottom-sidebar">
-#         <div style="font-size: 1rem; word-spacing: 3px;">📄 Verzija: v1.1.5</div>
-#         <div style="font-size: 1rem; word-spacing: 3px;">🔧 Autor: AI & Aleksandar</div>
-#     </div>
-#     ''',
-#     unsafe_allow_html=True
-# )
-
 #st.sidebar.markdown("[💬 Prijavite grešku](mailto:aca1976@mts.rs)")
     
 # --- Title and Description ---
