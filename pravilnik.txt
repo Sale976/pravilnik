@@ -69,7 +69,7 @@ oblik karoserije za vozila vrste M, N, O -- clan 11(PoPV) str. 15
 vrsta T, Tm ,TR i C -- clan 12(PoPV) str. 20
 vrsta R, S -- clan 13(PoPV) str. 21
 prikljucak za izvodenje radova za vozila vrste R i S -- clan 14(PoPV) str. 22
-vrsta K -- clan 15(PoPV) str. 23
+vrsta K -- clan 15(PoPV) str. 22
 terenska vozila - podvrsta G -- clan 16(PoPV) str. 23
 duzina vozila -- clan 17(PoPV) str. 23
 sirina vozila -- clan 18(PoPV) str. 25
