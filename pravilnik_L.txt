@@ -69,7 +69,7 @@ oblik karoserije za vozila vrste M, N, O -- član 11(PoPV) str. 15
 vrsta T, Tm ,TR i C -- član 12(PoPV) str. 20
 vrsta R, S -- član 13(PoPV) str. 21
 priključak za izvođenje radova za vozila vrste R i S -- član 14(PoPV) str. 22
-vrsta K -- član 15(PoPV) str. 23
+vrsta K -- član 15(PoPV) str. 22
 terenska vozila - podvrsta G -- član 16(PoPV) str. 23
 dužina vozila -- član 17(PoPV) str. 23
 širina vozila -- član 18(PoPV) str. 25
