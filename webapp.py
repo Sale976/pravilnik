@@ -162,6 +162,8 @@ with st.sidebar:
         - Kliknite na PDF ikonicu da otvorite dokument.  
         """)
 
+    filepath = "pravilnik.txt"
+
     def read_text_file(filepath):
         with open(filepath, 'r') as f:
             return f.read()
