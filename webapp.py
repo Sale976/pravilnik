@@ -162,6 +162,19 @@ with st.sidebar:
         - Kliknite na PDF ikonicu da otvorite dokument.  
         """)
 
+    def read_text_file(filepath):
+        with open(filepath, 'r') as f:
+            return f.read()
+
+    st.title("Text File Content in Popover")
+
+    # Read the content of the text file
+    file_content = read_text_file("my_text_file.txt")
+
+    # Create a popover
+    with st.popover("Show Text Content"):
+        st.markdown(file_content) # Display the content using st.markdown
+
     search_mode = st.radio(
         "Način pretrage:",
         ["Tačna fraza", "Bilo koja reč"],
