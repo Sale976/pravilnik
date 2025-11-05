@@ -171,7 +171,7 @@ def read_text_file(filepath):
 st.title("Text File Content in Popover")
 
 # Read the content of the text file
-file_content = read_text_file("my_text_file.txt")
+file_content = read_text_file("pravilnik.txt")
 
 # Create a popover
 with st.popover("Show Text Content"):
