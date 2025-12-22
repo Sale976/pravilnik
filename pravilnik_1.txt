@@ -1,0 +1,225 @@
+pravilnik propisuje -- clan 1(PPMV) str. 1
+oznacavanje vrste vozila -- clan 2(PPMV) str. 2
+homogolacija delova, uredaja i opreme -- clan 3(PPMV) str. 2
+izrazi koristeni u pravilniku -- clan 4(PPMV) str. 2
+    1) potvrda o saobraznosti (CoC) -- clan 4(PPMV) str. 2
+    2) jednoobrazni tehnicki uslovi -- clan 4(PPMV) str. 2
+    3) dimenzije vozila i skupa vozila (definicija) -- clan 4(PPMV) str. 2
+    4) masa vozila spremnog za voznju -- clan 4(PPMV) str. 2
+      (1) Vrsta M i N -- clan 4(PPMV) str. 2
+      (2) Vrsta O -- clan 4(PPMV) str. 3
+      (3) Vrsta L -- clan 4(PPMV) str. 3
+      (4) Vrsta T -- clan 4(PPMV) str. 3
+    5) masa neopterecenog vozila -- clan 4(PPMV) str. 3
+    6) proizvodacka tablica -- clan 4(PPMV) str. 3
+    7) najveca dozvoljena masa teretnog vozila (tegljac) -- clan 4(PPMV) str. 3
+    8) najveca konstruktivna brzina vozila -- clan 4(PPMV) str. 3
+    9) vetrobran -- clan 4(PPMV) str. 3
+    10) bocna okna u ravni vozaca -- clan 4(PPMV) str. 4
+    11) svetlo -- clan 4(PPMV) str. 4
+    12) tovarni prostor -- clan 4(PPMV) str. 4
+    13) visina otvora za utovar -- clan 4(PPMV) str. 4
+    14) povrsina otvora za utovar -- clan 4(PPMV) str. 4
+    15) zglobni autobus -- clan 4(PPMV) str. 4
+    16) tegljac -- clan 4(PPMV) str. 4
+    17) platforma za prevoz vangabaritnih tereta -- clan 4(PPMV) str. 4
+    18) homologacija vozila, opreme ili delova vozila (postupak homologacije) -- clan 4(PPMV) str. 4
+    19) klirens -- clan 4(PPMV) str. 4
+    20) sirina traga -- clan 4(PPMV) str. 4
+    21) meduosovinsko rastojanje -- clan 4(PPMV) str. 4
+    22) razmak osovina motornih vozila i prikolica -- clan 4(PPMV) str. 5
+    23) ukupni razmak osovina -- clan 4(PPMV) str. 5
+    24) motor sa nadpunjenjem -- clan 4(PPMV) str. 5
+    25) kocni sistem sa PTPVunim servo dejstvom -- clan 4(PPMV) str. 5
+    26) kocni sistem sa delimicnim servo dejstvom -- clan 4(PPMV) str. 5
+    27) proizvodac vozila -- clan 4(PPMV) str. 5
+    28) marka vozila -- clan 4(PPMV) str. 5
+    29) komercijalna oznaka -- clan 4(PPMV) str. 5
+    30) vrsta vozila -- clan 4(PPMV) str. 5
+    31) tip vozila -- clan 4(PPMV) str. 5
+    32) varijanta tipa vozila -- clan 4(PPMV) str. 6
+    33) verzija varijante vozila -- clan 4(PPMV) str. 6
+    34) oblik karoserije -- clan 4(PPMV) str. 6
+    35) identifikaciona oznaka vozila (VIN) -- clan 4(PPMV) str. 6
+    36) analogni tahograf -- clan 4(PPMV) str. 6
+    37) dnevno svetlo -- clan 4(PPMV) str. 6
+    38) digitalni tahograf -- clan 4(PPMV) str. 6
+    39) granicnik brzine -- clan 4(PPMV) str. 6
+    39a) osovina (znacenje) -- clan 4(PPMV) str. 6
+    40) grupa osovina (znacenje) -- clan 4(PPMV) str. 6
+    41) udvojeni tockovi vozila vrste L -- clan 4(PPMV) str. 7
+    42) kocna obloga -- clan 4(PPMV) str. 7
+    43) identifikacioni kod kocnih diskova ili dobosa -- clan 4(PPMV) str. 7
+    44) referentne sile kocenja -- clan 4(PPMV) str. 7
+    45) elektricno regenerativno kocenje -- clan 4(PPMV) str. 7
+    46) automatski upravljano kocenje -- clan 4(PPMV) str. 7
+    47) nedeljiv teret -- clan 4(PPMV) str. 7
+    48) alternativno gorivo -- clan 4(PPMV) str. 7
+    49) vozilo na alternativno gorivo -- clan 4(PPMV) str. 8
+    50) vozilo nulte emisije -- clan 4(PPMV) str. 8
+    51) najveca nominalna snaga motora -- clan 4(PPMV) str. 8
+    52) najveca trajna nominalna snaga elektromotora -- clan 4(PPMV) str. 8
+uredaji i oprema na vozilima -- clan 5(PPMV) str. 8
+vrsta L -- clan 6(PPMV) str. 9
+vrsta M -- clan 7(PPMV) str. 10
+vrsta N -- clan 8(PPMV) str. 11
+uslovi za vozila vrste N -- clan 9(PPMV) str. 11
+vrsta O -- clan 10(PPMV) str. 14
+oblik karoserije za vozila vrste M, N, O -- clan 11(PPMV) str. 15
+vrsta T, Tm ,TR i C -- clan 12(PPMV) str. 20
+vrsta R, S -- clan 13(PPMV) str. 21
+prikljucak za izvodenje radova za vozila vrste R i S -- clan 14(PPMV) str. 22
+vrsta K -- clan 15(PPMV) str. 22
+terenska vozila - podvrsta G -- clan 16(PPMV) str. 23
+duzina vozila -- clan 17(PPMV) str. 23
+sirina vozila -- clan 18(PPMV) str. 25
+visina vozila, klirens -- clan 19(PPMV) str. 25
+voznja u krug -- clan 20(PPMV) str. 26
+najveca dozvoljena ukupna masa motornog vozila i prikolice -- clan 21(PPMV) str. 26
+osovinsko opterecenje -- clan 22(PPMV) str. 28
+najveca dozvoljena masa vozila sa tockovima od metala, pune gume itd -- clan 23(PPMV) str. 29
+odnos najvece nominalne snage -- clan 24(PPMV) str. 30
+sistem za upravljanje-opste odredbe (volan) -- clan 25(PPMV) str.31
+kocni sistem-opste odredbe (kocnice) -- clan 26(PPMV) str. 31
+kocne obloge (plocice, pakne, diskovi, dobosi) -- clan 27(PPMV) str. 31
+pneumatski kocni sistem (kocnice) -- clan 28(PPMV) str. 32
+sistem za kocenje-funkcije kocnog sistema (radno, pomocno, parkirno, dugotrajno usporavanje) -- clan 29(PPMV) str. 33
+abs (kocenje) -- clan 30(PPMV) str. 34
+radno kocenje -- clan 31(PPMV) str. 34
+elektricno kocenje (regenerativno) -- clan 31a(PPMV) str. 35
+sistem za dugotrajno usporavanje -- clan 32(PPMV) str. 36
+komande kocenja -- clan 33(PPMV) str. 36
+servo -- clan 34(PPMV) str. 37
+radno kocenje R -- clan 35(PPMV) str. 37
+radno kocenje L, M, N, O -- clan 36(PPMV) str. 38
+radno kocenje L1, L3 -- clan 37(PPMV) str. 39
+radno kocenje L2, L5, L6, L7 -- clan 38(PPMV) str. 39
+radno kocenje L4 -- clan 39(PPMV) str. 40
+radno kocenje T, C, K, Tm, TR -- clan 40(PPMV) str. 40
+normativi kocnih koeficijenata (ovalnost) -- clan 41(PPMV) str. 40
+svetlosno i svelosno signalni uredaji (vrste) -- clan 42(PPMV) str. 45
+svetlosno i svelosno signalni uredaji (prednji deo vozila) -- clan 43(PPMV) str. 45
+svetlosno i svelosno signalni uredaji (istovetni, udvojeni) -- clan 44(PPMV) str. 45
+svetlosno i svelosno signalni uredaji (osvetljavanje puta) -- clan 45(PPMV) str. 45
+osvetljavanje puta (podela) -- clan 46(PPMV) str. 46
+glavni farovi -- clan 47(PPMV) str. 46
+glavni farovi M, N (gasni izvor, nivelacija snopa, dinamicko pracenje, LED moduli) -- clan 48(PPMV) str. 47
+svetlosni snop (kratka svetla) -- clan 49(PPMV) str. 48
+svetla za voznju unazad (rikverc svetlo) -- clan 50(PPMV) str. 49
+svetla za maglu (maglenke) -- clan 51(PPMV) str. 50
+farovi i svetlo za osvetljavanje radova -- clan 53(PPMV) str. 50
+oznacavanje vozila (podela) -- clan 55(PPMV) str. 51
+oznacavanje vozila (uslovi) -- clan 56(PPMV) str. 51
+prednja poziciona svetla -- clan 57(PPMV) str. 52
+zadnja poziciona svetla -- clan 58(PPMV) str. 52
+dnevna svetla -- clan 58a(PPMV) str. 53
+zadnje svetlo za maglu (maglenke) -- clan 59(PPMV) str. 54
+parkirna svetla -- clan 60(PPMV) str. 55
+gabaritna svetla -- clan 61(PPMV) str. 55
+svetlo zadnje registarske tablice -- clan 62(PPMV) str. 56
+rotaciona i trepcuca svetla (zuta, crvena, plava) -- clan 63(PPMV) str. 57
+katadiopteri -- clan 64(PPMV) str. 57
+svetla za oznacavanje vozila posebnih namena (taksi, obuka vozaca, putna pomoc, gradski prevoz) -- clan 65(PPMV) str. 59
+oznake dugih, teskih i sporih vozila -- clan 66(PPMV) str. 59
+reklamni natpisi -- clan 67(PPMV) str. 61
+uredaji za davanje svetlosnih znakova (podela) -- clan 68(PPMV) str. 61
+stop svetla -- clan 69(PPMV) str. 62
+pokazivaci pravca (zmigavci) -- clan 70(PPMV) str. 63
+normalna vidljivost (podela) -- clan 71(PPMV) str. 64
+vetrobran i sva stakla -- clan 72(PPMV) str.  str. 64
+brisaci vetrobrana -- clan 73(PPMV) str. 65
+peraci vetrobrana -- clan 74(PPMV) str. 66
+vozacko ogledalo (retrovizor) -- clan 75(PPMV) str. 66
+vozacko ogledalo N2, N3 (retrovizor) -- 75a(PPMV) str. 68
+zvucni znakovi (sirena) -- clan 76(PPMV) str. 68
+zvucni znakovi - jacina zvuka(db) (sirena) -- clan 77(PPMV) str. 69
+buka vozila -- clan 78(PPMV) str. 69
+kontrola i davanje znakova (odometar, tahograf itd) -- clan 79(PPMV) str. 70
+tahograf (uslovi) -- clan 80(PPMV) str. 73
+izduvni sistem (auspuh) -- clan 81(PPMV) str. 73
+izduvni gasovi - normativi -- clan 82(PPMV) str. 74
+vucni uredaj (kuka) -- clan 83(PPMV) str. 76
+uredaj za kretanje unazad (rikverc) -- clan 84(PPMV) str. 77
+sistem za oslanjanje -- clan 85(PPMV) str. 77
+pneumatici (gume) -- clan 86(PPMV) str. 78
+etektricna instalacija (akumulator, elektro instalacija) -- clan 87(PPMV) str. 78
+pogonski uredaj (motor) -- clan 88(PPMV) str. 78
+prenos snage (menjac) -- clan 89(PPMV) str. 79
+delovi vozila od posebnog znacaja (karoserija, VIN, kabina ili ram) -- clan 90(PPMV) str. 79
+boja, reklamne table i napisi -- clan 91(PPMV) str. 82
+registarska tablica -- clan 92(PPMV) str. 82
+povrsina za stajanje putnika -- clan 93(PPMV) str. 83
+vrata na vozilima M2, M3, O -- clan 94(PPMV) str. 83
+brave, vrata, poklopci -- clan 95(PPMV) str. 85
+provetravanje u vozilu -- clan 96(PPMV) str. 85
+sedista, kabina -- clan 97(PPMV) str. 85
+odmrzavanje i odmagljivanje vetrobrana, grejanje) -- clan 98(PPMV) str. 86
+blatobrani -- clan 99(PPMV) str. 86
+branici, zastitnik od podletanja -- clan 100(PPMV) str. 87
+sigurnosni pojasevi, bezbedonosna sedista, nasloni za glavu -- clan 101(PPMV) str. 88
+prikljucak za vucu (slepanje) -- clan 102(PPMV) str. 89
+neovlascena upotreba vozila M1 -- clan 103(PPMV) str. 89
+TNG, KPG -- clan 104(PPMV) str. 89
+lako električno vozilo -- clan 104a(PPMV) str. 90
+rezervni tocak -- clan 105(PPMV) str. 90
+aparat za gasenje pozara -- clan 106(PPMV) str. 91
+sigurnosni trougao -- clan 107(PPMV) str. 91
+prva pomoc -- clan 108(PPMV) str. 92
+klinasti podmetaci -- clan 109(PPMV) str. 92
+cekic za razbijanje stakla -- clan 110(PPMV) str. 92
+svetloodbojni prsluk -- clan 111(PPMV) str. 92
+uze ili poluga za vucu vozila -- clan 112(PPMV) str. 92
+zimska oprema (zimske gume, lanci, lopata, period za zimsku opremu) -- clan 113(PPMV) str. 93
+zastitna kaciga za L vozila -- clan 114(PPMV) str. 93
+ciscenje gusenica za vozila C -- clan 115(PPMV) str. 94
+oprema za vozila Tm i S -- clan 115a(PPMV) str. 94
+prepravljena vozila TNG, KPG (prelazne i zavrsne odredbe) -- clan 117(PPMV) str. 94
+izduvni gasovi N i M2, M3 (prelazne i zavrsne odredbe) -- clan 118a(PPMV) str. 94
+izduvni gasovi N, G i M2, M3 (prelazne i zavrsne odredbe) -- clan 118b(PPMV) str. 94
+taksi Euro 3 (prelazne i zavrsne odredbe) -- clan 119(PPMV) str. 95
+coc, brisac i perac vetrobrana za T i C (prelazne i zavrsne odredbe) -- clan 120(PPMV) str. 95
+homologacija za N (prelazne i zavrsne odredbe) -- clan 120a(PPMV) str. 95
+radno kocenje za R i S (prelazne i zavrsne odredbe) -- clan 120b(PPMV) str. 95
+vrsta N specijalna (prelazne i zavrsne odredbe) -- clan 120v(PPMV) str. 95
+konture vozila (prelazne i zavrsne odredbe) -- clan 121(PPMV) str. 95
+vozacko ogledalo N2, N3 ( retrovizor, prelazne i zavrsne odredbe) -- clan 121a(PPMV) str. 96
+tahograf (prelazne i zavrsne odredbe) -- clan 122(PPMV) str. 96
+kabina ili ram (prelazne i zavrsne odredbe) -- clan 123(PPMV) str. 96
+---------------------------------------------------------------------
+boja vozila (odredivanje boje vozila) -- clan 24(PTPV) str. 13
+baza podataka, propisi, uputstva, strucna literatura, tehnicka dokumentacija, elaborat, bazdarenje -- clan 27(PTPV) str. 14
+vrste tehnickog pregleda (podela) -- clan 28(PTPV) str. 15
+uslovi za vrsenje tehnickog pregleda -- clan 29(PTPV) str. 15
+sumnja u tacnost podataka -- clan 30(PTPV) str. 17
+tehnicki pregled vozila obuhvata -- clan 31(PTPV) str. 17
+tehnicki pregled vozila vrsi se u celini -- clan 32(PTPV) str. 18
+ponovni tehnicki pregled vozila -- clan 33(PTPV) str. 18
+tehnicki pregled vozila obuhvata pregled uredaja, opreme itd -- clan 34(PTPV) str. 18
+utvrdivanje tehnickih karakteristika vozila -- clan 35(PTPV) str. 19
+kontrolori (uslovi za kontrolore) -- clan 36(PTPV) str. 19
+snimanje vrsenja tehnickog pregleda (video sistem) -- clan 37(PTPV) str. 19
+tehnologija vrsenja tehnickog pregleda - eleborat (minimalna vremena za vrsenje tehnickog pregleda) -- clan 38(PTPV) str. 20
+ID broj -- clan 39(PTPV) str. 20
+evidencija -- clan 40(PTPV) str. 20
+potvrda, registracioni list, izvestaj -- clan 41(PTPV) str. 21
+tehnicki pregled vozila na poligonu (poligon) -- clan 42(PTPV) str. 22
+boja vozila -- clan 44(PTPV) str. 23
+fotografija vozila (fotografosanje vozila) -- clan 49(PTPV) str. 24
+registar pregledanih vozila (registar) -- clan 50(PTPV) str. 24
+Prilog 1:  identifikacija vozila -- tacka 0(PTPV) str. 26
+Prilog 1:  uredaj za upravljanje (volan) -- tacka 1(PTPV) str. 26
+Prilog 1:  uredaj za zaustavljanje (kocnice) -- tacka 2(PTPV) str. 27
+Prilog 1:  svetlosni i svetlosno-signalni uredaji (svetla) -- tacka 3(PTPV) str. 31
+Prilog 1:  uredaji koji omogucavaju normalnu vidljivost (vetrobran, ogledalo - retrovizor, uredjaj za kvasenje, brisanje - metlice) -- tacka 4(PTPV) str. 34
+Prilog 1:  uredaji za davanje zvucnih znakova (sirena) -- tacka 5(PTPV) str. 35
+Prilog 1:  uredaji za kontrolu i davanje znakova (odometar, tahograf) -- tacka 6(PTPV) str. 35
+Prilog 1:  uredaji za odvodenje i regulisanje izduvnih gasova (auspuh) -- tacka 7(PTPV) str. 36
+Prilog 1:  uredaj za spajanje vucnog i prikljucnog vozila (kuka) -- tacka 8(PTPV) str. 37
+Prilog 1:  uredaj za kretanje vozila unazad (rikverc) -- tacka 9(PTPV) str. 37
+Prilog 1:  uredaji za oslanjanje -- tacka 10(PTPV) str. 37
+Prilog 1:  uredaji za kretanje (pneumatici - gume) -- tacka 11(PTPV) str. 38
+Prilog 1:  elektro-uredaji i instalacija -- tacka 12(PTPV) str. 39
+Prilog 1:  pogonski uredaj (motor) -- tacka 13(PTPV) str. 39
+Prilog 1:  uredaj za prenos snage (menjac) -- tacka 14(PTPV) str. 40
+Prilog 1:  delovi vozila od posebnog znacaja za bezbednost (karoserija, ram, VIN, ukrasni predmeti, oslonci za noge) -- tacka 15(PTPV) str. 41
+Prilog 1:  oprema vozila -- tacka 16(PTPV) str. 44
