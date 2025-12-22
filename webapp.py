@@ -179,7 +179,7 @@ with st.sidebar:
 st.markdown(
     """
     <h2 style='text-align: center; font-size:28px;'>
-        Web aplikacija za pretragu Pravilnika o Podeli Vozila (PoPV) i Pravilnika o Tehničkom Pregledu (PoTP)
+        Web aplikacija za pretragu Pravilnika o Podeli Vozila (PPMV) i Pravilnika o Tehničkom Pregledu (PTPV)
     </h2>
     <p style='font-size:18px; text-align: left;'>
         🛈 Aplikacija pretražuje tekstualni fajl koji prikazuje broj člana i stranu iz PDF verzije pravilnika.
@@ -208,8 +208,8 @@ file_path = "pravilnik.txt"
 # --- Create demo file if not exist ---
 try:
     with open(file_path, "x", encoding="utf-8") as f:
-        f.write("ABS (kočenje) -- Član 30 (PoPV) str. 35\n")
-        f.write("Pregled svetala -- Član 12 (PoTP) str. 15\n")
+        f.write("ABS (kočenje) -- Član 30 (PPMV) str. 35\n")
+        f.write("Pregled svetala -- Član 12 (PTPV) str. 15\n")
         f.write("Ovaj red ne sadrži ništa relevantno.\n")
 except FileExistsError:
     pass
