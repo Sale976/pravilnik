@@ -158,7 +158,7 @@ with st.sidebar:
             <details>
                 <summary><strong>ℹ️ O Aplikaciji</strong></summary>
                 <div>
-                    <b>Web aplikacija za pretragu Pravilnika (PoPV, PoTP)</b><br><br>
+                    <b>Web aplikacija za pretragu Pravilnika (PPMV, PTPV)</b><br><br>
                     🔍 Omogućava brzo pronalaženje članova i stranica u pravilnicima.<br><br>
                     📄 Klikom na link otvarate odgovarajući PDF fajl na traženoj stranici.<br><br>
                     👨‍💻 Autor: <b>AI & Aleksandar</b><br>
