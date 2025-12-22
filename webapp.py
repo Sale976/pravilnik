@@ -11,7 +11,7 @@ import snowballstemmer
 
 
 st.set_page_config(
-    page_title="Pretraga PoPV - PoTP",
+    page_title="Pretraga PPMV - PTPV",
     page_icon="📘",
     layout="wide"
 )
