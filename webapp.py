@@ -179,7 +179,7 @@ with st.sidebar:
 st.markdown(
     """
     <h2 style='text-align: center; font-size:28px;'>
-        Web aplikacija za pretragu Pravilnika o Podeli Vozila (PPMV) i Pravilnika o Tehničkom Pregledu (PTPV)
+        Web aplikacija za pretragu Pravilnika o Podeli Motornih Vozila (PPMV) i Pravilnika o Tehničkom Pregledu Vozila (PTPV)
     </h2>
     <p style='font-size:18px; text-align: left;'>
         🛈 Aplikacija pretražuje tekstualni fajl koji prikazuje broj člana i stranu iz PDF verzije pravilnika.
