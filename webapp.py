@@ -303,7 +303,7 @@ with col2:
                 unsafe_allow_html=True
             )
             for match in matching_lines:
-                acronym_match = re.search(r"\((PoPV|PoTP)\)", match)
+                acronym_match = re.search(r"\((PPMV|PTPV)\)", match)
                 page_match = re.search(r"[Ss]tr\.*\s*(\d+)", match)
                 
                 acronym = acronym_match.group(1) if acronym_match else None
