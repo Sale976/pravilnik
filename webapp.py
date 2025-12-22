@@ -32,30 +32,6 @@ sheet = gc.open_by_url("https://docs.google.com/spreadsheets/d/1jXw517eCBbEWvhgJ
 COUNTER_FILE = Path("data/visitor_counter.json")
 COUNTER_FILE.parent.mkdir(parents=True, exist_ok=True)
 
-# --- Load or create the counter ---
-# def load_counter():
-#     path = Path(COUNTER_FILE)
-#     if path.exists():
-#         with open(path, "r") as f:
-#             return json.load(f).get("count", 0)
-#     else:
-#         return 0
-
-# # --- Save counter back to file ---
-# def save_counter(count):
-#     with open(COUNTER_FILE, "w") as f:
-#         json.dump({"count": count}, f)
-
-
-# # --- Increment the counter only once per session ---
-# if "counted" not in st.session_state:
-#     count = load_counter() + 1
-#     save_counter(count)
-#     #log_visit(count)  # 👈 CALL IT HERE
-#     st.session_state.counted = True
-# else:
-#     count = load_counter()
-
 
 # --- CSS STYLES ---
 st.markdown("""
