@@ -153,20 +153,21 @@ with st.sidebar:
 
     # ------------------------------------------------------------
     
-    # 1. CSS za precizno pozicioniranje dugmeta
+    # 2. CSS ZA TO SPECIFIČNO DUGME (koristimo ID #moje-dugme-kontejner)
     st.markdown("""
         <style>
-            /* Selektujemo kontejner u kojem je dugme */
-            div.stButton > button {
-                position: relative; /* Omogućava pomeranje u odnosu na normalnu poziciju */
-                top: -50px;         /* NEGATIVNO ga penje GORE, POZITIVNO ga spušta DOLE */
-                left: 0px;          /* POMERA ga DESNO ako povećaš broj */
-                #z-index: 999;       /* Osigurava da dugme bude iznad svega */
+            /* Ciljamo samo dugme unutar našeg specijalnog kontejnera */
+            div#moje-dugme-kontejner .stButton > button {
+                position: relative;
+                top: -35px;    /* SMANJI ovaj broj (npr. -50px) da ide JOŠ VIŠE GORE */
+                left: -10px;   /* SMANJI ovaj broj da ide SKROZ U LEVI UGAO */
+                z-index: 999;
+                background-color: #f0f2f6; /* Opciona boja da se razlikuje */
             }
-
-            /* Uklanjanje standardnog praznog prostora sidebara da bi dugme moglo skroz gore */
+        
+            /* Uklanjamo početni prostor sidebara da bi dugme moglo da izađe na vrh */
             [data-testid="stSidebarContent"] {
-                padding-top: 10px !important; 
+                padding-top: 0.5rem !important;
             }
         </style>
     """, unsafe_allow_html=True)
