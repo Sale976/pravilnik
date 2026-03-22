@@ -26,7 +26,7 @@ def prikazi_fajl_modal(putanja):
             sadrzaj = f.read()
         
         # Prikaz teksta (view-only)
-        st.text_area("Sadržaj dokumenta:", value=sadrzaj, height=400, disabled=True)
+        st.text_area("Sadržaj dokumenta:", value=sadrzaj, height=500, disabled=True)
         
         # Opciono dugme za zatvaranje unutar prozora (pored ugrađenog X)
         if st.button("Zatvori"):
