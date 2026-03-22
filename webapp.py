@@ -179,7 +179,7 @@ with st.sidebar:
 st.markdown("""
     <style>
         [data-testid="stSidebarNav"] {padding-top: 0rem;}
-        [data-testid="stSidebarUserContent"] {padding-top: 0rem;}
+        [data-testid="stSidebarUserContent"] {padding-top: 10rem;}
     </style>
 """, unsafe_allow_html=True)
 
