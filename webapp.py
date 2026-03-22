@@ -201,8 +201,8 @@ st.divider()
 # dugme za tekstualni fajl
 st.markdown("""
     <style>
-        [data-testid="stSidebarNav"] {padding-top: 0rem;}
-        [data-testid="stSidebarUserContent"] {padding-top: 20rem;}
+        [data-testid="stSidebarNav"] {padding-top: 5rem;}
+        [data-testid="stSidebarUserContent"] {padding-top: 0rem;}
     </style>
 """, unsafe_allow_html=True)
 
