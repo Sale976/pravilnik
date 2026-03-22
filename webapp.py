@@ -174,29 +174,6 @@ with st.sidebar:
     )
     st.markdown('</div>', unsafe_allow_html=True)
 
-
-#st.sidebar.markdown("[💬 Prijavite grešku](mailto:aca1976@mts.rs)")
-    
-# --- Title and Description ---
-st.markdown(
-    """
-    <h2 style='text-align: center; font-size:28px;'>
-        Web aplikacija za pretragu Pravilnika o Podeli Motornih Vozila (PPMV) i Pravilnika o Tehničkom Pregledu Vozila (PTPV)
-    </h2>
-    <p style='font-size:18px; text-align: left;'>
-        🛈 Aplikacija pretražuje tekstualni fajl koji prikazuje broj člana i stranu iz PDF verzije pravilnika.
-        Brojevi stranica važe ako su PDF fajlovi preuzeti sa zvaničnog izvora (PIS) bez izmene.
-    </p>
-    </h2>
-    <p style='font-size:18px; text-align: justify;'>
-        🛈 Pravilnik o Podeli Motornih i Priključnih Vozila, <b>br. 53 од 20. јуна 2025.</b>&#160; &#160; &#160;|&#160; &#160; &#160;Pravilnik o Tehničkom Pregledu Vozila, <b>br. 62 od 26. маја 2022.</b> 
-    </p>
-    """,
-    unsafe_allow_html=True
-)
-
-st.divider()
-
 # ------------------------------------------------------------
 # dugme za tekstualni fajl
 #st.markdown("""
@@ -232,6 +209,30 @@ with st.sidebar:
         prikazi_fajl_modal("pravilnik_1.txt")
 
 # ----------------------------------------------------------
+
+
+#st.sidebar.markdown("[💬 Prijavite grešku](mailto:aca1976@mts.rs)")
+    
+# --- Title and Description ---
+st.markdown(
+    """
+    <h2 style='text-align: center; font-size:28px;'>
+        Web aplikacija za pretragu Pravilnika o Podeli Motornih Vozila (PPMV) i Pravilnika o Tehničkom Pregledu Vozila (PTPV)
+    </h2>
+    <p style='font-size:18px; text-align: left;'>
+        🛈 Aplikacija pretražuje tekstualni fajl koji prikazuje broj člana i stranu iz PDF verzije pravilnika.
+        Brojevi stranica važe ako su PDF fajlovi preuzeti sa zvaničnog izvora (PIS) bez izmene.
+    </p>
+    </h2>
+    <p style='font-size:18px; text-align: justify;'>
+        🛈 Pravilnik o Podeli Motornih i Priključnih Vozila, <b>br. 53 од 20. јуна 2025.</b>&#160; &#160; &#160;|&#160; &#160; &#160;Pravilnik o Tehničkom Pregledu Vozila, <b>br. 62 od 26. маја 2022.</b> 
+    </p>
+    """,
+    unsafe_allow_html=True
+)
+
+st.divider()
+
 
 # --- Session State ---
 if "search_query" not in st.session_state:
