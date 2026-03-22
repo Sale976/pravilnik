@@ -161,7 +161,7 @@ with st.sidebar:
                 position: absolute;
                 top: 20px;        /* TAČNA UDALJENOST OD VRHA (podesi po želji) */
                 left: 15px;       /* UDALJENOST OD LEVE IVICE */
-                z-index: 999999;
+                #z-index: 999999;
                 width: fit-content;
             }
 
@@ -185,7 +185,7 @@ with st.sidebar:
         try:
             with open(putanja, "r", encoding="utf-8") as f:
                 sadrzaj = f.read()
-            st.text_area("Sadržaj dokumenta:", value=sadrzaj, height=750, disabled=True)
+            st.text_area("Sadržaj dokumenta:", value=sadrzaj, height=800, disabled=True)
             if st.button("Zatvori"):
                 st.rerun()
         except FileNotFoundError:
