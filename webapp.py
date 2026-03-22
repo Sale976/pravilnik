@@ -44,7 +44,7 @@ def prikazi_fajl_modal(putanja):
 
 # 2. Postavljanje dugmeta u SIDEBAR
 with st.sidebar:
-    st.title("Fajl")
+    st.title("")
     if st.button("📄 Otvori tekstualni fajl"):
         # Pozivamo funkciju koja otvara prozor preko ekrana
         prikazi_fajl_modal("pravilnik_1.txt")
