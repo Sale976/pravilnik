@@ -160,7 +160,7 @@ with st.sidebar:
             div#moje-dugme-kontejner .stButton > button {
                 position: relative;
                 top: -30px;    /* SMANJI ovaj broj (npr. -50px) da ide JOŠ VIŠE GORE */
-                left: 5px;   /* SMANJI ovaj broj da ide SKROZ U LEVI UGAO */
+                left: -10px;   /* SMANJI ovaj broj da ide SKROZ U LEVI UGAO */
                 z-index: 999;
                 background-color: #f0f2f6; /* Opciona boja da se razlikuje */
             }
