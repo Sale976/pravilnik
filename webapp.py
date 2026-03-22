@@ -159,7 +159,7 @@ with st.sidebar:
             /* Ciljamo samo dugme unutar našeg specijalnog kontejnera */
             div#moje-dugme-kontejner .stButton > button {
                 position: relative;
-                top: -70px;    /* SMANJI ovaj broj (npr. -50px) da ide JOŠ VIŠE GORE */
+                top: -50px;    /* SMANJI ovaj broj (npr. -50px) da ide JOŠ VIŠE GORE */
                 left: -10px;   /* SMANJI ovaj broj da ide SKROZ U LEVI UGAO */
                 z-index: 999;
                 background-color: #f0f2f6; /* Opciona boja da se razlikuje */
@@ -196,9 +196,6 @@ with st.sidebar:
         if st.button("📄 Otvori fajl"):
             prikazi_fajl_modal("pravilnik_1.txt")
         st.markdown('</div>', unsafe_allow_html=True)
-
-        # TEST: Drugo dugme koje se NEĆE pomeriti
-        # st.button("Normalno dugme (ostaje na mestu)")
     
     #with st.sidebar:
         #st.title("")
