@@ -172,7 +172,7 @@ with st.sidebar:
         </style>
     """, unsafe_allow_html=True)
 
-    # 1. Definišemo funkciju koja će biti naš "pop-up" prozor
+    # Definišemo funkciju koja će biti naš "pop-up" prozor
     @st.dialog("Pregled fajla", width="large")
     def prikazi_fajl_modal(putanja):
         try:
@@ -189,12 +189,22 @@ with st.sidebar:
         except FileNotFoundError:
             st.error("Fajl nije pronađen.")
 
-    # 2. Postavljanje dugmeta u SIDEBAR
+    # Postavljanje dugmeta u SIDEBAR
     with st.sidebar:
-        st.title("")
-        if st.button("📄 Otvori tekstualni fajl"):
+    # "Umotavamo" dugme u div sa ID-jem koji smo definisali u CSS-u
+    st.markdown('<div id="moje-dugme-kontejner">', unsafe_allow_html=True)
+    if st.button("📄 Otvori fajl"):
+        otvori_modal("pravilnik_1.txt")
+    st.markdown('</div>', unsafe_allow_html=True)
+
+    # TEST: Drugo dugme koje se NEĆE pomeriti
+    st.button("Normalno dugme (ostaje na mestu)")
+    
+    #with st.sidebar:
+        #st.title("")
+        #if st.button("📄 Otvori tekstualni fajl"):
             # Pozivamo funkciju koja otvara prozor preko ekrana
-            prikazi_fajl_modal("pravilnik_1.txt")
+            #prikazi_fajl_modal("pravilnik_1.txt")
 
     # ----------------------------------------------------------
     
