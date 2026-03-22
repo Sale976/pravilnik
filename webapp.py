@@ -152,6 +152,7 @@ with st.sidebar:
         - Pri unosu reči ne koristiti kvačice iznad slova.  
         - Kliknite na PDF ikonicu da otvorite dokument.  
         """)
+        st.markdown(get_text_file_link("pravilnik_1.txt", "🔍 Pogledaj logove"), unsafe_allow_html=True)
 
     search_mode = st.radio(
         "Način pretrage:",
@@ -160,7 +161,6 @@ with st.sidebar:
     )
     
     st.markdown('</div>', unsafe_allow_html=True)  # Close top container
-    st.markdown(get_text_file_link("pravilnik_1.txt", "🔍 Pogledaj logove"), unsafe_allow_html=True)
 
     # Spacer to push content to bottom
     st.markdown('<div style="flex-grow: 1;"></div>', unsafe_allow_html=True)
