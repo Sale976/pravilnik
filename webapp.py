@@ -201,8 +201,8 @@ with st.sidebar:
     
         # Dodajemo prazan prostor (spacer) da ostali elementi ne odu pod dugme
         st.markdown("<br><br>", unsafe_allow_html=True)
-        st.write("---")
-        st.write("Ostatak menija...")
+        #st.write("---")
+        #st.write("Ostatak menija...")
 
 
     # ----------------------------------------------------------
