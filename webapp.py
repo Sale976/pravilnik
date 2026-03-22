@@ -152,56 +152,58 @@ with st.sidebar:
     st.markdown('<div style="flex-grow: 1;"></div>', unsafe_allow_html=True)
 
     # ------------------------------------------------------------
-    
-    # CSS ZA TO SPECIFIČNO DUGME (koristimo ID #moje-dugme-kontejner)
-    st.markdown("""
+
+    # CSS - Koristimo jači selektor i fiksnu poziciju unutar sidebara
+    st.html("""
         <style>
-            /* Ciljamo samo dugme unutar našeg specijalnog kontejnera */
-            div#moje-dugme-kontejner .stButton > button {
-                position: relative;
-                top: -50px;    /* SMANJI ovaj broj (npr. -50px) da ide JOŠ VIŠE GORE */
-                left: -10px;   /* SMANJI ovaj broj da ide SKROZ U LEVI UGAO */
-                z-index: 999;
-                background-color: #f0f2f6; /* Opciona boja da se razlikuje */
+            /* Ciljamo direktno kontejner i dugme unutra */
+            [data-testid="stSidebar"] div#moje-dugme-kontejner {
+                position: absolute;
+                top: 10px;        /* TAČNA UDALJENOST OD VRHA (podesi po želji) */
+                left: 10px;       /* UDALJENOST OD LEVE IVICE */
+                z-index: 999999;
+                width: fit-content;
+            }
+
+            /* Stil samog dugmeta unutar tog kontejnera */
+            div#moje-dugme-kontejner button {
+                background-color: #f0f2f6 !important;
+                border: 1px solid #d1d5db !important;
+                padding: 5px 10px !important;
             }
         
-            /* Uklanjamo početni prostor sidebara da bi dugme moglo da izađe na vrh */
+            /* Čišćenje gornjeg prostora sidebara da ne smeta */
             [data-testid="stSidebarContent"] {
-                padding-top: 0.5rem !important;
+                padding-top: 0rem !important;
             }
         </style>
-    """, unsafe_allow_html=True)
+    """)
 
-    # Definišemo funkciju koja će biti naš "pop-up" prozor
+    # DEFINICIJA MODALA
     @st.dialog("Pregled fajla", width="large")
     def prikazi_fajl_modal(putanja):
         try:
-            with open("pravilnik_1.txt", "r", encoding="utf-8") as f:
+            with open(putanja, "r", encoding="utf-8") as f:
                 sadrzaj = f.read()
-        
-            # Prikaz teksta (view-only)
-            st.text_area("Sadržaj dokumenta:", value=sadrzaj, height=800, disabled=True)
-        
-            # Opciono dugme za zatvaranje unutar prozora (pored ugrađenog X)
+            st.text_area("Sadržaj dokumenta:", value=sadrzaj, height=600, disabled=True)
             if st.button("Zatvori"):
                 st.rerun()
-            
         except FileNotFoundError:
             st.error("Fajl nije pronađen.")
 
-    # Postavljanje dugmeta u SIDEBAR
+    # SIDEBAR POZICIONIRANJE
     with st.sidebar:
-        # "Umotavamo" dugme u div sa ID-jem koji smo definisali u CSS-u
-        st.markdown('<div id="moje-dugme-kontejner">', unsafe_allow_html=True)
+        # Koristimo st.html da bi ID sigurno bio prihvaćen
+        st.html('<div id="moje-dugme-kontejner">')
         if st.button("📄 Otvori fajl"):
             prikazi_fajl_modal("pravilnik_1.txt")
-        st.markdown('</div>', unsafe_allow_html=True)
+        st.html('</div>')
     
-    #with st.sidebar:
-        #st.title("")
-        #if st.button("📄 Otvori tekstualni fajl"):
-            # Pozivamo funkciju koja otvara prozor preko ekrana
-            #prikazi_fajl_modal("pravilnik_1.txt")
+        # Dodajemo prazan prostor (spacer) da ostali elementi ne odu pod dugme
+        st.markdown("<br><br>", unsafe_allow_html=True)
+        st.write("---")
+        st.write("Ostatak menija...")
+
 
     # ----------------------------------------------------------
     
