@@ -216,7 +216,7 @@ with st.sidebar:
                     🔍 Omogućava brzo pronalaženje članova i stranica u pravilnicima.<br><br>
                     📄 Klikom na link otvarate odgovarajući PDF fajl na traženoj stranici.<br><br>
                     👨‍💻 Autor: <b>AI & Aleksandar</b><br>
-                    📄 Verzija: <b>v1.2</b><br>
+                    📄 Verzija: <b>v1.5</b><br>
                     🛠️ Izrađeno pomoću <a href="https://streamlit.io" target="_blank">Streamlit</a>
                 </div>
             </details>
