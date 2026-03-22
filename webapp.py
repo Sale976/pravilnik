@@ -153,31 +153,27 @@ with st.sidebar:
 
     # ------------------------------------------------------------
 
-    # CSS - Koristimo jači selektor i fiksnu poziciju unutar sidebara
-    st.html("""
+    # CSS ZA FIKSNO POZICIONIRANJE (Ignoriše logo i ostalo)
+    st.markdown("""
         <style>
-            /* Ciljamo direktno kontejner i dugme unutra */
-            [data-testid="stSidebar"] div#moje-dugme-kontejner {
+            /* Ciljamo PRVO dugme u sidebar-u i fiksiramo ga za ekran */
+            section[data-testid="stSidebar"] .stButton:nth-of-type(1) button {
                 position: fixed;
-                top: 40px;        /* TAČNA UDALJENOST OD VRHA (podesi po želji) */
-                left: 15px;       /* UDALJENOST OD LEVE IVICE */
-                #z-index: 999999;
-                width: fit-content;
+                top: 10px;        /* 10px od samog vrha stranice */
+                left: 10px;       /* 10px od leve ivice ekrana/sidebar-a */
+                z-index: 999999;  /* Ide iznad logoa i svega ostalog */
+                width: auto;
+                padding: 2px 10px !important;
+                height: auto;
+                min-height: 0px;
             }
 
-            /* Stil samog dugmeta unutar tog kontejnera */
-            div#moje-dugme-kontejner button {
-                background-color: #f0f2f6 !important;
-                border: 1px solid #d1d5db !important;
-                padding: 5px 10px !important;
-            }
-        
-            /* Čišćenje gornjeg prostora sidebara da ne smeta */
+            /* Opciono: Ako logo previše "beži" gore, dodajemo razmak */
             [data-testid="stSidebarContent"] {
-                padding-top: 0rem !important;
+                padding-top: 3rem !important;
             }
         </style>
-    """)
+    """, unsafe_allow_html=True)
 
     # DEFINICIJA MODALA
     @st.dialog("Pregled fajla", width="large")
