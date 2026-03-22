@@ -17,19 +17,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# 1. FUNKCIJU STAVITE NA VRH (da bi bila definisana pre upotrebe)
-def get_text_file_link(file_path, link_text):
-    try:
-        with open(file_path, "r", encoding="utf-8") as f:
-            content = f.read()
-        b64 = base64.b64encode(content.encode()).decode()
-        href = f'data:text/plain;base64,{b64}'
-        return f'<a href="{href}" target="_blank">{link_text}</a>'
-    except FileNotFoundError:
-        return "Fajl nije pronađen."
-
 file_path = "pravilnik_1.txt"
-
 
 # Google Sheets API scope
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
@@ -152,7 +140,6 @@ with st.sidebar:
         - Pri unosu reči ne koristiti kvačice iznad slova.  
         - Kliknite na PDF ikonicu da otvorite dokument.  
         """)
-        st.markdown(get_text_file_link("pravilnik_1.txt", "🔍 Pogledaj logove"), unsafe_allow_html=True)
 
     search_mode = st.radio(
         "Način pretrage:",
