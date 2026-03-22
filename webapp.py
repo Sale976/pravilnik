@@ -158,8 +158,8 @@ with st.sidebar:
         <style>
             /* Ciljamo direktno kontejner i dugme unutra */
             [data-testid="stSidebar"] div#moje-dugme-kontejner {
-                position: absolute;
-                top: 50px;        /* TAČNA UDALJENOST OD VRHA (podesi po želji) */
+                position: fixed;
+                top: 40px;        /* TAČNA UDALJENOST OD VRHA (podesi po želji) */
                 left: 15px;       /* UDALJENOST OD LEVE IVICE */
                 #z-index: 999999;
                 width: fit-content;
