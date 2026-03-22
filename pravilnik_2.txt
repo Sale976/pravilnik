@@ -195,7 +195,7 @@ tehnički pregled vozila (obuhvata) -- član 31(PTPV) str. 17
 tehnički pregled vozila (vrši se u celini) -- član 32(PTPV) str. 18
 ponovni tehnički pregled vozila -- član 33(PTPV) str. 18
 tehnički pregled vozila (obuhvata pregled uređaja, opreme itd) -- član 34(PTPV) str. 18
-utvrđivanje tehničkih karakteristika vozila -- član 35(PTPV) str. 19
+utvrđivanje tehničkih karakteristika vozila (utkv) -- član 35(PTPV) str. 19
 kontrolori (uslovi za kontrolore) -- član 36(PTPV) str. 19
 snimanje vršenja tehničkog pregleda (video sistem) -- član 37(PTPV) str. 19
 tehnologija vršenja tehničkog pregleda (minimalna vremena za vršenje tehničkog pregleda) -- član 38(PTPV) str. 20
