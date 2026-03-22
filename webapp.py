@@ -152,14 +152,24 @@ with st.sidebar:
     st.markdown('<div style="flex-grow: 1;"></div>', unsafe_allow_html=True)
 
     # ------------------------------------------------------------
-    # dugme za tekstualni fajl
+    
+    # 1. CSS za precizno pozicioniranje dugmeta
     st.markdown("""
         <style>
-            [data-testid="stSidebarNav"] {padding-top: 0rem;}
-            [data-testid="stSidebarUserContent"] {padding-top: 0rem;}
+            /* Selektujemo kontejner u kojem je dugme */
+            div.stButton > button {
+                position: relative; /* Omogućava pomeranje u odnosu na normalnu poziciju */
+                top: -20px;         /* NEGATIVNO ga penje GORE, POZITIVNO ga spušta DOLE */
+                left: 0px;          /* POMERA ga DESNO ako povećaš broj */
+                z-index: 999;       /* Osigurava da dugme bude iznad svega */
+            }
+
+            /* Uklanjanje standardnog praznog prostora sidebara da bi dugme moglo skroz gore */
+            [data-testid="stSidebarContent"] {
+                padding-top: 10px !important; 
+            }
         </style>
     """, unsafe_allow_html=True)
-
 
     # 1. Definišemo funkciju koja će biti naš "pop-up" prozor
     @st.dialog("Pregled fajla", width="large")
