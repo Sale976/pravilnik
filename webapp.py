@@ -194,11 +194,11 @@ with st.sidebar:
         # "Umotavamo" dugme u div sa ID-jem koji smo definisali u CSS-u
         st.markdown('<div id="moje-dugme-kontejner">', unsafe_allow_html=True)
         if st.button("📄 Otvori fajl"):
-            otvori_modal("pravilnik_1.txt")
+            prikazi_fajl_modal("pravilnik_1.txt")
         st.markdown('</div>', unsafe_allow_html=True)
 
         # TEST: Drugo dugme koje se NEĆE pomeriti
-        st.button("Normalno dugme (ostaje na mestu)")
+        # st.button("Normalno dugme (ostaje na mestu)")
     
     #with st.sidebar:
         #st.title("")
