@@ -150,6 +150,42 @@ with st.sidebar:
 
     # Spacer to push content to bottom
     st.markdown('<div style="flex-grow: 1;"></div>', unsafe_allow_html=True)
+
+    # ------------------------------------------------------------
+    # dugme za tekstualni fajl
+    st.markdown("""
+        <style>
+            [data-testid="stSidebarNav"] {padding-top: 0rem;}
+            [data-testid="stSidebarUserContent"] {padding-top: 0rem;}
+        </style>
+    """, unsafe_allow_html=True)
+
+
+    # 1. Definišemo funkciju koja će biti naš "pop-up" prozor
+    @st.dialog("Pregled fajla", width="large")
+    def prikazi_fajl_modal(putanja):
+        try:
+            with open("pravilnik_1.txt", "r", encoding="utf-8") as f:
+                sadrzaj = f.read()
+        
+            # Prikaz teksta (view-only)
+            st.text_area("Sadržaj dokumenta:", value=sadrzaj, height=800, disabled=True)
+        
+            # Opciono dugme za zatvaranje unutar prozora (pored ugrađenog X)
+            if st.button("Zatvori"):
+                st.rerun()
+            
+        except FileNotFoundError:
+            st.error("Fajl nije pronađen.")
+
+    # 2. Postavljanje dugmeta u SIDEBAR
+    with st.sidebar:
+        st.title("")
+        if st.button("📄 Otvori tekstualni fajl"):
+            # Pozivamo funkciju koja otvara prozor preko ekrana
+            prikazi_fajl_modal("pravilnik_1.txt")
+
+    # ----------------------------------------------------------
     
     # --- BOTTOM ELEMENT ---
     # This markdown block with the "sidebar-bottom" class will be pushed down
@@ -173,42 +209,6 @@ with st.sidebar:
         unsafe_allow_html=True
     )
     st.markdown('</div>', unsafe_allow_html=True)
-
-# ------------------------------------------------------------
-# dugme za tekstualni fajl
-st.markdown("""
-    <style>
-        [data-testid="stSidebarNav"] {padding-top: 0rem;}
-        [data-testid="stSidebarUserContent"] {padding-top: 0rem;}
-    </style>
-""", unsafe_allow_html=True)
-
-
-# 1. Definišemo funkciju koja će biti naš "pop-up" prozor
-@st.dialog("Pregled fajla", width="large")
-def prikazi_fajl_modal(putanja):
-    try:
-        with open("pravilnik_1.txt", "r", encoding="utf-8") as f:
-            sadrzaj = f.read()
-        
-        # Prikaz teksta (view-only)
-        st.text_area("Sadržaj dokumenta:", value=sadrzaj, height=800, disabled=True)
-        
-        # Opciono dugme za zatvaranje unutar prozora (pored ugrađenog X)
-        if st.button("Zatvori"):
-            st.rerun()
-            
-    except FileNotFoundError:
-        st.error("Fajl nije pronađen.")
-
-# 2. Postavljanje dugmeta u SIDEBAR
-with st.sidebar:
-    st.title("")
-    if st.button("📄 Otvori tekstualni fajl"):
-        # Pozivamo funkciju koja otvara prozor preko ekrana
-        prikazi_fajl_modal("pravilnik_1.txt")
-
-# ----------------------------------------------------------
 
 
 #st.sidebar.markdown("[💬 Prijavite grešku](mailto:aca1976@mts.rs)")
