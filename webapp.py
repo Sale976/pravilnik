@@ -176,12 +176,12 @@ with st.sidebar:
 
 # ------------------------------------------------------------
 # dugme za tekstualni fajl
-#st.markdown("""
-    #<style>
-        #[data-testid="stSidebarNav"] {padding-top: 0rem;}
-        #[data-testid="stSidebarUserContent"] {padding-top: 0rem;}
-    #</style>
-#""", unsafe_allow_html=True)
+st.markdown("""
+    <style>
+        [data-testid="stSidebarNav"] {padding-top: 0rem;}
+        [data-testid="stSidebarUserContent"] {padding-top: 0rem;}
+    </style>
+""", unsafe_allow_html=True)
 
 
 # 1. Definišemo funkciju koja će biti naš "pop-up" prozor
@@ -192,7 +192,7 @@ def prikazi_fajl_modal(putanja):
             sadrzaj = f.read()
         
         # Prikaz teksta (view-only)
-        st.text_area("Sadržaj dokumenta:", value=sadrzaj, height=700, disabled=True)
+        st.text_area("Sadržaj dokumenta:", value=sadrzaj, height=800, disabled=True)
         
         # Opciono dugme za zatvaranje unutar prozora (pored ugrađenog X)
         if st.button("Zatvori"):
