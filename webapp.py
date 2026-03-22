@@ -18,20 +18,33 @@ st.set_page_config(
 )
 
 
-#file_path = "pravilnik_1.txt"
-# 1. Napravi dugme
-if st.sidebar.button('Prikaži sadržaj fajla'):
-    
-    # 2. Kada se klikne, izvršava se ovaj deo:
+# 1. Definišemo funkciju koja će biti naš "pop-up" prozor
+@st.dialog("Pregled fajla", width="large")
+def prikazi_fajl_modal(putanja):
     try:
         with open("pravilnik_1.txt", "r", encoding="utf-8") as f:
-            file_content = f.read()
+            sadrzaj = f.read()
         
-        # Prikazuje tekst u prozoru koji ne može da se menja (disabled)
-        st.text_area("Sadržaj vašeg fajla:", value=file_content, height=300, disabled=True)
+        # Prikaz teksta (view-only)
+        st.text_area("Sadržaj dokumenta:", value=sadrzaj, height=400, disabled=True)
         
+        # Opciono dugme za zatvaranje unutar prozora (pored ugrađenog X)
+        if st.button("Zatvori"):
+            st.rerun()
+            
     except FileNotFoundError:
-        st.error("Greška: Fajl 'vash_fajl.txt' nije pronađen u folderu aplikacije.")
+        st.error("Fajl nije pronađen.")
+
+# 2. Postavljanje dugmeta u SIDEBAR
+with st.sidebar:
+    st.title("Meni")
+    if st.button("📄 Otvori tekstualni fajl"):
+        # Pozivamo funkciju koja otvara prozor preko ekrana
+        prikazi_fajl_modal("pravilnik_1.txt")
+
+# Ostatak tvoje glavne aplikacije ide ovde
+st.write("Ovo je glavni sadržaj tvoje aplikacije koji će biti u pozadini.")
+
 
 
 # Google Sheets API scope
