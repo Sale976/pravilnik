@@ -159,8 +159,8 @@ with st.sidebar:
             /* Ciljamo PRVO dugme u sidebar-u i fiksiramo ga za ekran */
             section[data-testid="stSidebar"] .stButton:nth-of-type(1) button {
                 position: fixed;
-                top: 100px;        /* 10px od samog vrha stranice */
-                left: 15px;       /* 10px od leve ivice ekrana/sidebar-a */
+                top: 300px;        /* 10px od samog vrha stranice */
+                left: 20px;       /* 10px od leve ivice ekrana/sidebar-a */
                 z-index: 999999;  /* Ide iznad logoa i svega ostalog */
                 width: auto;
                 padding: 2px 10px !important;
