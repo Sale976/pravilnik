@@ -159,7 +159,7 @@ with st.sidebar:
             /* Selektujemo kontejner u kojem je dugme */
             div.stButton > button {
                 position: relative; /* Omogućava pomeranje u odnosu na normalnu poziciju */
-                top: -30px;         /* NEGATIVNO ga penje GORE, POZITIVNO ga spušta DOLE */
+                top: -50px;         /* NEGATIVNO ga penje GORE, POZITIVNO ga spušta DOLE */
                 left: 0px;          /* POMERA ga DESNO ako povećaš broj */
                 z-index: 999;       /* Osigurava da dugme bude iznad svega */
             }
