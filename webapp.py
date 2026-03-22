@@ -137,7 +137,6 @@ st.markdown("""
 
 # --- SIDEBAR CONTENT ---
 with st.sidebar:
-    st.markdown(get_text_file_link("pravilnik_1.txt", "🔍 Pogledaj logove"), unsafe_allow_html=True)
     # Logo at the top
     # st.markdown('<div class="logo">📘 Pretraga Pravilnika</div>', unsafe_allow_html=True)
     st.image("./data/inspect.jpg", width=240)
@@ -161,6 +160,7 @@ with st.sidebar:
     )
     
     st.markdown('</div>', unsafe_allow_html=True)  # Close top container
+    st.markdown(get_text_file_link("pravilnik_1.txt", "🔍 Pogledaj logove"), unsafe_allow_html=True)
 
     # Spacer to push content to bottom
     st.markdown('<div style="flex-grow: 1;"></div>', unsafe_allow_html=True)
