@@ -159,8 +159,8 @@ with st.sidebar:
             /* Ciljamo samo dugme unutar našeg specijalnog kontejnera */
             div#moje-dugme-kontejner .stButton > button {
                 position: relative;
-                top: -50px;    /* SMANJI ovaj broj (npr. -50px) da ide JOŠ VIŠE GORE */
-                left: -10px;   /* SMANJI ovaj broj da ide SKROZ U LEVI UGAO */
+                top: -70px;    /* SMANJI ovaj broj (npr. -50px) da ide JOŠ VIŠE GORE */
+                left: -15px;   /* SMANJI ovaj broj da ide SKROZ U LEVI UGAO */
                 z-index: 999;
                 background-color: #f0f2f6; /* Opciona boja da se razlikuje */
             }
