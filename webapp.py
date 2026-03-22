@@ -17,6 +17,13 @@ st.set_page_config(
     layout="wide"
 )
 
+st.markdown("""
+    <style>
+        [data-testid="stSidebarNav"] {padding-top: 0rem;}
+        [data-testid="stSidebarUserContent"] {padding-top: 0rem;}
+    </style>
+""", unsafe_allow_html=True)
+
 
 # 1. Definišemo funkciju koja će biti naš "pop-up" prozor
 @st.dialog("Pregled fajla", width="large")
