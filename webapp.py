@@ -50,7 +50,7 @@ with st.sidebar:
         prikazi_fajl_modal("pravilnik_1.txt")
 
 # Ostatak tvoje glavne aplikacije ide ovde
-st.write("Ovo je glavni sadržaj tvoje aplikacije koji će biti u pozadini.")
+#st.write("Ovo je glavni sadržaj tvoje aplikacije koji će biti u pozadini.")
 
 
 
