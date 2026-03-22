@@ -17,42 +17,6 @@ st.set_page_config(
     layout="wide"
 )
 
-st.markdown("""
-    <style>
-        [data-testid="stSidebarNav"] {padding-top: 0rem;}
-        [data-testid="stSidebarUserContent"] {padding-top: 0rem;}
-    </style>
-""", unsafe_allow_html=True)
-
-
-# 1. Definišemo funkciju koja će biti naš "pop-up" prozor
-@st.dialog("Pregled fajla", width="large")
-def prikazi_fajl_modal(putanja):
-    try:
-        with open("pravilnik_1.txt", "r", encoding="utf-8") as f:
-            sadrzaj = f.read()
-        
-        # Prikaz teksta (view-only)
-        st.text_area("Sadržaj dokumenta:", value=sadrzaj, height=700, disabled=True)
-        
-        # Opciono dugme za zatvaranje unutar prozora (pored ugrađenog X)
-        if st.button("Zatvori"):
-            st.rerun()
-            
-    except FileNotFoundError:
-        st.error("Fajl nije pronađen.")
-
-# 2. Postavljanje dugmeta u SIDEBAR
-with st.sidebar:
-    st.title("")
-    if st.button("📄 Otvori tekstualni fajl"):
-        # Pozivamo funkciju koja otvara prozor preko ekrana
-        prikazi_fajl_modal("pravilnik_1.txt")
-
-# Ostatak tvoje glavne aplikacije ide ovde
-#st.write("Ovo je glavni sadržaj tvoje aplikacije koji će biti u pozadini.")
-
-
 
 # Google Sheets API scope
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
@@ -232,6 +196,42 @@ st.markdown(
 )
 
 st.divider()
+
+# ------------------------------------------------------------
+# dugme za tekstualni fajl
+st.markdown("""
+    <style>
+        [data-testid="stSidebarNav"] {padding-top: 0rem;}
+        [data-testid="stSidebarUserContent"] {padding-top: 0rem;}
+    </style>
+""", unsafe_allow_html=True)
+
+
+# 1. Definišemo funkciju koja će biti naš "pop-up" prozor
+@st.dialog("Pregled fajla", width="large")
+def prikazi_fajl_modal(putanja):
+    try:
+        with open("pravilnik_1.txt", "r", encoding="utf-8") as f:
+            sadrzaj = f.read()
+        
+        # Prikaz teksta (view-only)
+        st.text_area("Sadržaj dokumenta:", value=sadrzaj, height=700, disabled=True)
+        
+        # Opciono dugme za zatvaranje unutar prozora (pored ugrađenog X)
+        if st.button("Zatvori"):
+            st.rerun()
+            
+    except FileNotFoundError:
+        st.error("Fajl nije pronađen.")
+
+# 2. Postavljanje dugmeta u SIDEBAR
+with st.sidebar:
+    st.title("")
+    if st.button("📄 Otvori tekstualni fajl"):
+        # Pozivamo funkciju koja otvara prozor preko ekrana
+        prikazi_fajl_modal("pravilnik_1.txt")
+
+# ----------------------------------------------------------
 
 # --- Session State ---
 if "search_query" not in st.session_state:
