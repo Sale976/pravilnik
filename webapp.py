@@ -17,7 +17,22 @@ st.set_page_config(
     layout="wide"
 )
 
-file_path = "pravilnik_1.txt"
+
+#file_path = "pravilnik_1.txt"
+# 1. Napravi dugme
+if st.sidebar.button('Prikaži sadržaj fajla'):
+    
+    # 2. Kada se klikne, izvršava se ovaj deo:
+    try:
+        with open("pravilnik_1.txt", "r", encoding="utf-8") as f:
+            file_content = f.read()
+        
+        # Prikazuje tekst u prozoru koji ne može da se menja (disabled)
+        st.text_area("Sadržaj vašeg fajla:", value=file_content, height=300, disabled=True)
+        
+    except FileNotFoundError:
+        st.error("Greška: Fajl 'vash_fajl.txt' nije pronađen u folderu aplikacije.")
+
 
 # Google Sheets API scope
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
