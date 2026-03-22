@@ -153,13 +153,13 @@ with st.sidebar:
 
     # ------------------------------------------------------------
     
-    # 2. CSS ZA TO SPECIFIČNO DUGME (koristimo ID #moje-dugme-kontejner)
+    # CSS ZA TO SPECIFIČNO DUGME (koristimo ID #moje-dugme-kontejner)
     st.markdown("""
         <style>
             /* Ciljamo samo dugme unutar našeg specijalnog kontejnera */
             div#moje-dugme-kontejner .stButton > button {
                 position: relative;
-                top: -35px;    /* SMANJI ovaj broj (npr. -50px) da ide JOŠ VIŠE GORE */
+                top: -50px;    /* SMANJI ovaj broj (npr. -50px) da ide JOŠ VIŠE GORE */
                 left: -10px;   /* SMANJI ovaj broj da ide SKROZ U LEVI UGAO */
                 z-index: 999;
                 background-color: #f0f2f6; /* Opciona boja da se razlikuje */
