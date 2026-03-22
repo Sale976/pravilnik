@@ -160,7 +160,7 @@ with st.sidebar:
             section[data-testid="stSidebar"] .stButton:nth-of-type(1) button {
                 position: fixed;
                 top: 20px;        /* 10px od samog vrha stranice */
-                left: 45px;       /* 10px od leve ivice ekrana/sidebar-a */
+                left: 40px;       /* 10px od leve ivice ekrana/sidebar-a */
                 z-index: 999999;  /* Ide iznad logoa i svega ostalog */
                 width: auto;
                 padding: 2px 10px !important;
@@ -197,9 +197,6 @@ with st.sidebar:
     
         # Dodajemo prazan prostor (spacer) da ostali elementi ne odu pod dugme
         st.markdown("<br><br>", unsafe_allow_html=True)
-        #st.write("---")
-        #st.write("Ostatak menija...")
-
 
     # ----------------------------------------------------------
     
@@ -237,7 +234,7 @@ st.markdown(
     </h2>
     <p style='font-size:18px; text-align: left;'>
         🛈 Aplikacija pretražuje tekstualni fajl (gornje levo dugme za prikaz sadržaja) i na osnovu pretrage prikazuje broj člana i stranu iz PDF verzije pravilnika.
-        Brojevi stranica važe ako su PDF fajlovi preuzeti sa zvaničnog izvora (PIS) bez izmene.
+        Brojevi stranica važe ako su PDF fajlovi preuzeti sa zvaničnog izvora (PIS) bez izmena.
     </p>
     </h2>
     <p style='font-size:18px; text-align: justify;'>
