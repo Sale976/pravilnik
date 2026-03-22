@@ -160,7 +160,7 @@ with st.sidebar:
             section[data-testid="stSidebar"] .stButton:nth-of-type(1) button {
                 position: fixed;
                 top: 15px;        /* 10px od samog vrha stranice */
-                left: 50px;       /* 10px od leve ivice ekrana/sidebar-a */
+                left: 60px;       /* 10px od leve ivice ekrana/sidebar-a */
                 z-index: 999999;  /* Ide iznad logoa i svega ostalog */
                 width: auto;
                 padding: 2px 10px !important;
@@ -236,7 +236,7 @@ st.markdown(
         Web aplikacija za pretragu Pravilnika o Podeli Motornih Vozila (PPMV) i Pravilnika o Tehničkom Pregledu Vozila (PTPV)
     </h2>
     <p style='font-size:18px; text-align: left;'>
-        🛈 Aplikacija pretražuje tekstualni fajl (gornje levo dugme) koji prikazuje broj člana i stranu iz PDF verzije pravilnika.
+        🛈 Aplikacija pretražuje tekstualni fajl (gornje levo dugme za prikaz sadržaja) koji prikazuje broj člana i stranu iz PDF verzije pravilnika.
         Brojevi stranica važe ako su PDF fajlovi preuzeti sa zvaničnog izvora (PIS) bez izmene.
     </p>
     </h2>
