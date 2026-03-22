@@ -191,7 +191,7 @@ with st.sidebar:
     with st.sidebar:
         # Koristimo st.html da bi ID sigurno bio prihvaćen
         st.html('<div id="moje-dugme-kontejner">')
-        if st.button("📄 Otvori fajl"):
+        if st.button("📄 Otvori Tekstualni fajl"):
             prikazi_fajl_modal("pravilnik_1.txt")
         st.html('</div>')
     
