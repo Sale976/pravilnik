@@ -270,8 +270,7 @@ except FileExistsError:
 col1, col2 = st.columns([1, 2])
 
 with col1:
-    #st.markdown("<br>", unsafe_allow_html=True)
-    # CSS koji pomera sadržaj nadole za npr. 50 piksela
+    # CSS koji pomera sadržaj nadole za onoliko piksela koliko je potrebno
     st.markdown(
         """
         <style>
