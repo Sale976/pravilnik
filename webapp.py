@@ -276,7 +276,7 @@ with col1:
         """
         <style>
             div[data-testid="stVerticalBlock"] > div:has(input[key="search_query"]) {
-                margin-top: 10px;
+                margin-top: 0px;
             }
         </style>
         """,
