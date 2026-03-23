@@ -270,6 +270,7 @@ except FileExistsError:
 col1, col2 = st.columns([1, 2])
 
 with col1:
+    st.markdown("<br><br>", unsafe_allow_html=True) 
     st.text_input(
         r"$\textsf{\large Unesite tekst za pretragu:}$",
         value=st.session_state.search_query,
