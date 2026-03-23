@@ -170,7 +170,7 @@ with st.sidebar:
 
             /* Opciono: Ako logo previše "beži" gore, dodajemo razmak */
             [data-testid="stSidebarContent"] {
-                padding-top: 3rem !important;
+                padding-top: 1rem !important;
             }
         </style>
     """, unsafe_allow_html=True)
