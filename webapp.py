@@ -270,7 +270,19 @@ except FileExistsError:
 col1, col2 = st.columns([1, 2])
 
 with col1:
-    st.markdown("<br>", unsafe_allow_html=True) 
+    #st.markdown("<br>", unsafe_allow_html=True)
+    # CSS koji pomera sadržaj nadole za npr. 50 piksela
+    st.markdown(
+        """
+        <style>
+            div[data-testid="stVerticalBlock"] > div:has(input[key="search_query"]) {
+                margin-top: 10px;
+            }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+    
     st.text_input(
         r"$\textsf{\large Unesite tekst za pretragu:}$",
         value=st.session_state.search_query,
