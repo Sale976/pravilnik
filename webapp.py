@@ -233,7 +233,7 @@ st.markdown(
         Web aplikacija za pretragu Pravilnika o Podeli Motornih Vozila (PPMV) i Pravilnika o Tehničkom Pregledu Vozila (PTPV)
     </h2>
     <p style='font-size:18px; text-align: left;'>
-        🛈 Aplikacija pretražuje tekstualni fajl i na osnovu pretrage prikazuje broj člana i stranu iz PDF verzije pravilnika. Brojevi stranica važe ako su PDF fajlovi preuzeti sa zvaničnog izvora (PIS) bez izmena.
+        🛈 Aplikacija pretražuje tekstualni fajl i na osnovu pretrage prikazuje broj člana i stranu iz PDF verzije pravilnika. Brojevi stranica važe ako su PDF fajlovi preuzeti sa zvaničnog izvora (PIS) bez izmena.<br>
         🛈 Tekstualni fajl (gornje levo dugme za prikaz sadržaja) je za korisnika aplikacije isključivo informativnog karaktera!
     </p>
     </h2>
