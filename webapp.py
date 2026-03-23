@@ -181,7 +181,7 @@ with st.sidebar:
         try:
             with open(putanja, "r", encoding="utf-8") as f:
                 sadrzaj = f.read()
-            st.text_area("Sadržaj dokumenta:", value=sadrzaj, height=800, disabled=True)
+            st.text_area("Sadržaj dokumenta:", value=sadrzaj, height=700, disabled=True)
             if st.button("Zatvori"):
                 st.rerun()
         except FileNotFoundError:
