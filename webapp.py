@@ -102,7 +102,7 @@ st.markdown("""
     }
     
     .results-table {
-        margin-top: 20px;
+        margin-top: 10px;
     }
     
     .highlight {
