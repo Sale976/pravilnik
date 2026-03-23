@@ -363,7 +363,7 @@ with col2:
         
         if matching_lines:
             st.markdown(
-                "<h3 style='color: #0077b6; margin-top: -22px; font-size: 17px;'>🔍 Rezultati pretrage:</h3>",
+                "<h3 style='color: #0077b6; margin-top: -20px; font-size: 17px;'>🔍 Rezultati pretrage:</h3>",
                 unsafe_allow_html=True
             )
             for match in matching_lines:
