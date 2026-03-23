@@ -98,11 +98,11 @@ st.markdown("""
         background-color: #f0f2f6;
         padding: 20px;
         border-radius: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     
     .results-table {
-        margin-top: 10px;
+        margin-top: 20px;
     }
     
     .highlight {
