@@ -392,7 +392,7 @@ with col2:
                 st.markdown(
                     f"""
                     <div style='display: flex; flex-direction: row; align-items: center;
-                            gap: 5px; padding: 5px; background-color: #B9F1C0;
+                            gap: 1px; padding: 5px; background-color: #B9F1C0;
                             border-left: 4px solid #0077b6; margin-bottom: 5px;
                             font-size:17px; flex-wrap: wrap;'>
                         <div>{match}</div>
