@@ -294,7 +294,7 @@ def find_words_by_stem(stem_target, line_words):
     return [word for word in line_words if stemmer.stemWord(word.lower()) == stem_target]
 
 with col2:
-    st.markdown("<div style='margin-top: 5px;'>", unsafe_allow_html=True)
+    st.markdown("<div style='margin-top: 0px;'>", unsafe_allow_html=True)
 
     matching_lines = []
 
