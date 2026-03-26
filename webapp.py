@@ -160,7 +160,7 @@ with st.sidebar:
             section[data-testid="stSidebar"] .stButton:nth-of-type(1) button {
                 position: fixed;
                 top: 20px;        /* 10px od samog vrha stranice */
-                left: 44px;       /* 10px od leve ivice ekrana/sidebar-a */
+                left: 46px;       /* 10px od leve ivice ekrana/sidebar-a */
                 z-index: 999999;  /* Ide iznad logoa i svega ostalog */
                 width: auto;
                 padding: 2px 10px !important;
