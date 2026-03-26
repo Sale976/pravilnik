@@ -229,7 +229,7 @@ with st.sidebar:
 # --- Title and Description ---
 st.markdown(
     """
-    <h2 style='text-align: center; margin-top: -30px; font-size:28px;'>
+    <h2 style='text-align: center; margin-top: -40px; font-size:28px;'>
         Web aplikacija za pretragu Pravilnika o Podeli Motornih Vozila (PPMV) i Pravilnika o Tehničkom Pregledu Vozila (PTPV)
     </h2>
     <p style='font-size:18px; text-align: left;'>
