@@ -249,6 +249,8 @@ st.divider()
 
 st.write("Primer načina pretrage: Unosom reči npr. "svetla" aplikacija vraća više rezultata iz kojih se može naći odgovarajući rezultat, međutim ako se unese "kratka svetla" dobija se jedan rezultat.")
 
+st.divider()
+
 # --- Session State ---
 if "search_query" not in st.session_state:
     st.session_state.search_query = ""
