@@ -110,7 +110,7 @@ svetla za maglu (maglenke) -- clan 51(PoPV) str. 50
 farovi i svetlo za osvetljavanje radova -- clan 53(PoPV) str. 50
 oznacavanje vozila (podela) -- clan 55(PoPV) str. 51
 oznacavanje vozila (uslovi) -- clan 56(PoPV) str. 51
-prednja poziciona svetla -- clan 57(PoPV) str. 52
+prednja poziciona svetla -- clan 57(PoPV) str. 51
 zadnja poziciona svetla -- clan 58(PoPV) str. 52
 dnevna svetla -- clan 58a(PoPV) str. 53
 zadnje svetlo za maglu (maglenke) -- clan 59(PoPV) str. 54
