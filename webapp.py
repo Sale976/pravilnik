@@ -224,7 +224,7 @@ with st.sidebar:
     st.markdown('</div>', unsafe_allow_html=True)
 
 
-#st.sidebar.markdown("[💬 Prijavite grešku](mailto:aca1976@mts.rs)")
+st.sidebar.markdown("[💬 Prijavite grešku](mailto:aca1976@mts.rs)")
     
 # --- Title and Description ---
 st.markdown(
