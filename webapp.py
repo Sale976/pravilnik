@@ -211,7 +211,7 @@ with st.sidebar:
                 <div>
                     <b>Web aplikacija za pretragu Pravilnika (PPMV, PTPV)</b><br><br>
                     🔍 Omogućava brzo pronalaženje članova i stranica u pravilnicima.<br><br>
-                    📄 Klikom na link otvarate odgovarajući PDF fajl na traženoj stranici.<br><br>
+                    📄 Klikom na link otvarate PDF fajl na traženoj stranici.<br><br>
                     👨‍💻 Autor: <b>AI & Aleksandar</b><br>
                     📄 Verzija: <b>v1.5</b><br>
                     💬 Prijavite grešku ili sugestiju na: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aca1976@mts.rs</b><br>
