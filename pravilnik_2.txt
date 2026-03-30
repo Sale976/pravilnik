@@ -104,31 +104,31 @@ svetlosno i svelosno signalni uređaji (osvetljavanje puta) -- član 45(PPMV) st
 osvetljavanje puta (podela) -- član 46(PPMV) str. 46
 glavni farovi -- član 47(PPMV) str. 46
 glavni farovi M, N (gasni izvor, nivelacija snopa, dinamičko praćenje, LED moduli) -- član 48(PPMV) str. 47
-svetlosni snop (kratka svetla) -- član 49(PPMV) str. 48
-svetla za vožnju unazad (rikverc svetlo) -- član 50(PPMV) str. 49
-svetla za maglu (maglenke) -- član 51(PPMV) str. 50
+svetlosni snop (kratko svetlo) -- član 49(PPMV) str. 48
+svetlo za vožnju unazad (rikverc svetlo) -- član 50(PPMV) str. 49
+svetlo za maglu (maglenke) -- član 51(PPMV) str. 50
 farovi i svetlo za osvetljavanje radova -- član 53(PPMV) str. 50
 označavanje vozila (podela) -- član 55(PPMV) str. 51
 označavanje vozila (uslovi) -- član 56(PPMV) str. 51
-prednja poziciona svetla -- član 57(PPMV) str. 51
-zadnja poziciona svetla -- član 58(PPMV) str. 52
-dnevna svetla -- član 58a(PPMV) str. 53
+prednje poziciono svetlo -- član 57(PPMV) str. 51
+zadnje poziciono svetlo -- član 58(PPMV) str. 52
+dnevno svetlo -- član 58a(PPMV) str. 53
 zadnje svetlo za maglu (maglenke) -- član 59(PPMV) str. 54
-parkirna svetla -- član 60(PPMV) str. 55
-gabaritna svetla -- član 61(PPMV) str. 55
+parkirno svetlo -- član 60(PPMV) str. 55
+gabaritno svetlo -- član 61(PPMV) str. 55
 svetlo zadnje registarske tablice -- član 62(PPMV) str. 56
-rotaciona i trepćuća svetla (žuta, crvena, plava) -- član 63(PPMV) str. 57
+rotaciono i trepćuće svetlo (žuta, crvena, plava) -- član 63(PPMV) str. 57
 katadiopteri -- član 64(PPMV) str. 57
-svetla za označavanje vozila posebnih namena (taksi, obuka vozača, putna pomoć, gradski prevoz) -- član 65(PPMV) str. 59
+svetlo za označavanje vozila posebnih namena (taksi, obuka vozača, putna pomoć, gradski prevoz) -- član 65(PPMV) str. 59
 oznake dugih, teških i sporih vozila -- član 66(PPMV) str. 59
 reklamni natpisi -- član 67(PPMV) str. 61
 uređaji za davanje svetlosnih znakova (podela) -- član 68(PPMV) str. 61
-stop svetla -- član 69(PPMV) str. 62
-pokazivači pravca (žmigavci) -- član 70(PPMV) str. 63
+stop svetlo -- član 69(PPMV) str. 62
+pokazivač pravca (žmigavci) -- član 70(PPMV) str. 63
 normalna vidljivost (podela) -- član 71(PPMV) str. 64
 vetrobran i sva stakla -- član 72(PPMV) str.  str. 64
-brisači vetrobrana -- član 73(PPMV) str. 65
-perači vetrobrana -- član 74(PPMV) str. 66
+brisač vetrobrana -- član 73(PPMV) str. 65
+perač vetrobrana -- član 74(PPMV) str. 66
 vozačko ogledalo (retrovizor) -- član 75(PPMV) str. 66
 vozačko ogledalo N2, N3 (retrovizor) -- 75a(PPMV) str. 68
 zvučni znakovi (sirena) -- član 76(PPMV) str. 68
@@ -209,7 +209,7 @@ registar pregledanih vozila (registar) -- član 50(PTPV) str. 24
 Prilog 1:  identifikacija vozila -- tačka 0(PTPV) str. 26
 Prilog 1:  uređaj za upravljanje (volan) -- tačka 1(PTPV) str. 26
 Prilog 1:  uređaj za zaustavljanje (kočnice) -- tačka 2(PTPV) str. 27
-Prilog 1:  svetlosni i svetlosno-signalni uređaji (svetla) -- tačka 3(PTPV) str. 31
+Prilog 1:  svetlosni i svetlosno-signalni uređaji (svetlo) -- tačka 3(PTPV) str. 31
 Prilog 1:  uređaji koji omogućavaju normalnu vidljivost (vetrobran, ogledalo - retrovizor, uređaj za kvašenje, brisanje - metlice) -- tačka 4(PTPV) str. 34
 Prilog 1:  uređaji za davanje zvučnih znakova (sirena) -- tačka 5(PTPV) str. 35
 Prilog 1:  uređaji za kontrolu i davanje znakova (odometar, tahograf) -- tačka 6(PTPV) str. 35
