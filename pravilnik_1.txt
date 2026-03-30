@@ -104,27 +104,27 @@ svetlosno i svelosno signalni uredaji (osvetljavanje puta) -- clan 45(PPMV) str.
 osvetljavanje puta (podela) -- clan 46(PPMV) str. 46
 glavni farovi -- clan 47(PPMV) str. 46
 glavni farovi M, N (gasni izvor, nivelacija snopa, dinamicko pracenje, LED moduli) -- clan 48(PPMV) str. 47
-svetlosni snop (kratka svetla) -- clan 49(PPMV) str. 48
-svetla za voznju unazad (rikverc svetlo) -- clan 50(PPMV) str. 49
-svetla za maglu (maglenke) -- clan 51(PPMV) str. 50
+svetlosni snop (kratko svetlo, dugo svetlo) -- clan 49(PPMV) str. 48
+svetlo za voznju unazad (rikverc svetlo) -- clan 50(PPMV) str. 49
+svetlo za maglu (maglenke) -- clan 51(PPMV) str. 50
 farovi i svetlo za osvetljavanje radova -- clan 53(PPMV) str. 50
 oznacavanje vozila (podela) -- clan 55(PPMV) str. 51
 oznacavanje vozila (uslovi) -- clan 56(PPMV) str. 51
-prednja poziciona svetla -- clan 57(PPMV) str. 51
-zadnja poziciona svetla -- clan 58(PPMV) str. 52
-dnevna svetla -- clan 58a(PPMV) str. 53
+prednje poziciono svetlo -- clan 57(PPMV) str. 51
+zadnje poziciono svetlo -- clan 58(PPMV) str. 52
+dnevno svetlo -- clan 58a(PPMV) str. 53
 zadnje svetlo za maglu (maglenke) -- clan 59(PPMV) str. 54
-parkirna svetla -- clan 60(PPMV) str. 55
-gabaritna svetla -- clan 61(PPMV) str. 55
+parkirno svetlo -- clan 60(PPMV) str. 55
+gabaritno svetlo -- clan 61(PPMV) str. 55
 svetlo zadnje registarske tablice -- clan 62(PPMV) str. 56
-rotaciona i trepcuca svetla (zuta, crvena, plava) -- clan 63(PPMV) str. 57
+rotaciona i trepcuca svetlo (zuta, crvena, plava) -- clan 63(PPMV) str. 57
 katadiopteri -- clan 64(PPMV) str. 57
-svetla za oznacavanje vozila posebnih namena (taksi, obuka vozaca, putna pomoc, gradski prevoz) -- clan 65(PPMV) str. 59
+svetlo za oznacavanje vozila posebnih namena (taksi, obuka vozaca, putna pomoc, gradski prevoz) -- clan 65(PPMV) str. 59
 oznake dugih, teskih i sporih vozila -- clan 66(PPMV) str. 59
 reklamni natpisi -- clan 67(PPMV) str. 61
 uredaji za davanje svetlosnih znakova (podela) -- clan 68(PPMV) str. 61
-stop svetla -- clan 69(PPMV) str. 62
-pokazivaci pravca (zmigavci) -- clan 70(PPMV) str. 63
+stop svetlo -- clan 69(PPMV) str. 62
+pokazivac pravca (zmigavci) -- clan 70(PPMV) str. 63
 normalna vidljivost (podela) -- clan 71(PPMV) str. 64
 vetrobran i sva stakla -- clan 72(PPMV) str.  str. 64
 brisaci vetrobrana -- clan 73(PPMV) str. 65
@@ -209,7 +209,7 @@ registar pregledanih vozila (registar) -- clan 50(PTPV) str. 24
 Prilog 1:  identifikacija vozila -- tacka 0(PTPV) str. 26
 Prilog 1:  uredaj za upravljanje (volan) -- tacka 1(PTPV) str. 26
 Prilog 1:  uredaj za zaustavljanje (kocnice) -- tacka 2(PTPV) str. 27
-Prilog 1:  svetlosni i svetlosno-signalni uredaji (svetla) -- tacka 3(PTPV) str. 31
+Prilog 1:  svetlosni i svetlosno-signalni uredaji (svetlo) -- tacka 3(PTPV) str. 31
 Prilog 1:  uredaji koji omogucavaju normalnu vidljivost (vetrobran, ogledalo - retrovizor, uredjaj za kvasenje, brisanje - metlice) -- tacka 4(PTPV) str. 34
 Prilog 1:  uredaji za davanje zvucnih znakova (sirena) -- tacka 5(PTPV) str. 35
 Prilog 1:  uredaji za kontrolu i davanje znakova (odometar, tahograf) -- tacka 6(PTPV) str. 35
