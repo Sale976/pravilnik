@@ -117,7 +117,7 @@ zadnje svetlo za maglu (maglenke) -- clan 59(PPMV) str. 54
 parkirno svetlo -- clan 60(PPMV) str. 55
 gabaritno svetlo -- clan 61(PPMV) str. 55
 svetlo zadnje registarske tablice -- clan 62(PPMV) str. 56
-rotaciona i trepcuca svetlo (zuta, crvena, plava) -- clan 63(PPMV) str. 57
+rotaciono i trepcuce svetlo (zuta, crvena, plava) -- clan 63(PPMV) str. 57
 katadiopteri -- clan 64(PPMV) str. 57
 svetlo za oznacavanje vozila posebnih namena (taksi, obuka vozaca, putna pomoc, gradski prevoz) -- clan 65(PPMV) str. 59
 oznake dugih, teskih i sporih vozila -- clan 66(PPMV) str. 59
@@ -127,8 +127,8 @@ stop svetlo -- clan 69(PPMV) str. 62
 pokazivac pravca (zmigavci) -- clan 70(PPMV) str. 63
 normalna vidljivost (podela) -- clan 71(PPMV) str. 64
 vetrobran i sva stakla -- clan 72(PPMV) str.  str. 64
-brisaci vetrobrana -- clan 73(PPMV) str. 65
-peraci vetrobrana -- clan 74(PPMV) str. 66
+brisac vetrobrana -- clan 73(PPMV) str. 65
+perac vetrobrana -- clan 74(PPMV) str. 66
 vozacko ogledalo (retrovizor) -- clan 75(PPMV) str. 66
 vozacko ogledalo N2, N3 (retrovizor) -- 75a(PPMV) str. 68
 zvucni znakovi (sirena) -- clan 76(PPMV) str. 68
