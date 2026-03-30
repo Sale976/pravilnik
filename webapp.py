@@ -214,6 +214,7 @@ with st.sidebar:
                     📄 Klikom na link otvarate odgovarajući PDF fajl na traženoj stranici.<br><br>
                     👨‍💻 Autor: <b>AI & Aleksandar</b><br>
                     📄 Verzija: <b>v1.5</b><br>
+                    💬 Prijavite grešku ili sugestiju na: aca1976@mts.rs
                     🛠️ Izrađeno pomoću <a href="https://streamlit.io" target="_blank">Streamlit</a>
                 </div>
             </details>
@@ -224,7 +225,7 @@ with st.sidebar:
     st.markdown('</div>', unsafe_allow_html=True)
 
 
-st.sidebar.markdown("[💬 Prijavite grešku](mailto:aca1976@mts.rs)")
+#st.sidebar.markdown("[💬 Prijavite grešku](mailto:aca1976@mts.rs)")
     
 # --- Title and Description ---
 st.markdown(
