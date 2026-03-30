@@ -214,7 +214,7 @@ with st.sidebar:
                     📄 Klikom na link otvarate odgovarajući PDF fajl na traženoj stranici.<br><br>
                     👨‍💻 Autor: <b>AI & Aleksandar</b><br>
                     📄 Verzija: <b>v1.5</b><br>
-                    💬 Prijavite grešku ili sugestiju na: &nbsp;&nbsp;&nbsp;aca1976@mts.rs</b><br>
+                    💬 Prijavite grešku ili sugestiju na: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aca1976@mts.rs</b><br>
                     🛠️ Izrađeno pomoću <a href="https://streamlit.io" target="_blank">Streamlit</a>
                 </div>
             </details>
