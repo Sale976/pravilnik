@@ -104,7 +104,7 @@ svetlosno i svelosno signalni uređaji (osvetljavanje puta) -- član 45(PPMV) st
 osvetljavanje puta (podela) -- član 46(PPMV) str. 46
 glavni farovi -- član 47(PPMV) str. 46
 glavni farovi M, N (gasni izvor, nivelacija snopa, dinamičko praćenje, LED moduli) -- član 48(PPMV) str. 47
-svetlosni snop (kratko svetlo) -- član 49(PPMV) str. 48
+svetlosni snop (kratko svetlo, dugo svetlo) -- član 49(PPMV) str. 48
 svetlo za vožnju unazad (rikverc svetlo) -- član 50(PPMV) str. 49
 svetlo za maglu (maglenke) -- član 51(PPMV) str. 50
 farovi i svetlo za osvetljavanje radova -- član 53(PPMV) str. 50
