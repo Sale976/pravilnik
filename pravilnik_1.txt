@@ -77,7 +77,7 @@ visina vozila, klirens -- clan 19(PPMV) str. 25
 voznja u krug -- clan 20(PPMV) str. 26
 najveca dozvoljena ukupna masa motornog vozila i prikolice -- clan 21(PPMV) str. 26
 osovinsko opterecenje -- clan 22(PPMV) str. 28
-najveca dozvoljena masa vozila sa tockovima od metala, pune gume itd -- clan 23(PPMV) str. 29
+najveca dozvoljena masa vozila sa tockovima od metala, pune gume itd -- clan 23(PPMV) str. 30
 odnos najvece nominalne snage -- clan 24(PPMV) str. 30
 sistem za upravljanje-opste odredbe (volan) -- clan 25(PPMV) str.31
 kocni sistem-opste odredbe (kocnice) -- clan 26(PPMV) str. 31
