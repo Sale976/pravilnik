@@ -76,7 +76,7 @@ dužina vozila -- član 17(PPMV) str. 23
 visina vozila, klirens -- član 19(PPMV) str. 25
 vožnja u krug -- član 20(PPMV) str. 26
 najveća dozvoljena ukupna masa motornog vozila i prikolice -- član 21(PPMV) str. 26
-osovinsko opterećenje -- član 22(PPMV) str. 28
+osovinsko opterećenje -- član 22(PPMV) str. 29
 najveća dozvoljena masa vozila sa točkovima od metala, pune gume itd -- član 23(PPMV) str. 30
 odnos najveće nominalne snage -- član 24(PPMV) str. 30
 sistem za upravljanje-opšte odredbe (volan) -- član 25(PPMV) str.31
