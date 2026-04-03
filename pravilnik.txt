@@ -76,8 +76,8 @@ sirina vozila -- clan 18(PoPV) str. 25
 visina vozila, klirens -- clan 19(PoPV) str. 25
 voznja u krug -- clan 20(PoPV) str. 26
 najveca dozvoljena ukupna masa motornog vozila i prikolice -- clan 21(PoPV) str. 26
-osovinsko opterecenje -- clan 22(PoPV) str. 28
-najveca dozvoljena masa vozila sa tockovima od metala, pune gume itd -- clan 23(PoPV) str. 29
+osovinsko opterecenje -- clan 22(PoPV) str. 29
+najveca dozvoljena masa vozila sa tockovima od metala, pune gume itd -- clan 23(PoPV) str. 30
 odnos najvece nominalne snage -- clan 24(PoPV) str. 30
 sistem za upravljanje-opste odredbe (volan) -- clan 25(PoPV) str.31
 kocni sistem-opste odredbe (kocnice) -- clan 26(PoPV) str. 31
