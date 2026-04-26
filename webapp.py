@@ -4,7 +4,6 @@ import re
 import json
 from pathlib import Path
 from datetime import datetime
-#from oauth2client.service_account import ServiceAccountCredentials
 import requests
 import string
 import snowballstemmer
