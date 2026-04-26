@@ -4,8 +4,7 @@ import re
 import json
 from pathlib import Path
 from datetime import datetime
-#import gspread
-from oauth2client.service_account import ServiceAccountCredentials
+#from oauth2client.service_account import ServiceAccountCredentials
 import requests
 import string
 import snowballstemmer
@@ -17,18 +16,6 @@ st.set_page_config(
     layout="wide"
 )
 
-
-# Google Sheets API scope
-#scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-
-# Authenticate with credentials stored in Streamlit secrets
-#credentials = ServiceAccountCredentials.from_json_keyfile_dict(
-    #st.secrets["google_service_account"], scope
-#)
-#gc = gspread.authorize(credentials)
-
-# Open your Google Sheet (change "logs_file" if needed)
-# sheet = gc.open_by_url("https://docs.google.com/spreadsheets/d/1jXw517eCBbEWvhgJ3uxxASnTZ5kdqyWZT0e9ke-KQ4U/edit?gid=0#gid=0").worksheet("logs")
 
 # --- Config ---
 COUNTER_FILE = Path("data/visitor_counter.json")
