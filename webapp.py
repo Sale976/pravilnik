@@ -178,7 +178,7 @@ with st.sidebar:
         # Koristimo st.html da bi ID sigurno bio prihvaćen
         st.html('<div id="moje-dugme-kontejner">')
         if st.button("📄 Otvori Tekstualni fajl"):
-            prikazi_fajl_modal("pravilnik_2.txt")
+            prikazi_fajl_modal("pravilnik.txt")
         st.html('</div>')
     
         # Dodajemo prazan prostor (spacer) da ostali elementi ne odu pod dugme
@@ -241,7 +241,7 @@ def clear_search():
     st.session_state.search_query = ""
 
 # --- File path ---
-file_path = "pravilnik_2.txt"
+file_path = "pravilnik.txt"
 
 # --- Create demo file if not exist ---
 try:
