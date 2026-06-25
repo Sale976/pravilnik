@@ -362,7 +362,7 @@ with col2:
                 file_link = ""
                 if acronym and page_number:
                     pdf_links = {
-                        "PPMV": "https://cdn.jsdelivr.net/gh/Sale976/pravilnik/popv.pdf",
+                        "PPMV": "https://cdn.jsdelivr.net/gh/Sale976/pravilnik/ppmv.pdf",
                         "PTPV": "https://cdn.jsdelivr.net/gh/Sale976/pravilnik/potp.pdf"
                     }
                     pdf_url = pdf_links.get(acronym)
