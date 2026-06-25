@@ -148,45 +148,47 @@ etektrična instalacija (akumulator, elektro instalacija) -- član 87(PPMV) str.
 pogonski uređaj (motor) -- član 88(PPMV) str. 85
 prenos snage (menjač) -- član 89(PPMV) str. 85
 delovi vozila od posebnog značaja (karoserija, VIN, kabina ili ram, istureni delovi, oslonci za noge i nogara za L) -- član 90(PPMV) str. 85
-boja, reklamne table i napisi -- član 91(PPMV) str. 82
-registarska tablica -- član 92(PPMV) str. 82
-površina za stajanje putnika -- član 93(PPMV) str. 83
-vrata na vozilima M2, M3, O -- član 94(PPMV) str. 83
-brave, vrata, poklopci -- član 95(PPMV) str. 85
-provetravanje u vozilu -- član 96(PPMV) str. 85
-sedišta, kabina -- član 97(PPMV) str. 85
-odmrzavanje i odmagljivanje vetrobrana, grejanje) -- član 98(PPMV) str. 86
-blatobrani -- član 99(PPMV) str. 86
-branici, zaštitnik od podletanja -- član 100(PPMV) str. 87
-sigurnosni pojasevi, bezbedonosna sedišta, nasloni za glavu -- član 101(PPMV) str. 88
-priključak za vuču (šlepanje) -- član 102(PPMV) str. 89
-neovlašćena upotreba vozila M1 -- član 103(PPMV) str. 89
-TNG, KPG -- član 104(PPMV) str. 89
-lako električno vozilo -- član 104a(PPMV) str. 90
-rezervni točak -- član 105(PPMV) str. 90
-aparat za gašenje požara -- član 106(PPMV) str. 91
-sigurnosni trougao -- član 107(PPMV) str. 91
-prva pomoć -- član 108(PPMV) str. 92
-klinasti podmetači -- član 109(PPMV) str. 92
-čekić za razbijanje stakla -- član 110(PPMV) str. 92
-svetloodbojni prsluk -- član 111(PPMV) str. 92
-uže ili poluga za vuču vozila -- član 112(PPMV) str. 92
-zimska oprema (zimske gume, lanci, lopata, period za zimsku opremu) -- član 113(PPMV) str. 93
-zaštitna kaciga za L vozila -- član 114(PPMV) str. 93
-čišćenje gusenica za vozila C -- član 115(PPMV) str. 94
-oprema za vozila Tm i S -- član 115a(PPMV) str. 94
-TNG, KPG (prelazne i završne odredbe) -- član 117(PPMV) str. 94
-izduvni gasovi (prelazne i završne odredbe) -- član 118a(PPMV) str. 94
-izduvni gasovi (prelazne i završne odredbe) -- član 118b(PPMV) str. 94
-taksi Euro 3 (prelazne i završne odredbe) -- član 119(PPMV) str. 95
-coc, brisač i perač vetrobrana za T i C (prelazne i završne odredbe) -- član 120(PPMV) str. 95
-homologacija za N (prelazne i završne odredbe) -- član 120a(PPMV) str. 95
-radno kočenje za R i S (prelazne i završne odredbe) -- član 120b(PPMV) str. 95
-vrsta N specijalna (prelazne i završne odredbe) -- član 120v(PPMV) str. 95
-konture vozila (prelazne i završne odredbe) -- član 121(PPMV) str. 95
-vozačko ogledalo N2, N3 (retrovizor, prelazne i završne odredbe) -- član 121a(PPMV) str. 96
-tahograf (prelazne i završne odredbe) -- član 122(PPMV) str. 96
-kabina ili ram (prelazne i završne odredbe) -- član 123(PPMV) str. 96
+M2, M3 (O) kao i N2 i N3 (O3 i O4) od stupanja Srbije u EU -- čln 90a(PPMV) str. 88
+boja, reklamne table i napisi -- član 91(PPMV) str. 89
+registarska tablica -- član 92(PPMV) str. 89
+površina za stajanje putnika -- član 93(PPMV) str. 90
+vrata na vozilima M2, M3, O -- član 94(PPMV) str. 90
+brave, vrata, poklopci -- član 95(PPMV) str. 92
+provetravanje u vozilu -- član 96(PPMV) str. 92
+sedišta, kabina -- član 97(PPMV) str. 92
+odmrzavanje i odmagljivanje vetrobrana, grejanje) -- član 98(PPMV) str. 93
+blatobrani -- član 99(PPMV) str. 93
+branici, zaštitnik od podletanja -- član 100(PPMV) str. 94
+sigurnosni pojasevi, bezbedonosna sedišta, nasloni za glavu -- član 101(PPMV) str. 95
+priključak za vuču (šlepanje) -- član 102(PPMV) str. 96
+neovlašćena upotreba vozila M1 -- član 103(PPMV) str. 96
+TNG, KPG -- član 104(PPMV) str. 97
+lako električno vozilo -- član 104a(PPMV) str. 97
+rezervni točak -- član 105(PPMV) str. 98
+aparat za gašenje požara -- član 106(PPMV) str. 98
+sigurnosni trougao -- član 107(PPMV) str. 99
+prva pomoć -- član 108(PPMV) str. 99
+klinasti podmetači -- član 109(PPMV) str. 100
+čekić za razbijanje stakla -- član 110(PPMV) str. 100
+svetloodbojni prsluk -- član 111(PPMV) str. 100
+uže ili poluga za vuču vozila -- član 112(PPMV) str. 100
+zimska oprema (zimske gume, lanci, lopata, period za zimsku opremu) -- član 113(PPMV) str. 100
+zaštitna kaciga za L vozila -- član 114(PPMV) str. 101
+čišćenje gusenica za vozila C -- član 115(PPMV) str. 101
+oprema za vozila Tm i S -- član 115a(PPMV) str. 101
+TNG, KPG (prelazne i završne odredbe) -- član 117(PPMV) str. 102
+izduvni gasovi teretna vozila i autobusi (prelazne i završne odredbe) -- član 118a(PPMV) str. 102
+izduvni gasovi teretna, terenska vozila i autobusi za Vojsku (prelazne i završne odredbe) -- član 118b(PPMV) str. 102
+izduvni gasovi teretna, terenska vozila za Vatrogasce (prelazne i završne odredbe) -- član 118v(PPMV) str. 102
+taksi Euro 3 (prelazne i završne odredbe) -- član 119(PPMV) str. 103
+coc, brisač i perač vetrobrana za T i C (prelazne i završne odredbe) -- član 120(PPMV) str. 103
+homologacija za N (prelazne i završne odredbe) -- član 120a(PPMV) str. 103
+radno kočenje za R i S (prelazne i završne odredbe) -- član 120b(PPMV) str. 103
+vrsta N specijalna (prelazne i završne odredbe) -- član 120v(PPMV) str. 103
+konture vozila (prelazne i završne odredbe) -- član 121(PPMV) str. 103
+vozačko ogledalo N2, N3 (retrovizor, prelazne i završne odredbe) -- član 121a(PPMV) str. 104
+tahograf (prelazne i završne odredbe) -- član 122(PPMV) str. 104
+kabina ili ram (prelazne i završne odredbe) -- član 123(PPMV) str. 104
 ---------------------------------------------------------------------
 boja vozila (određivanje boje vozila) -- član 24(PTPV) str. 13
 baza podataka, propisi, uputstva, stručna literatura, tehnička dokumentacija, elaborat, baždarenje -- član 27(PTPV) str. 14
