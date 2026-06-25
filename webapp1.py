@@ -367,7 +367,7 @@ with col2:
                     }
                     pdf_url = pdf_links.get(acronym)
                     if pdf_url:
-                        # 💡 IZMENA: Dodat parametar &zoom=150 nakon parametra za stranicu
+                        # 💡 IZMENA: Dodat parametar &zoom=120 nakon parametra za stranicu
                         full_url = f"{pdf_url}#page={page_number}&zoom=150"
                         file_link = (
                             f"<a href='{full_url}' target='_blank' "
