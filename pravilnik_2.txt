@@ -6,7 +6,7 @@ izrazi korišteni u pravilniku -- član 4(PPMV) str. 2
     2) jednoobrazni tehnički uslovi -- član 4(PPMV) str. 2
     3) dimenzije vozila i skupa vozila (definicija) -- član 4(PPMV) str. 2
     4) masa vozila spremnog za vožnju -- član 4(PPMV) str. 2
-      (1) Vrsta M i N -- član 4(PPMV) str. 2
+      (1) Vrsta M i N -- član 4(PPMV) str. 3
       (2) Vrsta O -- član 4(PPMV) str. 3
       (3) Vrsta L -- član 4(PPMV) str. 3
       (4) Vrsta T -- član 4(PPMV) str. 3
@@ -14,7 +14,7 @@ izrazi korišteni u pravilniku -- član 4(PPMV) str. 2
     6) proizvođačka tablica -- član 4(PPMV) str. 3
     7) najveća dozvoljena masa teretnog vozila (tegljač) -- član 4(PPMV) str. 3
     8) najveća konstruktivna brzina vozila -- član 4(PPMV) str. 3
-    9) vetrobran -- član 4(PPMV) str. 3
+    9) vetrobran -- član 4(PPMV) str. 4
     10) bočna okna u ravni vozača -- član 4(PPMV) str. 4
     11) svetlo -- član 4(PPMV) str. 4
     12) tovarni prostor -- član 4(PPMV) str. 4
@@ -30,7 +30,7 @@ izrazi korišteni u pravilniku -- član 4(PPMV) str. 2
     22) razmak osovina motornih vozila i prikolica -- član 4(PPMV) str. 5
     23) ukupni razmak osovina -- član 4(PPMV) str. 5
     24) motor sa nadpunjenjem -- član 4(PPMV) str. 5
-    25) kočni sistem sa PTPVunim servo dejstvom -- član 4(PPMV) str. 5
+    25) kočni sistem sa potpunim servo dejstvom -- član 4(PPMV) str. 5
     26) kočni sistem sa delimičnim servo dejstvom -- član 4(PPMV) str. 5
     27) proizvođač vozila -- član 4(PPMV) str. 5
     28) marka vozila -- član 4(PPMV) str. 5
@@ -46,7 +46,7 @@ izrazi korišteni u pravilniku -- član 4(PPMV) str. 2
     38) digitalni tahograf -- član 4(PPMV) str. 6
     39) graničnik brzine -- član 4(PPMV) str. 6
     39a) osovina (značenje) -- član 4(PPMV) str. 6
-    40) grupa osovina (značenje) -- član 4(PPMV) str. 6
+    40) grupu osovina (značenje) -- član 4(PPMV) str. 7
     41) udvojeni točkovi vozila vrste L -- član 4(PPMV) str. 7
     42) kočna obloga -- član 4(PPMV) str. 7
     43) identifikacioni kod kočnih diskova ili doboša -- član 4(PPMV) str. 7
@@ -63,40 +63,41 @@ uređaji i oprema na vozilima -- član 5(PPMV) str. 8
 vrsta L -- član 6(PPMV) str. 9
 vrsta M -- član 7(PPMV) str. 10
 vrsta N -- član 8(PPMV) str. 11
-uslovi za vozila vrste N -- član 9(PPMV) str. 11
-vrsta O -- član 10(PPMV) str. 14
-oblik karoserije za vozila vrste M, N, O -- član 11(PPMV) str. 15
+uslovi za razvrstavanje vozila vrste N -- član 9(PPMV) str. 12
+vrsta O -- član 10(PPMV) str. 15
+oblik karoserije za vozila vrste M, N, O -- član 11(PPMV) str. 16
 vrsta T, Tm ,TR i C -- član 12(PPMV) str. 20
-vrsta R, S -- član 13(PPMV) str. 21
-priključak za izvođenje radova za vozila vrste R i S -- član 14(PPMV) str. 22
-vrsta K -- član 15(PPMV) str. 22
-terenska vozila - podvrsta G -- član 16(PPMV) str. 23
-dužina vozila -- član 17(PPMV) str. 23
-širina vozila -- član 18(PPMV) str. 25
-visina vozila, klirens -- član 19(PPMV) str. 25
-vožnja u krug -- član 20(PPMV) str. 26
-najveća dozvoljena ukupna masa motornog vozila i prikolice -- član 21(PPMV) str. 26
-osovinsko opterećenje -- član 22(PPMV) str. 29
-najveća dozvoljena masa vozila sa točkovima od metala, pune gume itd -- član 23(PPMV) str. 30
-odnos najveće nominalne snage -- član 24(PPMV) str. 30
-sistem za upravljanje-opšte odredbe (volan) -- član 25(PPMV) str.31
-kočni sistem-opšte odredbe (kočnice) -- član 26(PPMV) str. 31
-kočne obloge (pločice, pakne, diskovi, doboši) -- član 27(PPMV) str. 31
-pneumatski kočni sistem (kočnice) -- član 28(PPMV) str. 32
-sistem za kočenje-funkcije kočnog sistema (radno, pomoćno, parkirno, dugotrajno usporavanje) -- član 29(PPMV) str. 33
-abs (kočenje) -- član 30(PPMV) str. 34
-radno kočenje -- član 31(PPMV) str. 34
-električno kočenje (regenerativno) -- član 31a(PPMV) str. 35
-sistem za dugotrajno usporavanje -- član 32(PPMV) str. 36
-komande kočenja -- član 33(PPMV) str. 36
-servo -- član 34(PPMV) str. 37
-radno kočenje R -- član 35(PPMV) str. 37
-radno kočenje L, M, N, O -- član 36(PPMV) str. 38
-radno kočenje L1, L3 -- član 37(PPMV) str. 39
-radno kočenje L2, L5, L6, L7 -- član 38(PPMV) str. 39
-radno kočenje L4 -- član 39(PPMV) str. 40
-radno kočenje T, C, K, Tm, TR -- član 40(PPMV) str. 40
-normativi kočnih koeficijenata -- član 41(PPMV) str. 40
+vrsta R, S -- član 13(PPMV) str. 22
+priključak za izvođenje radova za vozila vrste R i S -- član 14(PPMV) str. 23
+vrsta K -- član 15(PPMV) str. 23
+terenska vozila - podvrsta G -- član 16(PPMV) str. 24
+dužina vozila -- član 17(PPMV) str. 24
+širina vozila -- član 18(PPMV) str. 26
+visina vozila, klirens -- član 19(PPMV) str. 27
+vožnja u krug -- član 20(PPMV) str. 27
+najveća dozvoljena ukupna masa motornog vozila i prikolice -- član 21(PPMV) str. 27
+osovinsko opterećenje -- član 22(PPMV) str. 31
+najveća dozvoljena masa vozila sa točkovima od metala, pune gume itd -- član 23(PPMV) str. 32
+odnos najveće nominalne snage -- član 24(PPMV) str. 33
+sistem za upravljanje-opšte odredbe (volan) -- član 25(PPMV) str.33
+kočni sistem-opšte odredbe (kočnice) -- član 26(PPMV) str. 33
+kočne obloge (pločice, pakne, diskovi, doboši) -- član 27(PPMV) str. 34
+pneumatski kočni sistem (kočnice) -- član 28(PPMV) str. 34
+sistem za kočenje-funkcije kočnog sistema (radno, pomoćno, parkirno, dugotrajno usporavanje) -- član 29(PPMV) str. 35
+abs (kočenje) -- član 30(PPMV) str. 36
+radno kočenje -- član 31(PPMV) str. 37
+električno kočenje (regenerativno) -- član 31a(PPMV) str. 38
+sistem za dugotrajno usporavanje -- član 32(PPMV) str. 38
+komande kočenja -- član 33(PPMV) str. 39
+kočni sistem, servo -- član 34(PPMV) str. 40
+radno kočenje R -- član 35(PPMV) str. 40
+radno kočenje L, M, N, O -- član 36(PPMV) str. 41
+radno kočenje L1, L3 -- član 37(PPMV) str. 42
+radno kočenje L2, L5, L6, L7 -- član 38(PPMV) str. 42
+radno kočenje L4 -- član 39(PPMV) str. 42
+radno kočenje T, C, K, Tm, TR -- član 40(PPMV) str. 43
+normativi kočnih koeficijenata -- član 41(PPMV) str. 43
+tabela 1 i 2 kočnif koeficijenata -- član 41(PPMV) str. 44
 svetlosno i svelosno signalni uređaji (vrste) -- član 42(PPMV) str. 45
 svetlosno i svelosno signalni uređaji (prednji deo vozila) -- član 43(PPMV) str. 45
 svetlosno i svelosno signalni uređaji (istovetni, udvojeni) -- član 44(PPMV) str. 45
