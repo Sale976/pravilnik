@@ -122,7 +122,7 @@ with st.sidebar:
     with st.expander("ℹ️ Uputstvo", expanded=True):
         st.markdown("""
         - Unesite ključnu reč ili frazu za pretragu.  
-        - Pri unosu reči ne koristiti kvačice iznad slova.  
+        - Pri unosu reči koristiti kvačice iznad slova.  
         - Kliknite na PDF ikonicu da otvorite dokument.  
         """)
 
