@@ -217,8 +217,8 @@ st.markdown(
     <h2 style='text-align: center; margin-top: -60px; font-size:28px;'>
         Web aplikacija za pretragu Pravilnika o Podeli Motornih Vozila (PPMV) i Pravilnika o Tehničkom Pregledu Vozila (PTPV)
     </h2>
-    <p style='font-size:18px; text-align: left;'>
-        🛈 Aplikacija pretražuje tekstualni fajl i na osnovu pretrage prikazuje broj člana i stranu iz PDF verzije pravilnika. Klikom na pdf fajl isti se otvara u posebnom tabu.<br>
+    <p style='font-size:20px; text-align: left;'>
+        🛈 Aplikacija pretražuje tekstualni fajl i na osnovu pretrage prikazuje broj člana i stranu iz PDF verzije pravilnika. Klikom na pdf fajl isti se otvara u posebnom tab-u na odgovarajućoj stranici.<br>
         🛈 Tekstualni fajl (gornje levo dugme za prikaz sadržaja) je za korisnika aplikacije isključivo informativnog karaktera. Preporuka je da korisnik letimično pregleda ovaj fajl!
     </p>
     </h2>
