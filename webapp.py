@@ -217,12 +217,12 @@ st.markdown(
     <h2 style='text-align: center; margin-top: -60px; font-size:28px;'>
         Web aplikacija za pretragu Pravilnika o Podeli Motornih Vozila (PPMV) i Pravilnika o Tehničkom Pregledu Vozila (PTPV)
     </h2>
-    <p style='font-size:20px; text-align: left;'>
+    <p style='font-size:18px; text-align: left;'>
         🛈 Aplikacija pretražuje tekstualni fajl i na osnovu pretrage prikazuje broj člana i stranu iz PDF verzije pravilnika. Klikom na pdf fajl isti se otvara u posebnom tab-u na odgovarajućoj stranici.<br>
         🛈 Tekstualni fajl (gornje levo dugme za prikaz sadržaja) je za korisnika aplikacije isključivo informativnog karaktera. Preporuka je da korisnik letimično pregleda ovaj fajl!
     </p>
     </h2>
-    <p style='font-size:20px; text-align: justify;'>
+    <p style='font-size:18px; text-align: justify;'>
         🛈 Pravilnik o Podeli Motornih i Priključnih Vozila, <b>br. 54 од 19. јуна 2026.</b>&#160; &#160; &#160;|&#160; &#160; &#160;Pravilnik o Tehničkom Pregledu Vozila, <b>br. 62 od 26. маја 2022.</b> 
     </p>
     """,
