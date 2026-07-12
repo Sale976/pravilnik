@@ -231,7 +231,7 @@ st.markdown(
 
 st.divider()
 
-st.write('🛈 Primer načina pretrage: Unosom reči npr. :orange["*svetlo*"] aplikacija vraća više mogućih rezultata, međutim ako se unese :orange["*kratko svetlo*"] dobija se jedan rezultat.')
+st.write('🛈 Primer načina pretrage: Unosom reči :orange["*svetlo*"] aplikacija vraća više mogućih rezultata, međutim ako se unese :orange["*kratko svetlo*"] dobija se jedan rezultat.')
 
 # --- Session State ---
 if "search_query" not in st.session_state:
