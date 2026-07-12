@@ -17,8 +17,8 @@ st.set_page_config(
 
 
 # --- Config ---
-COUNTER_FILE = Path("data/visitor_counter.json")
-COUNTER_FILE.parent.mkdir(parents=True, exist_ok=True)
+# COUNTER_FILE = Path("data/visitor_counter.json")
+# COUNTER_FILE.parent.mkdir(parents=True, exist_ok=True)
 
 
 # --- CSS STYLES ---
