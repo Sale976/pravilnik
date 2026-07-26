@@ -11,7 +11,7 @@ izrazi korišteni u pravilniku -- član 4(PPMV) str. 2
       (3) Vrsta L -- član 4(PPMV) str. 3
       (4) Vrsta T -- član 4(PPMV) str. 3
     5) masa neopterećenog vozila -- član 4(PPMV) str. 3
-    6) proizvođačka tablica -- član 4(PPMV) str. 3
+    6) proizvođačka tablica (pločica ili nalepnica) -- član 4(PPMV) str. 3
     7) najveća dozvoljena masa teretnog vozila (tegljač) -- član 4(PPMV) str. 3
     8) najveća konstruktivna brzina vozila -- član 4(PPMV) str. 3
     9) vetrobran -- član 4(PPMV) str. 3
