@@ -126,8 +126,8 @@ svetlo za označavanje vozila posebnih namena (taksi, obuka vozača, putna pomo�
 oznake dugih, teških i sporih vozila -- član 66(PPMV) str. 61
 reklamni natpisi -- član 67(PPMV) str. 62
 uređaji za davanje svetlosnih znakova (podela) -- član 68(PPMV) str. 63
-stop svetlo -- član 69(PPMV) str. 63
-pokazivač pravca (žmigavac) -- član 70(PPMV) str. 64
+stop svetla -- član 69(PPMV) str. 63
+pokazivači pravca (žmigavac) -- član 70(PPMV) str. 64
 normalna vidljivost (podela) -- član 71(PPMV) str. 66
 vetrobran i sva stakla -- član 72(PPMV) str.  str. 66
 brisač vetrobrana -- član 73(PPMV) str. 67
