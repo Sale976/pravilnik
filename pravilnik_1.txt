@@ -130,8 +130,8 @@ stop svetla -- član 69(PPMV) str. 63
 pokazivači pravca (žmigavac) -- član 70(PPMV) str. 64
 normalna vidljivost (podela) -- član 71(PPMV) str. 66
 vetrobran i sva stakla -- član 72(PPMV) str.  str. 66
-brisač vetrobrana -- član 73(PPMV) str. 67
-perač vetrobrana -- član 74(PPMV) str. 67
+brisači vetrobrana -- član 73(PPMV) str. 67
+perači vetrobrana -- član 74(PPMV) str. 67
 vozačko ogledalo (retrovizor) -- član 75(PPMV) str. 68
 vozačko ogledalo N2, N3 (retrovizor) -- 75a(PPMV) str. 69
 zvučni znakovi (sirena) -- član 76(PPMV) str. 70
@@ -217,7 +217,7 @@ Prilog 1:  identifikacija vozila -- tačka 0(PTPV) str. 26
 Prilog 1:  uređaj za upravljanje (volan) -- tačka 1(PTPV) str. 26
 Prilog 1:  uređaj za zaustavljanje (kočnice) -- tačka 2(PTPV) str. 27
 Prilog 1:  svetlosni i svetlosno-signalni uređaji (svetlo) -- tačka 3(PTPV) str. 31
-Prilog 1:  uređaji koji omogućavaju normalnu vidljivost (vetrobran, ogledalo - retrovizor, uređaj za kvašenje, brisanje - metlice) -- tačka 4(PTPV) str. 34
+Prilog 1:  uređaji koji omogućavaju normalnu vidljivost (vetrobran, ogledalo - retrovizor, perači - uređaj za kvašenje, brisači - metlice) -- tačka 4(PTPV) str. 34
 Prilog 1:  uređaji za davanje zvučnih znakova (sirena) -- tačka 5(PTPV) str. 35
 Prilog 1:  uređaji za kontrolu i davanje znakova (odometar, tahograf) -- tačka 6(PTPV) str. 35
 Prilog 1:  uređaji za odvođenje i regulisanje izduvnih gasova (auspuh) -- tačka 7(PTPV) str. 36
