@@ -82,6 +82,7 @@ st.markdown("""
     
     .search-box {
         background-color: #f0f2f6;
+        width: 5rem;
         padding: 20px;
         border-radius: 10px;
         margin-bottom: 20px;
