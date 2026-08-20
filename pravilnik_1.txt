@@ -117,8 +117,8 @@ prednja poziciona svetla -- član 57(PPMV) str. 52
 zadnja poziciona svetla -- član 58(PPMV) str. 54
 dnevno svetlo -- član 58a(PPMV) str. 55
 zadnja svetla za maglu (maglenke) -- član 59(PPMV) str. 55
-parkirno svetlo -- član 60(PPMV) str. 56
-gabaritno svetlo -- član 61(PPMV) str. 57
+parkirna svetla -- član 60(PPMV) str. 56
+gabaritna svetla -- član 61(PPMV) str. 57
 svetlo zadnje registarske tablice -- član 62(PPMV) str. 58
 rotaciono i trepćuće svetlo (žuta, crvena, plava) -- član 63(PPMV) str. 59
 katadiopteri -- član 64(PPMV) str. 59
