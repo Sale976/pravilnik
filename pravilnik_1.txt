@@ -113,10 +113,10 @@ svetlo za maglu (maglenke) -- član 51(PPMV) str. 50
 farovi i svetlo za osvetljavanje radova -- član 53(PPMV) str. 51
 označavanje vozila (podela) -- član 55(PPMV) str. 51
 označavanje vozila (homologacija, jednoobrazni tehnički uslovi) -- član 56(PPMV) str. 52
-prednje poziciono svetlo -- član 57(PPMV) str. 52
-zadnje poziciono svetlo -- član 58(PPMV) str. 54
+prednja poziciona svetla -- član 57(PPMV) str. 52
+zadnja poziciona svetla -- član 58(PPMV) str. 54
 dnevno svetlo -- član 58a(PPMV) str. 55
-zadnje svetlo za maglu (maglenke) -- član 59(PPMV) str. 55
+zadnja svetla za maglu (maglenke) -- član 59(PPMV) str. 55
 parkirno svetlo -- član 60(PPMV) str. 56
 gabaritno svetlo -- član 61(PPMV) str. 57
 svetlo zadnje registarske tablice -- član 62(PPMV) str. 58
