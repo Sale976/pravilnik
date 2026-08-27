@@ -220,7 +220,7 @@ Prilog 1:  uređaj za zaustavljanje (pneumatski i hidraulički prenosni mehaniza
 Prilog 1:  uređaj za zaustavljanje (mehanički prenosni mehanizam, kočnice) -- tačka 2(PTPV) str. 30
 Prilog 1:  svetlosni i svetlosno-signalni uređaji (kratko svetlo i dugo svetlo) -- tačka 3(PTPV) str. 31
 Prilog 1:  svetlosni i svetlosno-signalni uređaji (prednje svetlo za maglu, dnevno svetlo, rikverc, farovi za radove i dodatni farovi, reflektor, prednja i zadnja poziciona svetla) -- tačka 3(PTPV) str. 32
-Prilog 1:  svetlosni i svetlosno-signalni uređaji (zadnje svetlo za maglu, parkirna, gabaritna, svetlo reg. tablice, rotaciono, trepćuće, katadiopteri, vozila posebnih namena, oznake dugih teških sporih, konture, reflektivne reklame, stop svetlo) -- tačka 3(PTPV) str. 33
+Prilog 1:  svetlosni i svetlosno-signalni uređaji (zadnje svetlo za maglu, parkirna, gabaritna, svetlo reg. tablice, rotaciono, trepćuće, katadiopteri, vozila posebnih namena, oznake dugih teških sporih, konture, reflektivne reklame, stop svetla) -- tačka 3(PTPV) str. 33
 Prilog 1:  svetlosni i svetlosno-signalni uređaji (pokazivači pravca, svi pokazivači pravca, svetlosni znak upozorenja, oznake dugih teških sporih, reflektivne reklame) -- tačka 3(PTPV) str. 34
 Prilog 1:  uređaji koji omogućavaju normalnu vidljivost (vetrobran i prozorska okna, ogledalo - retrovizor, perač, perači - kvašenje, brisači - metlice) -- tačka 4(PTPV) str. 34
 Prilog 1:  uređaji za davanje zvučnih znakova (sirena) -- tačka 5(PTPV) str. 35
