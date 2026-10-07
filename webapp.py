@@ -94,7 +94,7 @@ st.markdown("""
     .highlight {
         background-color: #fff8e1;
         padding: 2px 4px;
-        border-radius: 20px;
+        border-radius: 3px;
     }
     
     /* Logo styling */
