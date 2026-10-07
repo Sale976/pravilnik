@@ -35,6 +35,7 @@ st.markdown("""
     /* Container for the top content */
     .sidebar-top {
         flex-shrink: 0;
+        background-color: #FAEBD7;
     }
     
     /* Container for the bottom content - FIXED POSITIONING */
