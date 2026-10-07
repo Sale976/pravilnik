@@ -188,10 +188,10 @@ with st.sidebar:
             """,
             unsafe_allow_html=True
         )
-        st.html('<div id="moje-dugme-kontejner">')
-        if st.button("📄 Otvori Tekstualni fajl"):
-            prikazi_fajl_modal("pravilnik.txt")
-        st.html('</div>')
+            st.html('<div id="moje-dugme-kontejner">')
+            if st.button("📄 Otvori Tekstualni fajl"):
+                prikazi_fajl_modal("pravilnik.txt")
+            st.html('</div>')
     
         # Dodajemo prazan prostor (spacer) da ostali elementi ne odu pod dugme
         st.markdown("<br><br>", unsafe_allow_html=True)
