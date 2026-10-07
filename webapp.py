@@ -168,6 +168,7 @@ with st.sidebar:
             with open(putanja, "r", encoding="utf-8") as f:
                 sadrzaj = f.read()
             st.text_area("Sadržaj dokumenta:", value=sadrzaj, height=700, disabled=True)
+            <div style="background-color: #fff8e1"</div>
             if st.button("Zatvori"):
                 st.rerun()
         except FileNotFoundError:
