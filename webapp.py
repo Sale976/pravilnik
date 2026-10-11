@@ -85,7 +85,7 @@ st.markdown("""
         padding: 20px;
         border-radius: 10px;
         margin-bottom: 20px;
-        outline: none;
+        outline: 3px solid #0076ff;
     }
     
     .results-table {
