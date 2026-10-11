@@ -171,11 +171,14 @@ with st.sidebar:
             st.markdown(
                 """
                 <style>
-                /* Changes the background of the textarea container */
-                div[data-baseweb="textarea"] textarea {
-                    background-color: #f0f2f6 !important; /* Light gray background */
-                    color: #31333F !important;            /* Dark text color */
-                    font-family: monospace;
+                /* Targets the entire app background */
+                .stApp, .main {
+                    background-color: #2b2b2b !important; /* Replace with your desired color */
+                }
+            
+                /* Optional: Make the text white so it remains readable on a dark background */
+                h1, h2, h3, p, label, span {
+                    color: #ffffff !important;
                 }
                 </style>
                 """,
