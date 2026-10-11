@@ -167,6 +167,17 @@ with st.sidebar:
         try:
             with open(putanja, "r", encoding="utf-8") as f:
                 sadrzaj = f.read()
+            # This minimal snippet is required to change the window color from green to your choice
+            st.markdown(
+                """
+                <style>
+                div[role="dialog"], div[role="dialog"] > div { 
+                    background-color: #ffffff !important; 
+                }
+                </style>
+                """, 
+                unsafe_allow_html=True
+            )
             st.text_area("Sadržaj dokumenta:", value=sadrzaj, height=700, disabled=True)
             if st.button("Zatvori"):
                 st.rerun()
