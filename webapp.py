@@ -167,18 +167,33 @@ with st.sidebar:
         try:
             with open(putanja, "r", encoding="utf-8") as f:
                 sadrzaj = f.read()
-            # 2. Inject CSS targeting only the modal popup container
+            # Aggressive CSS targeting to overwrite any default/green styles
             st.markdown(
                 """
                 <style>
-                /* Changes the background color inside the modal popup window */
-                div[data-testid="stDialog"] div[role="dialog"] {
-                    background-color: #1e1e1e !important; /* Dark theme background */
-                    border: 1px solid #444444;
+                /* 1. Target the native dialog wrapper */
+                div[data-testid="stDialog"] div[role="dialog"],
+                div[data-testid="stDialog"] [data-test-script-element="true"],
+                .stDialog inline-container,
+                [data-testid="stDialog"] {
+                    background-color: #1e1e1e !important; /* Your target color (e.g., dark gray) */
+                }
+
+                /* 2. Fix the inner background wrapper if a theme light-green exists */
+                div[role="dialog"] > div {
+                    background-color: #1e1e1e !important;
                 }
             
-                /* Optional: Adjust the dialog title color to match your new background */
-                div[data-testid="stDialog"] h1 {
+                /* 3. Ensure the text area block doesn't keep a green tint */
+                div[data-baseweb="textarea"] textarea {
+                    background-color: #2b2b2b !important;
+                    color: #ffffff !important;
+                }
+
+                /* 4. Fix typography visibility over your new background */
+                div[data-testid="stDialog"] h1, 
+                div[data-testid="stDialog"] p, 
+                div[data-testid="stDialog"] label {
                     color: #ffffff !important;
                 }
                 </style>
