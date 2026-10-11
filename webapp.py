@@ -86,6 +86,14 @@ st.markdown("""
         border-radius: 10px;
         margin-bottom: 20px;
     }
+
+    .search-box input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+    }
     
     .results-table {
         margin-top: 20px;
