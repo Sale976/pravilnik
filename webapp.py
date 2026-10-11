@@ -167,16 +167,24 @@ with st.sidebar:
         try:
             with open(putanja, "r", encoding="utf-8") as f:
                 sadrzaj = f.read()
-            # This minimal snippet is required to change the window color from green to your choice
-            st.markdown(
+            # Comprehensive CSS injection to replace the light green theme background
+            st.html(
                 """
                 <style>
-                div[role="dialog"], div[role="dialog"] > div { 
+                /* Targets every layer of Streamlit's dialog window to change it to white */
+                div[role="dialog"], 
+                div[role="dialog"] > div, 
+                div[data-testid="stDialog"] div[data-test-script-element="true"] { 
                     background-color: #ffffff !important; 
                 }
+
+                /* Ensures the text area component inner frame matches the window */
+                div[data-baseweb="textarea"], 
+                div[data-baseweb="textarea"] > div {
+                    background-color: #f8f9fa !important;
+                }
                 </style>
-                """, 
-                unsafe_allow_html=True
+                """
             )
             st.text_area("Sadržaj dokumenta:", value=sadrzaj, height=700, disabled=True)
             if st.button("Zatvori"):
