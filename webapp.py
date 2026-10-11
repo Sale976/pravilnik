@@ -167,19 +167,7 @@ with st.sidebar:
         try:
             with open(putanja, "r", encoding="utf-8") as f:
                 sadrzaj = f.read()
-            # 1. Use a custom styled HTML wrapper to force the background color
-            # Replace '#ffffff' with any background color you want (e.g., #ffffff for white, #1e1e1e for dark gray)
-            st.markdown(
-                """
-                <div style="
-                    background-color: #ffffff !important; 
-                    padding: 20px; 
-                    border-radius: 8px; 
-                    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-                ">
-                """, 
-                unsafe_allow_html=True
-            )
+           
             st.text_area("Sadržaj dokumenta:", value=sadrzaj, height=700, disabled=True)
             if st.button("Zatvori"):
                 st.rerun()
