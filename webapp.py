@@ -167,6 +167,20 @@ with st.sidebar:
         try:
             with open(putanja, "r", encoding="utf-8") as f:
                 sadrzaj = f.read()
+            # Inject custom CSS to change the text area background color
+            st.markdown(
+                """
+                <style>
+                /* Changes the background of the textarea container */
+                div[data-baseweb="textarea"] textarea {
+                    background-color: #f0f2f6 !important; /* Light gray background */
+                    color: #31333F !important;            /* Dark text color */
+                    font-family: monospace;
+                }
+                </style>
+                """,
+                unsafe_allow_html=True
+            )
             st.text_area("Sadržaj dokumenta:", value=sadrzaj, height=700, disabled=True)
             if st.button("Zatvori"):
                 st.rerun()
