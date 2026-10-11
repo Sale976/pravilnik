@@ -167,17 +167,18 @@ with st.sidebar:
         try:
             with open(putanja, "r", encoding="utf-8") as f:
                 sadrzaj = f.read()
-            # Inject custom CSS to change the text area background color
+            # 2. Inject CSS targeting only the modal popup container
             st.markdown(
                 """
                 <style>
-                /* Targets the entire app background */
-                .stApp, .main {
-                    background-color: #2b2b2b !important; /* Replace with your desired color */
+                /* Changes the background color inside the modal popup window */
+                div[data-testid="stDialog"] div[role="dialog"] {
+                    background-color: #1e1e1e !important; /* Dark theme background */
+                    border: 1px solid #444444;
                 }
             
-                /* Optional: Make the text white so it remains readable on a dark background */
-                h1, h2, h3, p, label, span {
+                /* Optional: Adjust the dialog title color to match your new background */
+                div[data-testid="stDialog"] h1 {
                     color: #ffffff !important;
                 }
                 </style>
